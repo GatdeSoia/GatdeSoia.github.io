@@ -39,9 +39,11 @@ strong {
 }
 
 h1, h3, h5 {
+  color: #ff0044;
   font-family: 'Roboto Condensed', sans-serif;
   text-align: center;
   text-transform: uppercase;
+  text-shadow: -2px 2px 0 #000000, -1px 1px 0 #000000;
 }
 
 h2, h4, h6 {
@@ -87,7 +89,7 @@ li {
 
 .logo {
   display: block;
-  width: 64px;
+  width: 96px;
   padding: 64px;
   margin-left: auto;
   margin-right: auto;
@@ -100,10 +102,11 @@ li {
 }
 
 .name {
+  color: #ff0044;
   font-size: 1.8em;
   padding-bottom: 4px;
   letter-spacing: 4px;
-  text-shadow: 2px 2px 0 #161616, 1px 1px 0 #161616;
+  text-shadow: -2px 2px 0 #000000, -1px 1px 0 #000000;
 }
 
 .job {
