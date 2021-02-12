@@ -208,6 +208,13 @@ section a {
   border-radius: 4px;
   box-shadow: 2px 2px 0 #000000, 1px 1px 0 #000000;
   padding: 3px 24px 24px 24px;
+  max-width: 60%;
+  margin-left: 20%;
+}
+
+.list {
+  max-width: 60%;
+  margin-left: 20%;
 }
 
 #contact {
@@ -291,6 +298,16 @@ img {
     column-count: 3;
   }
 
+  .monospace {
+    max-width: 80%;
+    margin-left: 8%;
+  }
+
+  .list {
+    max-width: 80%;
+    margin-left: 8%;
+  }
+
 }
 
 /* -------------------------------------------------------------------------- */
@@ -345,6 +362,16 @@ img {
     width:100%;
     height: 100%;
   </div>
+  }
+
+  .monospace {
+    max-width: 100%;
+    margin-left: inherit;
+  }
+
+  .list {
+    max-width: 100%;
+    margin-left: inherit;
   }
 }
 
