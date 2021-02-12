@@ -207,7 +207,7 @@ section a {
   font-weight: 300;
   border-radius: 4px;
   box-shadow: 2px 2px 0 #000000, 1px 1px 0 #000000;
-  padding: 3px 24px 24px 24px;
+  padding: 24px 12px 32px 32px;
   max-width: 60%;
   margin-left: 20%;
 }
