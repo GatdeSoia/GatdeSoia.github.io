@@ -234,14 +234,23 @@ section a {
 footer {
   color: #000000;
   background-color: #ffffff;
+  text-align: center;
   width: 100%;
   padding: 48px 0 16px 0;
   margin-top: 48px;
 }
 
+.lang {
+  padding-bottom: 32px;
+}
+
 .credits {
   font-size: 0.8em;
-  text-align: center;
+}
+
+.letrita {
+  font-size: 0.6em;
+  padding: 48px 0 36px 0;
 }
 
 
@@ -377,6 +386,10 @@ img {
 
 /* -------------------------------------------------------------------------- */
 @media screen and (max-width: 512px) {
+
+  h3 {
+    padding-top: 40px;
+  }
 
   .masonry {
     column-count: 1;
