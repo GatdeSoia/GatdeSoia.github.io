@@ -461,14 +461,71 @@
 
 					<section>
 						<h1>Concept art</h1>
+						<div class="twocolumn-1-1">
+							<div>
+							<ul>
+								<li class="fragment">Number your concepts
+									<ul>
+										<li class="small-text">"I like #3, but make it rounder like #7."</li>
+									</ul>
+								</li>
+								<li class="fragment">Name your layers and groups
+									<ul>
+										<li class="small-text">Ah, yes, <em>Ebene 24</em>, that's what I was looking for.</li>
+									</ul>
+								</li>
+								<li class="fragment">Keep proportions from all views</li>
+							</ul>
+							</div>
+							<div>
+								<img class="fragment" data-src="./lib/img/concept2.png">
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h1>Concept art</h1>
+						<div class="twocolumn-1-2">
+							<div>
+							<ul>
+								<li class="fragment">Using references is <strong>mandatory</strong>
+									<ul>
+										<li class="small-text">Creativity comes from the way you ensamble the pieces of reality that your game is portraying</li>
+										<li class="small-text">Without references, stereotypes and unconscious biases take over</li>
+									</ul>
+								</li>
+							</ul>
+							</div>
+							<div class="fragment">
+								<img data-src="./lib/img/blasphemous.jpg">
+								<p class="tiny-text">Blasphemous (2019) The Game Kitchen</p>
+							</div>
+						</div>
 					</section>
 
 					<section>
 						<h2>Character concept art</h2>
+						<ul>
+							<li class="fragment">A character's gotta move
+								<ul>
+									<li class="small-text">Do the joints make sense?</li>
+									<li class="small-text">Can they bend knees or elbows with that piece of armour?</li>
+								</ul>
+							</li>
+							<li class="fragment">Concept extreme face and body expressions</li>
+						</ul>
 					</section>
 
 					<section>
 						<h2>Props & environment concept art</h2>
+						<ul>
+							<li class="fragment">Learn technical drawing</li>
+							<li class="fragment">Don't fear "cheating". Use all the tools at your disposal:
+								<ul>
+									<li class="small-text">Blockout environments in Blender and trace on top of a render</li>
+								</ul>
+							</li>
+						</ul>
 					</section>
 
 				</section>
@@ -482,10 +539,70 @@
 
 					<section>
 						<h2>Resolution</h2>
+						<div class="twocolumn-1-1">
+							<div>
+								<ul>
+									<li class="fragment">All images must have a size of <strong>power of 2</strong>
+										<ul>
+											<li class="fragment small-text">2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192</li>
+										</ul>
+									</li>
+									<li class="fragment">They don't have to be square
+										<ul>
+											<li class="small-text">E.g.: 128 x 32, 256 x 16</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div>
+								<img class="fragment" data-src="./lib/img/he-man.png">
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h2>Resolution</h2>
+						<div class="twocolumn-1-2">
+							<div>
+								<ul>
+									<li class="fragment">It can be an individual asset...</li>
+									<li class="fragment">... or a collection of (whatever individual size) of assets arranged into an atlas</li>
+								</ul>
+							</div>
+							<div class="fragment">
+								<img data-src="./lib/img/flup.png">
+								<p class="tiny-text">Moskito Beat (2016) Superglue Games</p>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h2>Resolution</h2>
+								<ul>
+									<li class="fragment">It has to be big enough to not scale up in game
+										<ul>
+											<li class="small-text">Otherwise the image blurs*</li>
+										</ul>
+									</li>
+									<li class="fragment">It has to be small enough to not eat up resources rendering</li>
+									<br>
+									<br>
+									<li class="fragment">* Pixel art has the advantage of storing tiny assets, since the scaling up is part of what makes the style pixel-visible</li>
+							</ul>
 					</section>
 
 					<section>
 						<h2>Reusability</h2>
+						<div class="twocolumn-1-2">
+							<div>
+								<li class="fragment">The more you can reuse an asset, the better</li>
+							</div>
+							<div class="fragment">
+								<img data-src="./lib/img/mario.jpg">
+								<p class="tiny-text">Super Mario Bros. (1985) Nintendo</p>
+							</div>
+						</div>
+					</section>
 					</section>
 
 				</section>
@@ -503,10 +620,88 @@
 
 					<section>
 						<h3>Scale</h3>
+						<div class="twocolumn-3-2">
+							<div class="fragment">
+								<img data-src="./lib/img/noctis.jpg">
+								<p class="tiny-text">Final Fantasy XV (2016) Square Enix</p>
+							</div>
+							<div class="fragment">
+								<img data-src="./lib/img/spyro.png">
+								<p class="tiny-text">Spyro the Dragon (1998) Insomniac Games</p>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h3>Scale</h3>
+							<ul>
+								<li class="fragment">The problem with tiny triangles:
+									<ul>
+										<li class="fragment">The computer still has to calculate the position of all those triangles, just for a single pixel, or none, to render</li>
+										<li class="fragment">When there are too many tiny triangles the render is edgy</li>
+									</ul>
+								</li>
+							</ul>
+							<img class="fragment" data-src="./lib/img/triangles.png">
+					</section>
+
+					<section>
+						<h3>LODs</h3>
+							<ul>
+								<li class="fragment">Meshes<ul>
+									<li class="fragment">Solves tiny triangles waste of calculation</li>
+									</ul>
+								</li>
+								<li class="fragment">Textures (MipMaps)<ul>
+									<li class="fragment">Solves aliasing issues and Moiré patterns</li>
+									</ul>
+								</li>
+								<li class="fragment">Bones & framerate<ul>
+									<li class="fragment">Solves having too many skinned meshes in frame</li>
+									</ul>
+								</li>
+								<br>
+								<li class="fragment">Find the balance:
+									<ul>
+										<li class="fragment">The more assets to load, the heavier the program is going to be on the memory</li>
+										<li class="fragment">The more triangles there need to be rendered, the bigger the textures, and the more skinned meshes are animated, the heavier it will be on the GPU</li>
+									</ul>
+								</li>
+							</ul>
 					</section>
 
 					<section>
 						<h3>Modularity</h3>
+						<div class="twocolumn-1-1">
+							<div>
+								<ul>
+									<li class="fragment">Document and apply strict measurements:
+										<ul>
+											<li class="fragment">How high is the seat of a chair for the character to sit down?</li>
+											<li class="fragment">What's the measure of the narrowest corridor the character should go through?</li>
+											<li class="fragment">How tall is a wall?</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="fragment">
+								<img data-src="./lib/img/skyrim.jpg">
+								<p class="tiny-text">Skyrim (2011) Bethesda Game Studios</p>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h3>Visibility</h3>
+						<ul>
+							<li class="fragment">If a fraction of a mesh is visible, the whole mesh is being calculated</li>
+							<li class="fragment">How much should I chop a house?
+								<ul>
+									<li class="fragment">Are you going to be close to it? Chop it!</li>
+									<li class="fragment">Is it a figure in the landscape far away? Make it a quad and slap a texture on it.</li>
+								</ul>
+							</li>
+						</ul>
 					</section>
 
 					<section>
@@ -515,14 +710,56 @@
 
 					<section>
 						<h3>Texture size</h3>
+						<div class="twocolumn-1-1">
+							<div>
+							<ul>
+								<li class="fragment">The smaller, the better</li>
+								<li class="fragment">The less textures per material, the better
+									<ul>
+										<li class="fragment">Diffuse map: RGB(A)</li>
+										<li class="fragment">PBR map: RGBA</li>
+										<li class="fragment">Normal map: RGB</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div>
+							<img class="fragment" data-src="./lib/img/pbr.jpg">
+						</div>
+					</div>
 					</section>
 
 					<section>
 						<h3>UV space</h3>
+						<ul>
+							<li class="fragment">Two UV maps:
+								<ul>
+									<li class="fragment">Main UVmap</li>
+									<li class="fragment">Lightmap</li>
+								</ul>
+							</li>
+							<br>
+							<li class="fragment">The unwrap can't coincide</li>
+						</ul>
 					</section>
 
 					<section>
 						<h3>Material instances</h3>
+						<ul>
+							<li class="fragment">The fewer materials, the better. Yet you need to balance:
+								<ul>
+									<li class="fragment">Big atlases with tons of assets using the same material</li>
+									<li class="fragment">Small texture maps, with more materials in a scene</li>
+								</ul>
+							</li>
+							<br>
+							<li class="fragment">Consider: Tiling and triplanar projection</li>
+							<br>
+							<li class="fragment">Avoid multimaterial meshes<ul>
+								<li class="fragment">It's better to duplicate and flip a quad than to force double-side render</li>
+							</ul>
+						</li>
+						</ul>
 					</section>
 
 					<section>
@@ -531,10 +768,55 @@
 
 					<section>
 						<h3>Apply transforms</h3>
+						<ul>
+							<li class="fragment">Rotation at 0,0,0.</li>
+							<li class="fragment">Scale at 1,1,1.</li>
+						</ul>
 					</section>
 
 					<section>
 						<h3>Put your pivot points where I can see them</h3>
+						<div class="twocolumn-1-1">
+							<div>
+								<ul>
+									<li class="fragment">The pivot point belongs:
+										<ul>
+											<li class="fragment">to the bottom corner of a wall asset</li>
+											<li class="fragment">to the center of a basket ball</li>
+											<li class="fragment">to the center of a rotation point, and it's aligned with the main rotation axis</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div>
+								<img class="fragment" data-src="./lib/img/clint.gif">
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h3>Major exporting settings</h3>
+						<ul>
+							<li class="fragment">Blender to Unity:
+								<ul>
+									<li class="fragment">Rotate the mesh on X -90°. Apply.</li>
+									<li class="fragment">Rotate on X 90°. Do not apply this transform</li>
+									<li class="fragment">Apply Scalings: FBX Units Scale</li>
+									<li class="fragment">Forward: -Y Forward</li>
+									<li class="fragment">Up: Z Up</li>
+								</ul>
+							</li>
+							<br>
+							<li class="fragment">Blender to Unreal:
+								<ul>
+									<li class="fragment">Project must have a Unit Scale of 0.01</li>
+									<li class="fragment">Forward: Y Forward</li>
+									<li class="fragment">Up: Z Up</li>
+								</ul>
+							</li>
+							<br>
+							<li class="fragment">https://github.com/mrven/Blender-Asset-Creation-Toolset</li>
+						</ul>
 					</section>
 
 				</section>
@@ -552,15 +834,38 @@
 
 					<section>
 						<h3>Bones main roll</h3>
+						<img class="fragment" data-src="./lib/img/piku.png">
 					</section>
 
 					<section>
 						<h3>Euler vs. quaternions</h3>
+						<div class="twocolumn-2-3">
+							<div>
+								<ul>
+									<li class="fragment">Euler (X,Y,Z)</li>
+									<li class="fragment">Quaternions (X,Y,Z,W)
+									<ul>
+										<li class="small-text">> 180°</li>
+									</ul></li>
+								</ul>
+							</div>
+							<div>
+								<img class="fragment" data-src="./lib/img/curve.png">
+							</div>
+						</div>
 					</section>
 
 					<section>
 						<h3>Controllers and drivers are</h3>
 						<h3>your animator's friends</h3>
+						<ul>
+							<li class="fragment">Automate:</li>
+							<ul>
+								<li class="fragment">Legs rotation with IK feet</li>
+								<li class="fragment">Closing hand with different increments on each finger bone</li>
+								<li class="fragment">Key shapes</li>
+							</ul></li>
+						</ul>
 					</section>
 
 					<section>
@@ -569,6 +874,7 @@
 
 					<section>
 						<h3>Design a state machine</h3>
+						<img class="fragment" data-src="./lib/img/state.png">
 					</section>
 
 					<section>
@@ -579,16 +885,6 @@
 						<h3>Slice on demand</h3>
 					</section>
 
-				</section>
-
-				<!-- - - - - - - - - - VFX ARTIST - - - - - - - - - -->
-				<section>
-					<h1>VFX art</h1>
-				</section>
-
-				<!-- - - - - - - - - - TECHNICAL ARTIST - - - - - - - - - -->
-				<section>
-					<h1>Technical art</h1>
 				</section>
 
 				<!-- - - - - - - - - - MY TWO CENTS - - - - - - - - - -->
