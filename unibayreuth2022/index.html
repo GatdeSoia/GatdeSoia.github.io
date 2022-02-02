@@ -1,0 +1,648 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/tbck.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<!-- - - - - - - - - - TITLE SCREEN - - - - - - - - - -->
+				<section>
+					<h1>You are good at drawing,</h1>
+					<h1>now what? –</h1>
+					<h2>The technical skills of a game artist</h2>
+					<br>
+					<br>
+					<h3>Casilda de Zulueta | <a href="https://twitter.com/gatdesoia" target="_blank">@GatdeSoia</a></h3>
+					<h3>Uni Bayreuth | 2nd February 2022</h3>
+				</section>
+
+				<!-- - - - - - - - - - WHO AM I - - - - - - - - - -->
+				<section>
+
+					<section data-background-video="https://gatdesoia.es/lib/vid/gallery/ava.mp4"
+          data-background-video-loop data-background-video-muted data-background-opacity="0.4">
+						<h2>Who am I?</h2>
+						<div class="twocolumn-1-1">
+							<div>
+								<ul>
+									<li class="fragment">Casilda de Zulueta (Casi)</li>
+									<li class="fragment">Technical artist and animator</li>
+									<li class="fragment">6 years in the games industry</li>
+								</ul>
+							</div>
+							<div class="fragment">
+								<img data-src="./lib/img/casi.jpg">
+							</div>
+						</div>
+					</section>
+
+					<section data-background-video="./lib/vid/pepper.mp4"
+          data-background-video-loop data-background-video-muted data-background-opacity="0.4">
+						<h2>Academic Background</h2>
+						<div class="twocolumn-3-2">
+							<div>
+								<ul>
+									<li class="fragment">Audiovisual Communication B.Soc.Sc.
+										<ul>
+											<li class="small-text">Universitat Politècnica de València</li>
+										</ul>
+									</li>
+									<li class="fragment">Erasmus exchange
+										<ul>
+											<li class="small-text">Köln International School of Design</li>
+										</ul>
+									</li>
+									<li class="fragment">Game Development & Research M.A.
+										<ul>
+											<li class="small-text">Cologne Game Lab</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="fragment">
+								<img data-src="./lib/img/13-rosas.png">
+								<p class="tiny-text">13 Rosas (2022) Casilda de Zulueta</p>
+							</div>
+						</div>
+					</section>
+
+					<section data-background-video="https://gatdesoia.es/lib/vid/gallery/bob.mp4"
+          data-background-video-loop data-background-video-muted data-background-opacity="0.4">
+						<h2>Flying Sheep Studios</h2>
+						<div class="twocolumn-1-2">
+							<div>
+								<ul>
+									<li class="fragment">3D artist
+										<ul>
+											<li class="small-text">HTML5 games</li>
+										</ul>
+									</li>
+									<li class="fragment">Video editor</li>
+									<li class="fragment">More than 30 games</li>
+								</ul>
+							</div>
+							<div class="fragment">
+								<img data-src="./lib/img/ninjago.jpg">
+								<p class="tiny-text">Lego Ninjago: Sumpf-Arena (2017) Flying Sheep Studios</p>
+							</div>
+						</div>
+					</section>
+
+					<section data-background-video="./lib/vid/mars-vice.mp4"
+          data-background-video-loop data-background-video-muted data-background-opacity="0.4">
+						<h2>Freelancer</h2>
+						<div class="twocolumn-1-2">
+							<div>
+								<ul>
+									<li class="fragment">Technical artist</li>
+									<li class="fragment">Animator</li>
+									<li class="fragment">Teacher</li>
+									<br>
+									<li class="fragment">Mars Vice
+										<ul>
+											<li class="small-text">Rho Labyrinths</li>
+										</ul>
+									</li>
+									<li class="fragment">Enclosed Encounter
+										<ul>
+											<li class="small-text">Fantastic Foe</li>
+										</ul>
+									</li>
+									<li class="fragment">Maniacs
+										<ul>
+											<li class="small-text">Achtung Autobahn</li>
+										</ul>
+									</li>
+									<li class="fragment">The 7th Axe
+										<ul>
+											<li class="small-text">Brainseed Factory</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="fragment">
+								<img data-src="./lib/img/bb.png">
+								<p class="tiny-text">Enclosed Encounter (Under Development) Fantastic Foe</p>
+							</div>
+						</div>
+					</section>
+
+					<section data-background-image="./lib/img/carousel.gif"
+          data-background-repeat data-background-opacity="0.4">
+						<h2>Making things for the sake of it</h2>
+						<div class="twocolumn-1-2">
+							<div>
+								<video muted loop data-autoplay src="./lib/vid/oathkeeper.mp4"></video>
+							</div>
+							<div>
+								<ul>
+									<li class="fragment">3D art</li>
+									<li class="fragment">Illustration</li>
+									<li class="fragment">Video</li>
+									<li class="fragment">Web design</li>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+				</section>
+
+				<!-- - - - - - - - - - WHAT IS THIS FOR - - - - - - - - - -->
+				<section>
+
+					<section>
+						<h2>The purpose of this talk</h2>
+						<ul>
+							<li class="fragment">To point at the technical aspects of game art</li>
+							<li class="fragment">To make you consider being methodological in your artistic processes</li>
+							<li class="fragment">To remind you that your value as a person does not depend on your productivity, that you deserve to rest and make things for fun, and that crunch is utter s***</li>
+						</ul>
+					</section>
+
+					<!-- Q#1 -->
+					<section data-background-video="https://gatdesoia.es/womenize2019/lib/vid/kh.mp4"
+          data-background-video-loop data-background-video-muted data-background-opacity="0.4">
+						<h3>Question #1:</h3>
+						<h2>what kind of artist do you want to be?</h2>
+							<p class="fragment">a. Concept</p>
+							<p class="fragment">b. 2D</p>
+							<p class="fragment">c. 3D</p>
+							<p class="fragment">d. UI</p>
+							<p class="fragment">e. Other</p>
+							<p class="fragment">f. Not interested</p>
+					</section>
+
+				</section>
+
+				<!-- - - - - - - - - - WHAT IS YOUR WORK FOR - - - - - - - - - -->
+				<section>
+
+					<section>
+						<h2>The purpose of your work</h2>
+						<ul>
+							<li class="fragment">To communicate with the player</li>
+							<li class="fragment">To communicate with the machine</li>
+						</ul>
+					</section>
+
+					<!-- THE ART IS FOR AN AUDIENCE -->
+					<section>
+						<h3>The art is for an audience to find meaning</h3>
+						<div class="twocolumn-1-1">
+							<div>
+								<ul>
+									<li class="fragment">It is appealing</li>
+									<li class="fragment">It is disgusting</li>
+									<li class="fragment">It has spikes so I know I'll get hurt if I enter its collision zone</li>
+									<li class="fragment">It is yellow so I know I can go that way</li>
+								</ul>
+							</div>
+							<div class="fragment">
+								<img data-src="./lib/img/mirrors-edge.jpg">
+								<p class="tiny-text">Mirror's Edge (2008) DICE</p>
+							</div>
+						</div>
+					</section>
+
+					<!-- THE ASSET IS FOR A MACHINE -->
+					<section>
+						<h3>The asset is for a machine to interpret (render)</h3>
+						<div class="twocolumn-1-1">
+							<div>
+								<ul>
+									<li class="fragment">Target device will constrain the polycount, atlas size, available rendering effects, color space</li>
+									<li class="fragment">POV and screen size restricts level of detail</li>
+									<li class="fragment">The bigger your files, the more space the game will occupy</li>
+									<li class="fragment">You are responsible for your asset</li>
+								</ul>
+							</div>
+							<div class="fragment">
+								<img data-src="./lib/img/lol.jpg">
+								<p class="tiny-text">League of Legends (2009-2022) Riot Games</p>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h3>Ask yourself:</h3>
+						<h2>what am I making this for?</h2>
+						<ul>
+							<li class="fragment">I'm making this chair so players can sit on it</li>
+							<li class="fragment">I'm reusing the material for the matching table</li>
+							<li class="fragment">I'm making the seat height universal for this game</li>
+							<li class="fragment">I'm putting the pivot point at the same distance from the front</li>
+						</ul>
+					</section>
+
+				</section>
+
+				<!-- - - - - - - - - - LET'S JUMP IN - - - - - - - - - -->
+				<section>
+					<section>
+						<h1>The tech behind the art</h1>
+					</section>
+
+					<!-- NAMES -->
+					<section>
+						<h2>Naming conventions?</h2>
+						<ul>
+							<li class="fragment">chair_FINAL.fbx</li>
+							<li class="fragment">chair_FINAL-02.fbx
+								<ul>
+									<li class="fragment">Cube.007
+									</li>
+								</ul>
+							</li>
+							<li class="fragment">assets-34.blend</li>
+							<li class="fragment">wood.png</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Naming conventions</h2>
+						<ul>
+							<li class="fragment">Chair 03.fbx
+								<ul>
+									<li class="fragment">Chair 03
+									</li>
+								</ul>
+							</li>
+							<li class="fragment">Chairs.blend</li>
+							<li class="fragment">Wood 07.png</li>
+							<br>
+							<li class="fragment">SM_Chair_03.fbx
+								<ul>
+									<li class="fragment">SM_Chair_03
+									</li>
+								</ul>
+							</li>
+							<li class="fragment">SM_Int_01.blend</li>
+							<li class="fragment">D_Wood_07.png</li>
+						</ul>
+					</section>
+
+					<!-- FOLDERS -->
+					<section>
+						<h2>Folder structures?</h2>
+						<ul>
+							<li class="fragment">Project
+								<ul>
+									<li class="fragment">Animations
+										<ul>
+											<li class="fragment">Character</li>
+											<li class="fragment">props</li>
+										</ul></li>
+									<li class="fragment">Assets</li>
+									<li class="fragment">Character
+										<ul>
+											<li class="fragment">Animation</li>
+											<li class="fragment">Textures</li>
+										</ul>
+									</li>
+									<li class="fragment">New Folder</li>
+									<li class="fragment">texture</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Folder structures</h2>
+						<div class="twocolumn-1-1">
+							<div>
+								<ul>
+									<li class="fragment">Project
+										<ul>
+											<li class="fragment">Characters
+												<ul>
+													<li class="fragment">Animations</li>
+													<li class="fragment">NPCs
+														<ul>
+															<li class="fragment">Materials
+																<ul>
+																	<li class="fragment">Textures</li>
+																</ul>
+															</li>
+															<li class="fragment">Meshes</li>
+															</ul>
+														</li>
+														<li class="fragment">Player
+															<ul>
+																<li class="fragment">Materials
+																	<ul>
+																		<li class="fragment">Textures</li>
+																	</ul>
+																</li>
+																<li class="fragment">Meshes</li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+									</div>
+									<div>
+										<ul>
+											<li class="fragment">Env
+												<ul>
+													<li class="fragment">Materials
+														<ul>
+															<li class="fragment">Textures</li>
+														</ul>
+													</li>
+													<li class="fragment">Meshes</li>
+												</ul>
+											</li>
+											<li class="fragment">UI
+												<ul>
+													<li class="fragment">Materials
+														<ul>
+															<li class="fragment">Textures</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li class="fragment">Props
+												<ul>
+													<li class="fragment">Materials
+														<ul>
+															<li class="fragment">Textures</li>
+														</ul>
+													</li>
+													<li class="fragment">Meshes</li>
+												</ul>
+											</li>
+										</ul>
+								</ul>
+							</ul>
+							</div>
+						</div>
+					</section>
+
+					<!-- ASSET LIST -->
+					<section>
+						<h2>Asset list</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>Asset</th>
+									<th>Working File</th>
+									<th>Type</th>
+									<th>Material</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>SM_Chair_01</td>
+									<td>SM_Int_01</td>
+									<td>seat</td>
+									<td>M_Wood_02</td>
+								</tr>
+								<tr>
+									<td>SM_Chair_02</td>
+									<td>SM_Int_01</td>
+									<td>seat</td>
+									<td>M_Wood_03</td>
+								</tr>
+								<tr>
+									<td>SM_Chair_03</td>
+									<td>SM_Int_01</td>
+									<td>seat</td>
+									<td>M_Wood_07</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+
+					<!-- CLOUD -->
+					<section>
+						<h2>Storage in the cloud</h2>
+						<ul>
+							<li class="fragment">Edit files (.blend, .ma, .psd, .afdesign, .spp)</li>
+							<li class="fragment">Both local and cloud files are synced</li>
+							<li class="fragment">Files that you don't use are not occupying space in your local disk</li>
+							<li class="fragment">All modifications are retrievable in the file history, up to a certain point in time (like 30 days)</li>
+						</ul>
+					</section>
+
+					<!-- V. CONTROL -->
+					<section>
+						<h2>Learn the basics of version control</h2>
+						<ul>
+							<li class="fragment">Project files (anything that goes into the engine project folder, with some exceptions that are not relevant to you, the artist)</li>
+							<li class="fragment">Save file is local</li>
+							<li class="fragment">Committed file is in the cloud</li>
+							<li class="fragment">All commits are retrievable, no matter how far in time</li>
+							<br>
+							<li class="fragment">Commit</li>
+							<li class="fragment">Pull</li>
+							<li class="fragment">Push</li>
+						</ul>
+					</section>
+
+				</section>
+
+				<!-- CONCEPT ARTIST -->
+				<section>
+
+					<section>
+						<h1>Concept art</h1>
+					</section>
+
+					<section>
+						<h2>Character concept art</h2>
+					</section>
+
+					<section>
+						<h2>Props & environment concept art</h2>
+					</section>
+
+				</section>
+
+				<!-- - - - - - - - - - 2D ARTIST - - - - - - - - - -->
+				<section>
+
+					<section>
+						<h1>2D art</h1>
+					</section>
+
+					<section>
+						<h2>Resolution</h2>
+					</section>
+
+					<section>
+						<h2>Reusability</h2>
+					</section>
+
+				</section>
+
+				<!-- - - - - - - - - - 3D ARTIST - - - - - - - - - -->
+				<section>
+
+					<section>
+						<h1>3D art</h1>
+					</section>
+
+					<section>
+						<h2>Modeling</h2>
+					</section>
+
+					<section>
+						<h3>Scale</h3>
+					</section>
+
+					<section>
+						<h3>Modularity</h3>
+					</section>
+
+					<section>
+						<h2>Texturing / adding materials</h2>
+					</section>
+
+					<section>
+						<h3>Texture size</h3>
+					</section>
+
+					<section>
+						<h3>UV space</h3>
+					</section>
+
+					<section>
+						<h3>Material instances</h3>
+					</section>
+
+					<section>
+						<h2>Exporting</h2>
+					</section>
+
+					<section>
+						<h3>Apply transforms</h3>
+					</section>
+
+					<section>
+						<h3>Put your pivot points where I can see them</h3>
+					</section>
+
+				</section>
+
+				<!-- - - - - - - - - - ANIMATOR - - - - - - - - - -->
+				<section>
+
+					<section>
+						<h1>Animation</h1>
+					</section>
+
+					<section>
+						<h2>Rigging</h2>
+					</section>
+
+					<section>
+						<h3>Bones main roll</h3>
+					</section>
+
+					<section>
+						<h3>Euler vs. quaternions</h3>
+					</section>
+
+					<section>
+						<h3>Controllers and drivers are</h3>
+						<h3>your animator's friends</h3>
+					</section>
+
+					<section>
+						<h2>Animation</h2>
+					</section>
+
+					<section>
+						<h3>Design a state machine</h3>
+					</section>
+
+					<section>
+						<h3>Blockout before you polish</h3>
+					</section>
+
+					<section>
+						<h3>Slice on demand</h3>
+					</section>
+
+				</section>
+
+				<!-- - - - - - - - - - VFX ARTIST - - - - - - - - - -->
+				<section>
+					<h1>VFX art</h1>
+				</section>
+
+				<!-- - - - - - - - - - TECHNICAL ARTIST - - - - - - - - - -->
+				<section>
+					<h1>Technical art</h1>
+				</section>
+
+				<!-- - - - - - - - - - MY TWO CENTS - - - - - - - - - -->
+				<section>
+					<section>
+						<h1>My two cents</h1>
+					</section>
+
+					<section>
+						<h2>Art has never been not technical</h2>
+					</section>
+
+					<section>
+						<h2>To hell with crunch</h2>
+					</section>
+				</section>
+
+				<!-- THANK YOU -->
+				<section>
+					<h1>Thank you 💖</h1>
+					<br>
+					<br>
+					<h3>Casilda de Zulueta</h3>
+					<h3><a href="mailto:contact at gatdesoia dot es" target="_blank">contact@gatdesoia.es</a></h3>
+					<h3><a href="https://gatdesoia.es" target="_blank">GatdeSoia.es</a> | <a href="https://twitter.com/gatdesoia" target="_blank">@GatdeSoia</a></h3>
+					<br>
+					<h3>Join the <a href="https://femdevsmeetup.com" target="_blank">#FemDevsMeetup</a>! 💚🎮</h3>
+				</section>
+
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				// controls: false,
+				slideNumber: "c/t",
+				mouseWheel: true,
+				transition: 'fade',
+				transitionSpeed: 'fast',
+
+				margin: 0.1,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
