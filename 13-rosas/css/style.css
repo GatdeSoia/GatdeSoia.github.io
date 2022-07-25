@@ -75,3 +75,10 @@ footer {
    grid-gap: 32px;
    text-align: left;
 }
+
+@media screen and (max-width: 720px) {
+.col-1-3, .col-1-6 {
+    display: block;
+}
+
+}
