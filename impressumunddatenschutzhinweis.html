@@ -1,93 +1,132 @@
-<!doctype html>
-<html lang="de">
-	<head>
-		<meta charset="utf-8">
-		<title>Impressum und Datenschutzhinweis</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<meta name="robots" content="noindex">
-
-		<link href=".\favicon.ico" rel="icon" type="image/x-icon" />
-		<meta property="og:image" content=".\lib\img\home\thumbnail.png">
-
-		<link rel="stylesheet" type="text/css" href=".\css\style.css">
-	</head>
-
-  <body>
-    <!-- HEADER -->
-    <header>
-      <nav>
-        <div class="title">
-          <a href=".\de" target="_self"><div class="name">Casilda de Zulueta</div>
-          <div class="job">3D Game Art / Technical Animation</div></a>
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="utf-8"/>
+        <meta name="robots" content="noindex">
+        <title>Portfolio | Casilda de Zulueta ~ GatdeSoia.es</title>
+        <meta name="author" content="Casilda de Zulueta"/> 
+        <meta name="description" content="Casilda de Zulueta's full portfolio."/> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"/> 
+        <link href="./favicon.ico" rel="icon" type="image/x-icon"/>
+        <link rel="stylesheet" type="text/css" href=".\css\css.css"/> 
+    </head>
+    <body>
+        <!-- TRAP -->
+        <div class="trap">
+            Avoiding automated lists: <a href="mailto:hi@casicasiperono.cat">hi@casicasiperono.cat</a>
         </div>
-        <div class="menu">
-          <ul class="menu">
-						<li class="menu-item"><a href=".\de">Startseite</a></li>
-            <li class="menu-item"><a href=".\de#gallery">Galerie</a></li>
-            <li class="menu-item"><a href=".\de#about">Über mich</a></li>
-            <li class="menu-item"><a href=".\de#contact">Kontakt</a></li>
-          </ul>
+        <div class="front-page">
+            <!-- SPLASH -->
+            <section id="splash" class="splash-s">
+                <div>
+                    <div id="splash-s-img">
+                        <img src="./lib/logo/cat.svg"/>
+                    </div>
+                    <div>
+                        <h1>Casilda de Zulueta</h1>
+                        <h2>Technical Art & Animation</h2> 
+                        <h3>~</h3> 
+                        <h4>GatdeSoia.es</h4>
+                    </div>
+                    <div><br><br><br></div>
+                </div>
+            </section>
+            <!-- HEADER -->             
+            <header>
+                <nav id="header">
+                    <!-- HAMBURGER MENU ICON -->
+                    <label for="menu-toggle">
+                        <img src="./lib/icon/menu.svg" class="icon"/>
+                    </label>
+                    <input type="checkbox" id="menu-toggle"/>
+                    <!-- HEADER LINKS -->
+                    <nav id="links">
+                        <a href="mailto:contact(at)gatdesoia(dot)es"><img src="./lib/icon/email.svg" class="icon"/></a>
+                        <a href="https://twitter.com/gatdesoia" target="_blank"><img src="./lib/icon/tw.svg" class="icon"/></a>
+                        <a href="https://gatdesoia.itch.io" target="_blank"><img src="./lib/icon/itchio.svg" class="icon"/></a>
+                        <a href="https://ko-fi.com/gatdesoia" target="_blank"><img src="./lib/icon/kofi.svg" class="icon"/></a>
+                    </nav>
+                    <!-- HEADER MENU -->
+                    <nav id="menu">
+                        <!-- HAMBURGER CONTENT -->
+                        <div id="menu-items">
+                            <div id="nav">
+                                <a href="https://gatdesoia.es/">Home</a>
+                            </div>
+                            <div id="lang">
+                                <a style="color: #666;">CA</a>
+                                <a style="color: #666;">DE</a>
+                                <a>EN</a>
+                                <a style="color: #666;">ES</a>
+                            </div>
+                        </div>
+                    </nav>                     
+                </nav>
+            </header>
         </div>
-      </nav>
-    </header>
+        <!-- MAIN CONTENT -->         
+        <main>
+            <section id="main">
+                <!-- IMPRESSUM -->                 
+                <section id="imprs">
+                    <h1>Impressum</h1>
+                    <div class="box box-m white-box div-c">
+                        <p>Angaben gemäß § 5 TMG:</p>
+                        <p>Verantwortlich für den Inhalt dieser Website:</p>
+                        <ul>
+                            <li>
+                                Casilda de Zulueta
+                            </li>
+                        </ul>
+                        <p>USt-IdNr.:</p>
+                        <ul>
+                            <li>
+                                DE333851451
+                            </li>
+                        </ul>
+                        <p>Bei Fragen wenden Sie sich bitte an folgende E-Mail.</p>
+                        <ul>
+                            <li>
+                                contact (at) gatdesoia (dot) es
+                            </li>
+                        </ul>
+                    </div>
 
-    <!-- MAIN CONTENT -->
-    <main>
+                </section>
 
-			<!-- LIST OF PUBLICATIONS -->
-			<section id="impressumunddatenschutz">
-			<br>
-				<h3>Impressum</h3>
-				<div class="monospace">
-					Angaben gemäß § 5 TMG:
-					<br>
-					Verantwortlich für den Inhalt dieser Website:
-					<ul><li>
-						Casilda de Zulueta
-					</li></ul>
-					USt-IdNr.:
-					<ul><li>
-						DE333851451
-					</li></ul>
-					Bei Fragen wenden Sie sich bitte an folgende E-Mail.
-					<ul><li>
-						contact (at) gatdesoia (dot) es
-					</li></ul>
-				</div>
-				<h3>Datenschutzhinweis</h3>
-				<div class="monospace">
-					Die Rechtsgrundlage der Datenverarbeitung auf dieser Homepage ist Art. 6 Abs. 1 DSGVO.
-					<br><br>
-					Sämtliche erhobene Daten (s. u.) werden zum Zweck der Nutzung dieser Homepage und zum Schutz der Rechte und des (auch geistigen) Eigentums des Herausgebers verarbeitet. Diese Daten werden auch verarbeitet, um den Aufbau sowie die Aufrechterhaltung der Verbindung sowie ein problemloses Surfen aufdieser Homepage gewährleisten zu können. Die Datenverarbeitung erfolgt ebenso für administrative Zwecke zur Auswertung von Nutzungsstatistiken.
-					<br><br>
-					Die benannten Zwecke begründen im Weiteren das Herausgeberinteresse an der Datenverarbeitung durch Nutzung dieser Homepage an sich.
-					<br><br>
-					Sämtliche erhobene Daten und Informationen werden nicht genutzt, um den Nutzer dieser Homepage persönlich zu identifizieren, es sei denn, er tritt über die auf der Webseite angebotenen digitalen Möglichkeiten mit dem Herausgeber in Kontakt.
-					<br><br>
-					Um die Nutzerdaten gegen zufällige oder vorsätzliche Manipulationen, teilweisen oder vollständigen Verlust, Zerstörung oder gegen den unbefugten Zugriff Dritter zu schützen, kommen im Zugriffsbereich geeignete technische und organisatorische Sicherheitsmaßnahmen zum Einsatz (Art. 25 DSGVO).
-					<br><br>
-					Auf dieser Homepage befinden sich Verlinkungen zu anderen Webseiten im Internet. Mit Anklicken dieser Verlinkungen verlässt der Nutzer diese Homepage. Der Herausgeber dieser Homepage übernimmt keine Haftung für Rechtsverletzungen, dahingestellt aus welchem Rechtsgrund, die mit dem Anklicken der Verlinkungen sowie dem Verlassen dieser Homepage einhergehen könnten. Insbesondere haftet der Herausgeber nicht für Datenschutzverletzungen, die sich allein durch Anklicken oder Mausberührung der Verlinkungen sowie darüber hinaus durch Besuch der extern verlinkten Seiten ergeben.
-					<br><br>
-					Beim Aufrufen dieser Homepage werden durch den vom Nutzer verwendeten Browser automatisch verschiedene Informationen an den Server, von dem diese Homepage in dem Moment abgerufen wird, übertragen. Diese werden zumindest zeitweilig in einer Speicherdatei auf dem Server erfasst, einem sogenannten Log-File. Davon unbenommen sind Daten, die der Internetprovider des Nutzers auf gesetzlicher oder sonstiger Basis vom Nutzer erfasst und eventuell speichert. Vorbenannte Informationen sind z. B. die IP-Adresse des Nutzer-Endgerätes, Datum und Uhrzeit des Zugriffs, Name und Internetadresse der abgerufenen Dateien, die Ursprungswebseite, von der aus der Zugriff erfolgt, der zugreifende Browser und das Betriebssystem des Zugriffgerätes sowie der Name des Access-Providers des Nutzers.
-					<br><br>
-					Weiterhin hat der Nutzer als Betroffene(r) folgende Rechte:
-					<br><br>
-					Der Nutzer kann gemäß Art. 15 DSGVO Auskunft über seine vom Herausgeber verarbeiteten personenbezogenen Daten verlangen. Dies betrifft besonders den Verarbeitungszweck, die Kategorie der personenbezogenen Daten, die Kategorien von Empfängern, denen die Nutzerdaten übermittelt werden, dieSpeicherdauer der Nutzerdaten, die Nutzerrechte auf Berichtigung (Art. 16 DSGVO), Löschung (Art. 17 DSGVO), Einschränkung der Verarbeitung (Art. 18 DSGVO) oder Widerspruch (Art. 21 DGSVO) sowie das Bestehen eines Beschwerderechts (Art. 77 DSGVO).
-				</div>
-			</section>
+                <!-- DATENSCHUTZ -->                 
+                <section id="imprs">
+                    <h1>Datenschutz</h1>
+                    <div class="box box-m white-box div-c">
+                        <p>Die Rechtsgrundlage der Datenverarbeitung auf dieser Homepage ist Art. 6 Abs. 1 DSGVO.</p>
+                        <p>Sämtliche erhobene Daten (s. u.) werden zum Zweck der Nutzung dieser Homepage und zum Schutz der Rechte und des (auch geistigen) Eigentums des Herausgebers verarbeitet. Diese Daten werden auch verarbeitet, um den Aufbau sowie die Aufrechterhaltung der Verbindung sowie ein problemloses Surfen aufdieser Homepage gewährleisten zu können. Die Datenverarbeitung erfolgt ebenso für administrative Zwecke zur Auswertung von Nutzungsstatistiken.</p>
+                        <p>Die benannten Zwecke begründen im Weiteren das Herausgeberinteresse an der Datenverarbeitung durch Nutzung dieser Homepage an sich.</p>
+                        <p>Sämtliche erhobene Daten und Informationen werden nicht genutzt, um den Nutzer dieser Homepage persönlich zu identifizieren, es sei denn, er tritt über die auf der Webseite angebotenen digitalen Möglichkeiten mit dem Herausgeber in Kontakt.</p>
+                        <p>Um die Nutzerdaten gegen zufällige oder vorsätzliche Manipulationen, teilweisen oder vollständigen Verlust, Zerstörung oder gegen den unbefugten Zugriff Dritter zu schützen, kommen im Zugriffsbereich geeignete technische und organisatorische Sicherheitsmaßnahmen zum Einsatz (Art. 25 DSGVO).</p>
+                        <p>Auf dieser Homepage befinden sich Verlinkungen zu anderen Webseiten im Internet. Mit Anklicken dieser Verlinkungen verlässt der Nutzer diese Homepage. Der Herausgeber dieser Homepage übernimmt keine Haftung für Rechtsverletzungen, dahingestellt aus welchem Rechtsgrund, die mit dem Anklicken der Verlinkungen sowie dem Verlassen dieser Homepage einhergehen könnten. Insbesondere haftet der Herausgeber nicht für Datenschutzverletzungen, die sich allein durch Anklicken oder Mausberührung der Verlinkungen sowie darüber hinaus durch Besuch der extern verlinkten Seiten ergeben.</p>
+                        <p>Beim Aufrufen dieser Homepage werden durch den vom Nutzer verwendeten Browser automatisch verschiedene Informationen an den Server, von dem diese Homepage in dem Moment abgerufen wird, übertragen. Diese werden zumindest zeitweilig in einer Speicherdatei auf dem Server erfasst, einem sogenannten Log-File. Davon unbenommen sind Daten, die der Internetprovider des Nutzers auf gesetzlicher oder sonstiger Basis vom Nutzer erfasst und eventuell speichert. Vorbenannte Informationen sind z. B. die IP-Adresse des Nutzer-Endgerätes, Datum und Uhrzeit des Zugriffs, Name und Internetadresse der abgerufenen Dateien, die Ursprungswebseite, von der aus der Zugriff erfolgt, der zugreifende Browser und das Betriebssystem des Zugriffgerätes sowie der Name des Access-Providers des Nutzers.</p>
+                        <p>Weiterhin hat der Nutzer als Betroffene(r) folgende Rechte:</p>
+                        <p>Der Nutzer kann gemäß Art. 15 DSGVO Auskunft über seine vom Herausgeber verarbeiteten personenbezogenen Daten verlangen. Dies betrifft besonders den Verarbeitungszweck, die Kategorie der personenbezogenen Daten, die Kategorien von Empfängern, denen die Nutzerdaten übermittelt werden, dieSpeicherdauer der Nutzerdaten, die Nutzerrechte auf Berichtigung (Art. 16 DSGVO), Löschung (Art. 17 DSGVO), Einschränkung der Verarbeitung (Art. 18 DSGVO) oder Widerspruch (Art. 21 DGSVO) sowie das Bestehen eines Beschwerderechts (Art. 77 DSGVO).</p>
+                    </div>
 
-    </main>
+                </section>
+            </section>
+        </main>
 
-    <!-- FOOTER -->
-    <footer>
-			<div class="lang"><a href=".\ca" target="_self">CA</a> | <strong>DE</strong> | <a href=".\" target="_self">EN</a> | <a href=".\es" target="_self">ES</a></div>
-      <div class="credits">Gat de Soia | 2021 - Casilda de Zulueta</div>
-			<a href="#"><img class="logo" src="./lib/logo/cat.png"/></a>
-			<div class="letrita"><a href=".\impressumunddatenschutzhinweis" target="_blank">Impressum & Datenschutz</a></div>
-    </footer>
-
-		<!-- JAVASCRIPT SCRIPTS -->
-    <script src="./js/script.js"></script>
-  </body>
+        <!-- FOOTER -->
+        <footer>
+            <div>
+                ~
+            </div>
+            <div>
+                Casilda de Zulueta
+            </div>
+            <div>
+                <a href="#">GatdeSoia.es</a> | 2022
+            </div>
+            <div class="imprs">
+                <a href="./impressumunddatenschutzhinweis.html">Impressum und Datenschutz</a>
+            </div>
+        </footer>
+    </body>     
 </html>

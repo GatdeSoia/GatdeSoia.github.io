@@ -1,142 +1,256 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Gat de Soia | Technical Art & Animation</title>
-		<meta name="author" content="Casilda de Zulueta">
-		<meta name="description" content="Gat de Soia’s portfolio.">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<link href="./favicon.ico" rel="icon" type="image/x-icon" />
-		<meta property="og:image" content=".\lib\img\home\thumbnail.png">
-
-		<link rel="stylesheet" type="text/css" href=".\css\style.css">
-	</head>
-
-  <body>
-    <!-- HEADER -->
-    <header>
-      <nav>
-        <div class="title">
-          <a href="#" target="_self"><div class="name">Casilda de Zulueta</div>
-          <div class="job">Technical Art & Animation</div></a>
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="utf-8"/> 
+        <title>Casilda de Zulueta ~ GatdeSoia.es</title>         
+        <meta name="author" content="Casilda de Zulueta"/> 
+        <meta name="description" content="Technical Art & Animation. M'agrada el café i faig videojocs."/> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"/> 
+        <link href="./favicon.ico" rel="icon" type="image/x-icon"/>
+        <link rel="stylesheet" type="text/css" href=".\css\css.css"/> 
+    </head>
+    <body>
+        <!-- TRAP -->
+        <div class="trap">
+            Avoiding automated lists: <a href="mailto:hi@casicasiperono.cat">hi@casicasiperono.cat</a>
         </div>
-        <div class="menu">
-          <ul class="menu">
-						<li class="menu-item"><a href="#">Home</a></li>
-            <li class="menu-item"><a href="#gallery">Gallery</a></li>
-            <li class="menu-item"><a href="#about">About</a></li>
-            <li class="menu-item"><a href="#contact">Contact</a></li>
-          </ul>
+        <div id="front-page" class="front-page">
+            <!-- SPLASH -->
+            <section id="splash">
+                <div>
+                    <div>
+                        <img src="./lib/logo/cat.svg"/>
+                    </div>
+                    <div>
+                        <h1>Casilda de Zulueta</h1>
+                        <h2>Technical Art & Animation</h2> 
+                        <h3>~</h3> 
+                        <h4>GatdeSoia.es</h4>
+                    </div>
+                    <!-- scroll down button to next section (id=portfolio) -->
+                    <div id="scroll-down">
+                        <a href="#portfolio"><img src="./lib/icon/scroll-down.svg" class="icon"/></a>
+                    </div>
+                </div>
+            </section>
+            <!-- HEADER -->             
+            <header>
+                <nav id="header">
+                    <!-- HAMBURGER MENU ICON -->
+                    <label for="menu-toggle">
+                        <img src="./lib/icon/menu.svg" class="icon"/>
+                    </label>
+                    <input type="checkbox" id="menu-toggle"/>
+                    <!-- HEADER LINKS -->
+                    <nav id="links"><a href="mailto:contact(at)gatdesoia(dot)es"><img src="./lib/icon/email.svg" class="icon"/></a><a href="https://twitter.com/gatdesoia" target="_blank"><img src="./lib/icon/tw.svg" class="icon"/></a><a href="https://gatdesoia.itch.io" target="_blank"><img src="./lib/icon/itchio.svg" class="icon"/></a><a href="https://ko-fi.com/gatdesoia" target="_blank"><img src="./lib/icon/kofi.svg" class="icon"/></a>
+                    </nav>
+                    <!-- HEADER MENU -->
+                    <nav id="menu">
+                        <!-- HAMBURGER CONTENT -->
+                        <div id="menu-items">
+                            <div id="nav" class="nav-hid">
+                                <a href="#">Home</a>
+                                <a href="#portfolio">Portfolio</a>
+                                <a href="#about">About</a>
+                                <a href="#talks">Talks, Workshops & Lectures</a>
+                                <a href="#tools">General Tools</a>
+                            </div>
+                            <div id="lang"><a style="color: #666;">CA</a><a style="color: #666;">DE</a><a>EN</a><a style="color: #666;">ES</a>
+                            </div>
+                        </div>
+                    </nav>                     
+                </nav>
+            </header>
         </div>
-      </nav>
-    </header>
+        <!-- MAIN CONTENT -->         
+        <main>
+            <section id="main">
+                <!-- PORTFOLIO -->                 
+                <section id="portfolio"> 
+                    <h1>Portfolio</h1> 
+                    <div class="portfolio-grid box-l div-c">
+                        <div class="img-bg img-13r shadow-box" style="background-image: url('./lib/img/box-01.png');">
+                            <a href="https://gatdesoia.itch.io/13-rosas" target="_blank"><img src="./lib/img/box-01-title.png" class="img-a"/><img src="./lib/img/box-01-title-b.png" class="img-b"/></a>
 
-    <!-- MAIN CONTENT -->
-    <main>
+                            <div class="img-footer img-footer-bg">
+                                <h4>[Independent Work] Game Designer / Game Artist</h4>
+                            </div>
+                        </div>
+                        <div class="img-bg img-mv shadow-box" style="background-image: url('./lib/img/box-02.png');">
+                            <a href="https://mars-vice.com" target="_blank"><img src="./lib/img/box-02-title.png"/></a>
+                            
+                            <div class="img-footer img-footer-bg">
+                                <h4>3D Art Lead / Rigger / Animator / Technical Artist</h4>
+                            </div>
+                        </div>
+                        <div class="img-bg img-ee shadow-box" style="background-image: url('./lib/img/box-03.png');">
+                            <a href="https://fantasticfoe.com" target="_blank"><img src="./lib/img/box-03-title.png" class="img-a"/><img src="./lib/img/box-03-title-b.png" class="img-b"/></a>
 
-      <!-- HOME SCREEN -->
-      <section id="home">
-        <h2>Call me <strong>Casi</strong>.
-        <br>
-        I'm a <strong>technical artist</strong> and <strong>animator</strong> currently based in Cologne, Germany.</h2>
+                            <div class="img-footer img-footer-bg">
+                                <h4>Rigger / Animator</h4>
+                            </div>
+                        </div>
+                        <div class="img-bg img-aas shadow-box" style="background-image: url('./lib/img/box-04.png');">
+                            <a href="https://achtungautobahn.com/maniacs" target="_blank"><img src="./lib/img/box-04-title.png" class="img-a"/><img src="./lib/img/box-04-title-b.png" class="img-b"/></a>
 
-        <h6>Open for freelance work.
-        <br>
-        Interested? Write me an e-mail to: <span id="email"><a href="mailto:contact(at)gatdesoia(dot)es">contact (at) gatdesoia (dot) es</a></span></h6>
-      </section>
+                            <div class="img-footer img-footer-bg">
+                                <h4>3D Artist / Animator</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-l div-c div-flex-r buttons">
+                        <button><a href="./portfolio.html">See full portfolio</a>
+                        </button>
+                    </div>
+                </section>
+                <!-- ABOUT -->                 
+                <section id="about"> 
+                    <h1>About</h1>
+                        <div class="box box-m white-box div-c">
+                            <p>Casilda de Zulueta is a technical artist and animator, indie game developer and animation teacher based in Germany. </p>
+                            <p>With 7 years of experience in the games industry, Casilda has specialized in filling the gaps between code and art by creating and documenting solutions for 3D art pipelines, writing shaders and rigging characters. Plus she will animate whatever may fall into her hands. She likes to optimize graphics for low-end devices, and takes pride on making her game assets run smoothly without sacrificing visual quality. </p>
+                            <p>Natural from Valencia, Spain, Casilda obtained in 2022 a master's degree in Game Development & Research (M.A.) at the Cologne Game Lab. Her final project, a horror adventure game for mobile, can be found on <a href="https://gatdesoia.itch.io/13-rosas" target="_blank">itch.io</a>. </p>
+                            <p>In parallel with her profession, she gives talks and workshops on media studies and game development processes, as well as teaching animation for the Game Design & Management (B.A.) at Hs Fresenius. </p>
+                            <p>Since 2018, Casilda has been co-organizing networking events and the annual Fem Devs Game Jam of the <a href="https://femdevsmeetup.com" target="_blank">#FemDevsMeetup</a>, a community of marginalized developers in Germany she is extremely proud to be part of. </p>
+                            <p>It is in this in-between of industry and academia that she walks both paths of praxis and theory. </p>
+                        </div>
+                    <div class="div-c div-flex-r buttons">
+                        <!--<button>
+                            <a href="">See CV online</a>
+                        </button>-->
+                        <button><a href="./lib/cv/zulueta-cv_2022.pdf">Download CV as PDF</a>
+                        </button>
+                    </div>
+                    <div class="box box-s div-c div-flex row-2-1">
+                        <div class="laurel" style="background-image: url('./lib/img/laurel.svg');">
+                            <h3>Next Gen Leaders</h3>
+                            <h4>Program Recipient IGDA Foundation</h4> 
+                            <h2>2021</h2> 
+                        </div>                         
+                        <div class="laurel" style="background-image: url('./lib/img/laurel.svg');">
+                            <h3>Honorary Mention</h3>
+                            <h4>Games for Change Challenge Europe</h4> 
+                            <h2>2014</h2> 
+                        </div>
+                    </div>                     
+                </section>
+                <!-- TALKS, WORKSHOPS & LECTURES -->                 
+                <section id="talks"> 
+                    <h1>Talks, Workshops & Lectures</h1>
+                    <div class="box box-l div-c div-flex row-3-2-1">
+                        <div>
+                            <h4>Talk (30')</h4>
+                            <h3 style="color: #ffccff"><!--<a href="" target="_blank">-->The bliss and curse of turning your passion into your source of income<!--</a>--></h3>
+                            <!--<h5></h5>-->
+                            <h4>TBA</h4> 
+                        </div>                         
+                        <div>
+                            <h4>Talk (5')</h4>
+                            <h3><a href="https://amazeberlin2022.sched.com/event/11bcF" target="_blank">13 Rosas</a></h3>
+                            <h3><a href="https://amazeberlin2022.sched.com/event/11bcF" target="_blank">🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹</a></h3>
+                            <h5>Hyper Talks. A MAZE</h5>
+                            <h4>17/05/2022 – Berlin, Germany</h4>
+                        </div>                         
+                        <div>
+                            <h4>Talk (1h)</h4>
+                            <h3><a href="https://medienwissenschaft.uni-bayreuth.de/gil/games-industry/vortragsarchiv/" target="_blank">You are good at drawing, now what? – The technical skills of a game artist</a></h3>
+                            <h5>Games Industry. Uni Bayreuth</h5>
+                            <h4>02/02/2022 – Bayreuth, Germany</h4> 
+                        </div>                         
+                        <div>
+                            <h4>Lecture (30')</h4>
+                            <h3><a href="https://gamehappens.com/gh2019/raheel-yawar-casilda-de-zulueta/" target="_blank">Beyond Mobile: The future of HTML5 games</a></h3>
+                            <h5>Game Happens. Elements of Change</h5>
+                            <h4>8-10/11/2019 – Genoa, Italy </h4>
+                        </div>                         
+                        <div>
+                            <h4> Workshop (2h)</h4>
+                            <h3><a href="https://womenizegamesandfilm2019.sched.com/event/VCVN/workshop-using-space-in-film-game-genres" target="_blank">Using Space in Film & Games Genres</a></h3>
+                            <h5>Womenize! Games and Film</h5>
+                            <h4>11/10/2019 – Cologne, Germany</h4>
+                        </div>                         
+                        <div> 
+                            <h4>Session (15')</h4>
+                            <h3><a href="https://www.pocketgamer.biz/news/71303/check-out-the-big-screen-gaming-track-in-association-with-games-helsinki-at-pocket-gamer-connects-helsinki/" target="_blank">BEYOND MOBILE: The Future of HTML5 Games [Flying Sheep Studios]</a></h3>
+                            <h5>Pocket Gamer Connects. Helsinki</h5>
+                            <h4>1-2/10/2019 – Helsinki, Finland</h4>
+                        </div>
+                    </div>
+                </section>
+                <!-- GENERAL TOOLS -->                 
+                <section id="tools"> 
+                    <h1>General Tools</h1> 
+                    <div class="box box-xs div-c"> 
+                        <div class="div-flex-c row-3">
+                            <div class="icon">
+                                <img src="lib/icon/un.svg" title="Unreal Engine"/>
+                            </div>
+                            <div class="icon">
+                                <img src="lib/icon/ue.svg" title="Unity"/>
+                            </div>
+                            <div class="icon">
+                                <img src="lib/icon/bl.svg" title="Blender"/>
+                            </div>                             
+                        </div>                         
+                        <div class="div-flex-c row-3">
+                            <div class="icon">
+                                <img src="lib/icon/af.svg" title="Affinity Designer"/>
+                            </div>
+                            <div class="icon">
+                                <img src="lib/icon/ps.svg" title="Photoshop"/>
+                            </div>
+                            <div class="icon">
+                                <img src="lib/icon/ai.svg" title="Illustrator"/>
+                            </div>
+                            <div class="icon">
+                                <img src="lib/icon/pr.svg" title="Premiere"/>
+                            </div>
+                            <div class="icon">
+                                <img src="lib/icon/ae.svg" title="After Effects"/>
+                            </div>
+                            <div class="icon">
+                                <img src="lib/icon/maya.svg" title="Maya"/>
+                            </div>
+                            <div class="icon">
+                                <img src="lib/icon/subs.svg" title="Substance"/>
+                            </div>
+                        </div>                         
+                    </div>                     
+                </section>
+                <!-- EXTRA -->                 
+                <!-- <section id="extra"> 
+                    <h1>Extra</h1> 
+                    <div> 
+                        <div>
+                            <video poster=".\lib\img\oathkeeper.png" preload="metadata" oncontextmenu="return false;" controls muted loop title="Oathkeeper: a Kingdom Hearts keyblade. 2,636 triangles, 256 x 512 pixels atlas. Made by: Gat de Soia." alt="Oathkeeper: a Kingdom Hearts keyblade. 2,636 triangles, 256 x 512 pixels atlas. Made by: Gat de Soia.">
+                                <source src=".\lib\vid\oathkeeper.mp4" type="video/mp4"/>
+                            </video>
+                        </div>
+                        <div>
+                            <img src="./lib/img/terrassa.png" title="A terrasse seen from inside." alt="A terrasse seen from inside."/>
+                        </div>
+                        <div>
+                            <img src="./lib/img/carousel.gif" title="A kid holds onto a moving carousel." alt="A kid holds onto a moving carousel."/>
+                        </div>
+                    </div>                     
+                </section> -->
+            </section>
+        </main>
 
-			<!-- GALLERY -->
-			<section id="gallery">
-				<h3>Gallery</h3>
-				<div class="masonry">
-					<video poster=".\lib\img\gallery\ava.png" preload="metadata" oncontextmenu="return false;" controls loop class="masonry-img" title="Knights of Fortune's hero Ava" alt="Knights of Fortune's hero Ava">
-						<source src=".\lib\vid\gallery\ava.mp4" type="video/mp4">
-					</video>
-
-					<video poster=".\lib\img\gallery\bob.png" preload="metadata" oncontextmenu="return false;" controls loop class="masonry-img" title="Knights of Fortune's hero Bob" alt="Knights of Fortune's hero Bob">
-						<source src=".\lib\vid\gallery\bob.mp4" type="video/mp4">
-					</video>
-
-					<video poster=".\lib\img\gallery\redpanda.png" preload="metadata" oncontextmenu="return false;" controls loop class="masonry-img" title="Red Panda: Surfer streets" alt="Red Panda: Surfer streets">
-						<source src=".\lib\vid\gallery\redpanda.mp4" type="video/mp4">
-					</video>
-				</div>
-			</section>
-
-			<!-- ABOUT -->
-      <section id="about">
-				<h3>About me</h3>
-        <div class="monospace">
-          <p>
-            Casilda de Zulueta is a technical artist and animator with more than 6 years of experience in the games industry. She has been working for several game studios, helping out with 3D art, shaders, rigging and basically anything animation. As a freelancer, she has sorted out best practices for assets creation and implementation, managed small teams of artists and written all sorts of technical documentation for the 3D art workflows. She also teaches animation for the Game Design & Management B.A. at Hochschule Fresenius.
-					</p><p>
-            Hailing from Spain, she moved to Germany to study Game Development & Research M.A. at the Cologne Game Lab and, later on, she worked at Flying Sheep Studios for 3 years, where she made 3D graphics for more than 30 HTML5 games.
-          </p><p>
-            She loves to see how games transform other media and vice versa (how films look like video games,  video  games  like  paintings...), and in general how games can make a difference, topics for which she has given several talks and workshops. Her interest in the game dev community lead her to join the organisation of the #FemDevsMeetup –a group of networking events for women in the industry–, hosting some of the Düsseldorf and Cologne meetups, and co-organising the Fem Devs Game Jam since 2019.
-          </p><p>
-            In 2021, Casilda became a recipient of the IGDA Foundation's Next Gen Leaders Program.
-          </p><p>
-            It is in this in-between of industry and academia that she walks both paths of praxis and theory.
-          </p>
-        </div>
-        <div class="list">
-          <p>
-            Recent talks & workshops:
-          </p><ul><li>
-            Talk (1h):
-            <br>
-            <!--<a href="" target="_blank">--><strong>You are good at drawing, now what? – The technical skills of a game artist</strong><!--</a>-->
-            <a href="https://www.youtube.com/watch?app=desktop&v=fp17gQt-2t8" target="_blank">{video}</a>
-            <br>
-            Games Industry. Uni Bayreuth
-            <br>
-            02/02/2022 – Bayreuth, Germany
-          </li><li>
-            Lecture (30’):
-            <br>
-            <a href="https://gamehappens.com/gh2019/raheel-yawar-casilda-de-zulueta/" target="_blank">Beyond Mobile: The future of HTML5 games</a>
-            <a href="https://www.youtube.com/watch?v=brPbg0EjyS8" target="_blank">{video}</a>
-            <br>
-            Game Happens. Elements of Change
-            <br>
-            8-10/11/2019 – Genoa, Italy
-          </li><li>
-            Workshop (2h):
-            <br>
-            <a href="https://womenizegamesandfilm2019.sched.com/event/VCVN/workshop-using-space-in-film-game-genres" target="_blank">Using Space in Film & Games Genres</a>
-            <br>
-            Womenize! Games and Film
-            <br>
-            11/10/2019 – Cologne, Germany
-          </li><li>
-            Session (15’):
-            <br>
-            <a href="https://www.pocketgamer.biz/news/71303/check-out-the-big-screen-gaming-track-in-association-with-games-helsinki-at-pocket-gamer-connects-helsinki/" target="_blank">BEYOND MOBILE: The Future of HTML5 Games [Flying Sheep Studios]</a>
-             <a href="https://www.youtube.com/watch?v=-RNwH_j2UfY" target="_blank">{video}</a>
-            <br>
-            Pocket Gamer Connects. Helsinki
-            <br>
-            1-2/10/2019 – Helsinki, Finland
-          </li></ul>
-        </div>
-      </section>
-
-      <!-- CONTACT -->
-      <section id="contact">
-				<h3>Contact info</h3>
-				<div class="contact-info">
-					<p><a href="mailto:contact(at)gatdesoia(dot)es">contact (at) gatdesoia (dot) es</a></p>
-					<p class="word-spacing"><a href="https://twitter.com/GatdeSoia" target="_blank">twitter</a> <a href="https://gatdesoia.itch.io/" target="_blank">itch.io</a></p>
-      </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-			<div class="lang"><a href=".\ca" target="_self">CA</a> | <a href=".\de" target="_self">DE</a> | <strong>EN</strong> | <a href=".\es" target="_self">ES</a></div>
-      <div class="credits">Gat de Soia | 2021 - Casilda de Zulueta</div>
-			<a href="#"><img class="logo" src="./lib/logo/cat.png"/></a>
-			<div class="letrita"><a href=".\impressumunddatenschutzhinweis" target="_blank">Impressum & Datenschutz</a></div>
-    </footer>
-  </body>
+        <!-- FOOTER -->
+        <footer>
+            <div>
+                ~
+            </div>
+            <div>
+                Casilda de Zulueta
+            </div>
+            <div>
+                <a href="#">GatdeSoia.es</a> | 2022
+            </div>
+            <div class="imprs">
+                <a href="./impressumunddatenschutzhinweis.html">Impressum und Datenschutz</a>
+            </div>
+        </footer>
+    </body>     
 </html>
