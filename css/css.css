@@ -179,7 +179,7 @@ header {
     padding: 8px;
 }
 
-#nav {
+.nav {
     text-align: center;
     font-size: 0.9em;
     display: flex;
