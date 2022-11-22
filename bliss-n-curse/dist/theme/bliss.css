@@ -247,7 +247,7 @@ li::before {
 
 .reveal strong,
 .reveal b {
-  font-weight: bold;
+  background-color: #ffff00;
 }
 
 .reveal em {
