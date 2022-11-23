@@ -34,7 +34,7 @@
   font-weight: 600;
 }
 
-section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
+section.has-dark-background {
   color: #fff;
 }
 
@@ -116,6 +116,12 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
    grid-template-columns: 1fr 1fr;
    grid-gap: 10px;
    text-align: left;
+}
+
+.threecolumn-1-1-1 {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 48px;
 }
 
 .small-text {
