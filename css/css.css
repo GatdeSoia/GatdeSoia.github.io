@@ -399,7 +399,7 @@ footer div {
 .row-2-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 16px;
+    row-gap: 0;
     column-gap: 24px;
     padding-bottom: 16px;
 }
