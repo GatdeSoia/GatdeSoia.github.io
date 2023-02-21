@@ -37,7 +37,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
     text-shadow: 1px 1px #000, 1px 1.5px #000, 1px 2px #000, 1.5px 1px #000, 1.5px 1.5px #000, 1.5px 2px #000, 2px 1px #000, 2px 1.5px #000, 2px 2px #000;
 }
 
@@ -244,6 +245,20 @@ main {
 
 #main h5 {
     text-transform: uppercase;
+}
+
+#main h6 {
+    font-size: 0.7em;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin: 0px;
+}
+
+.alt-title {
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 0.2em;
+    padding-bottom: 12px;
 }
 
 .buttons {
