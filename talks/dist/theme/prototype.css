@@ -121,7 +121,8 @@ section.has-dark-background {
 .threecolumn-1-1-1 {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
-   grid-gap: 48px;
+   grid-gap: 10px;
+   text-align: left;
 }
 
 .small-text {
