@@ -590,3 +590,14 @@ footer {
     font-size: 1em;
   }
 }
+
+@media screen and (max-width: 366px) {
+  .col-5-1-1-1-1-1 {
+    display: inherit;
+  }
+
+  .col-5-1-1-1-1-1 .game-container {
+    padding-bottom: 24px;
+  }
+
+}
