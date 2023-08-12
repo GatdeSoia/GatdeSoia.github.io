@@ -329,6 +329,10 @@ footer {
   color: #9999ff;
 }
 
+.red {
+  color: #ff4646;
+}
+
 .white {
   color: #cfd6ff;
 }
@@ -340,7 +344,7 @@ footer {
 .red-grad {
   background: linear-gradient(#ff4646, #ff00ff);
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .celeste-bg {
