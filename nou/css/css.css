@@ -342,9 +342,16 @@ footer {
 }
 
 .red-grad {
-  background: linear-gradient(#ff4646, #ff00ff);
-  background-clip: text;
-  color: transparent;
+  background: inherit;
+  color: #ff4646;
+}
+
+@supports (background-clip: text) {
+  .red-grad {
+    background: linear-gradient(#ff4646, #ff00ff);
+    background-clip: text;
+    color: transparent;
+  }
 }
 
 .celeste-bg {
