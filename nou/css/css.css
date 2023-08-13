@@ -55,6 +55,10 @@ a:visited {
   color: #ff00ff;
 }
 
+.cursor-def {
+  cursor: default;
+}
+
 /* H1, H2, H3, H4, H5, H6 */
 .white-box h1, .white-box h2, .white-box h3,.white-box h4, .white-box h5, .white-box h6 {
   margin: 16px 8px;
