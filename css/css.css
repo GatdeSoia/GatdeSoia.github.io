@@ -676,4 +676,8 @@ footer {
     padding-bottom: 24px;
   }
 
+	.popup {
+		display: none;
+	}
+
 }
