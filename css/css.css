@@ -191,6 +191,10 @@ header {
 .header-cat-logo {
   width: 80px;
   margin: 4px 0 0 12px;
+  background-image: url(../lib/logo/cat-bg.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .header-logo-text {
@@ -205,8 +209,30 @@ header {
 }
 
 .front-page .cat-logo {
-  width: 224px;
-  margin-top: 64px;
+  width: 128px;
+  background-image: url(../lib/logo/cat-bg.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.front-page .title-name {
+  font-size: 2em;
+  padding-bottom: 16px;
+}
+
+.front-page .title-job {
+  font-size: 1.4225em;
+  padding-bottom: 16px;
+}
+
+.front-page .title-separator {
+  font-size: 1.4em;
+  margin-bottom: 8px;
+}
+
+.front-page .title-web {
+  font-size: 1.1em;
 }
 
 .title-name {
@@ -460,6 +486,18 @@ footer {
   position: fixed;
 }
 
+.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+}
+
+.column-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .txt-center {
   text-align: center;
 }
@@ -481,6 +519,18 @@ footer {
 
 .line-margin {
   margin: 64px 0 32px 0;
+}
+
+.margin-8 {
+  margin-top: 8px;
+}
+
+.margin-16 {
+  margin-top: 16px;
+}
+
+.margin-32 {
+  margin-top: 32px;
 }
 
 .padding-96 {
@@ -549,27 +599,42 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .front-page .cat-logo {
-    width: 128px;
+  .popup a {
+    width: 96px;
+    height: 96px;
   }
 
-  .front-page .title-name {
-    font-size: 2em;
-    padding-bottom: 16px;
-  }
-
-  .front-page .title-job {
-    font-size: 1.4225em;
-    padding-bottom: 12px;
-  }
-
-  .front-page .title-separator {
-    font-size: 1.4em;
-    padding: 8px 0;
-  }
-
-  .front-page .title-web {
-    font-size: 1.4em;
+  @keyframes bounce-anim {
+    0% {
+      width: 96px;
+      height: 96px;
+      right: 32px;
+      bottom: 32px;}
+    70% {
+      width: 96px;
+      height: 96px;
+      right: 32px;
+      bottom: 32px;}
+    75% {
+      width: 128px;
+      height: 128px;
+      right: 16px;
+      bottom: 16px;}
+    85% {
+      width: 96px;
+      height: 96px;
+      right: 32px;
+      bottom: 32px;}
+    90% {
+      width: 112px;
+      height: 112px;
+      right: 24px;
+      bottom: 24px;}
+    100%  {
+      width: 96px;
+      height: 96px;
+      right: 32px;
+      bottom: 32px;}
   }
 }
 
@@ -598,11 +663,7 @@ footer {
 
   .front-page .title-separator {
     font-size: 1.2em;
-    padding: 8px 0;
-  }
-
-  .front-page .title-web {
-    font-size: 1em;
+    margin-bottom: -2px;
   }
 }
 

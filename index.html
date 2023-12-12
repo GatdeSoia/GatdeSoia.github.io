@@ -22,35 +22,49 @@
     </div>
 
     <!-- HEADER -->
-    <header id="header" class="blur purple-box-shadow">
-        <div class="logo">
+    <header id="header" class="blur purple-box-shadow cursor-def">
+        <div class="logo sticky">
           <a href="#"><div class="float-l"><img class="header-cat-logo" src="./lib/logo/cat.svg"/></div></a>
           <div class="header-logo-text float-l txt-center">
             <h5 class="title-name red-grad red-glow uppercase regular">Casilda de Zulueta</h5>
             <h6 class="title-job uppercase regular">Technical Art & Animation</h6>
           </div>
         </div>
-      <nav class="float-r">
-        <a href="https://gatdesoia.itch.io/" target="_blank"><img src="./lib/icon/controller.svg" class="icon"/></a>
-        <a href="mailto:contact(at)gatdesoia(dot)es"><img src="./lib/icon/email.svg" class="icon"/></a>
+      <nav class="float-r sticky">
+        <a href="https://gatdesoia.itch.io/" target="_blank" title="itch.io"><img src="./lib/icon/controller.svg" class="icon"/></a>
+        <a href="mailto:contact(at)gatdesoia(dot)es" title="e-mail"><img src="./lib/icon/email.svg" class="icon"/></a>
       </nav>
     </header>
 
     <!-- 13 ROSAS POPUP -->
     <div class="popup">
-      <a href="https://gatdesoia.itch.io/13-rosas" target="_blank" class="bounce-trigger radial-trigger-area"></a>
+      <a href="https://gatdesoia.itch.io/13-rosas" target="_blank" title="Play the demo!" class="bounce-trigger radial-trigger-area"></a>
     </div>
 
     <!-- FRONT PAGE -->
-    <section id="front-page" class="front-page celeste-bg purple-box-shadow">
-        <div class="img-center float-c">
+    <section id="front-page" class="front-page celeste-bg purple-box-shadow cursor-def">
+        <div class="img-center float-c padding-32">
           <img class="cat-logo" src="./lib/logo/cat.svg"/>
         </div>
         <div class="txt-center">
-          <h1 class="title-name red-grad red-glow uppercase lightweight cursor-def">Casilda de Zulueta</h1>
-          <h2 class="title-job uppercase lightweight cursor-def">Technical Art & Animation</h2>
-          <h3 class="title-separator lightweight cursor-def">~</h3>
-          <h4 class="title-web lightweight"><a href="#">GatdeSoia.es</a></h4>
+          <h1 class="title-name red-grad red-glow uppercase lightweight">Casilda de Zulueta</h1>
+          <h2 class="title-job uppercase lightweight">Technical Art & Animation</h2>
+          <h3 class="title-separator lightweight">~</h3>
+          <div class="column-display">
+            <a href="https://gatdesoia.itch.io/13-rosas" target="_blank" class="button margin-8">13 Rosas 🌹</a>
+            <a href="./portfolio.html" class="button margin-8">Portfolio 🕹️</a>
+            <a href="./resume.html" class="button margin-8">Résumé 📑</a>
+            <div class="margin-32">
+              <a href="https://gatdesoia.itch.io/" target="_blank" title="itch.io"><img src="./lib/icon/controller-pink.svg" class="icon"/></a>
+              <a href="mailto:contact(at)gatdesoia(dot)es" title="e-mail"><img src="./lib/icon/email-pink.svg" class="icon"/></a>
+            </div>
+            <div>
+              <a href="https://twitter.com/gatdesoia" target="_blank" title="twitter"><img src="./lib/icon/twitter-pink.svg" class="icon"/></a>
+              <a href="https://bsky.app/profile/gatdesoia.bsky.social" target="_blank" title="blusky"><img src="./lib/icon/bsky-pink.svg" class="icon"/></a>
+              <a href="https://www.linkedin.com/in/gatdesoia" target="_blank" title="linkedin"><img src="./lib/icon/lnkdn-pink.svg" class="icon"/></a>
+            </div>
+          </div>
+          <h4 class="title-web lightweight padding-32"><a href="#display">GatdeSoia.es</a></h4>
           
           <!-- scroll down button to next section (ID = display) -->
           <div class="scroll-down">
@@ -66,7 +80,7 @@
           <h4 class="uppercase">Consultancy & Workshops</h4>
           <p class="">Are you an indie studio or a start-up? Perhaps you need some assistance on setting up your next project's <strong>art and animation pipelines</strong><span id="dotsOne">...</span><span id="moreOne"> and best practices, or on assessing your game's <strong>optimization issues</strong> and the possible solutions regarding visual assets. Be it 2D, 3D or anything in between, I am available for consultancy, reviews and workshops for your team. <a href="mailto:contact(at)gatdesoia(dot)es">Let me give you a hand!</a> 💌</span></p>
           <div>
-            <a onclick="toggleOne()"><img src="./lib/icon/scroll-down.svg" id="btnMoreOne" class="icon-small radial-trigger-area"/></a>
+            <a onclick="toggleOne()"><img src="./lib/icon/scroll-down-pink.svg" id="btnMoreOne" class="icon-small radial-trigger-area"/></a>
           </div>
         </div>
 
@@ -74,7 +88,7 @@
           <h4 class="uppercase">Industry Talks & the <span class="green">#FemDevsMeetup</span></h4>
           <p class="">On occasion, I will give talks and participate in panels related to my profession. From general tips<span id="dotsTwo">...</span><span id="moreTwo"> on <strong>game art and art management</strong> to <strong>in-game animation planning</strong>, the struggle of turning one's passion into a source of income, and the importance of getting inspiration from outside the medium itself. Together with the rest of the #FemDevsMeetup team, I host events in several cities around Germany where we arrange talks, roundtables and casual dinners. <a href="https://femdevsmeetup.com" target="_blank">Learn more about the Fem Devs!</a> 💚</span></p>
           <div>
-            <a onclick="toggleTwo()"><img src="./lib/icon/scroll-down.svg" id="btnMoreTwo" class="icon-small radial-trigger-area"/></a>
+            <a onclick="toggleTwo()"><img src="./lib/icon/scroll-down-pink.svg" id="btnMoreTwo" class="icon-small radial-trigger-area"/></a>
           </div>
         </div>
 
@@ -82,7 +96,7 @@
           <h4 class="uppercase">Research & Projects</h4>
           <p class="">I like making and playing games as much as thinking about them. To me, <strong>the theoretical framework is as important as the technical one</strong><span id="dotsThree">...</span><span id="moreThree">, and therefore I try to put both into practice. With a background in media studies, I have a special fascination on the influence of pictorial and filmic languages in this medium, which in itself informs my output as a developer and as an observer. I also love horror games. <a href="https://gatdesoia.itch.io/" target="_blank">Take a look at my own creations</a> 🎮🌹</span></p>
           <div>
-            <a onclick="toggleThree()"><img src="./lib/icon/scroll-down.svg" id="btnMoreThree" class="icon-small radial-trigger-area"/></a>
+            <a onclick="toggleThree()"><img src="./lib/icon/scroll-down-pink.svg" id="btnMoreThree" class="icon-small radial-trigger-area"/></a>
           </div>
         </div>
       </div>
@@ -138,10 +152,17 @@
     </section>
 
     <footer class="txt-center celeste-grad-border">
-      <nav>
-        <a href="https://gatdesoia.itch.io/" target="_blank"><img src="./lib/icon/controller-pink.svg" class="icon"/></a>
-        <a href="mailto:contact(at)gatdesoia(dot)es"><img src="./lib/icon/email-pink.svg" class="icon"/></a>
-      </nav>
+      <div class="column-display">
+        <div class="padding-16 margin-8">
+          <a href="https://gatdesoia.itch.io/" target="_blank" title="itch.io"><img src="./lib/icon/controller-pink.svg" class="icon"/></a>
+          <a href="mailto:contact(at)gatdesoia(dot)es" title="e-mail"><img src="./lib/icon/email-pink.svg" class="icon"/></a>
+        </div>
+        <div>
+          <a href="https://twitter.com/gatdesoia" target="_blank" title="twitter"><img src="./lib/icon/twitter-pink.svg" class="icon"/></a>
+          <a href="https://bsky.app/profile/gatdesoia.bsky.social" target="_blank" title="blusky"><img src="./lib/icon/bsky-pink.svg" class="icon"/></a>
+          <a href="https://www.linkedin.com/in/gatdesoia" target="_blank" title="linkedin"><img src="./lib/icon/lnkdn-pink.svg" class="icon"/></a>
+        </div>
+      </div>
       <div>~</div>
       <div><span class="uppercase">Casilda de Zulueta</span> | Technical Art & Animation. | M'agrada el café i faig videojocs. | <a href="#">GatdeSoia.es</a> | 2023</div>
       <div class="imprs"><a href="./impressumunddatenschutzhinweis.html">Impressum und Datenschutz</a></div>
