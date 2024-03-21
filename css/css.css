@@ -521,6 +521,10 @@ footer {
   margin: 64px 0 32px 0;
 }
 
+.margin-0 {
+  margin: 0;
+}
+
 .margin-8 {
   margin-top: 8px;
 }
@@ -560,6 +564,12 @@ footer {
 
 .box {
   margin: 0 8px 0 8px;
+}
+
+.col-2-2-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  row-gap: 32px;
 }
 
 .col-3-1-1 {
