@@ -1,4 +1,7 @@
 User-agent: GPTBot
 User-agent: ChatGTP-User
 User-agent: Google-Extended
+User-agent: ClaudeBot
+User-agent: anthropic-ai
+User-agent: Claude-Web
 Disallow: /
