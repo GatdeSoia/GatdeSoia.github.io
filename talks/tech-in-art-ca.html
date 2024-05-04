@@ -29,7 +29,6 @@
 				</section>
 
 				<!-- - - - - - - - - - WHO AM I, WHERE AM I? - - - - - - - - - -->
-				<section>
 					<section>
 						<h1>¿QUIÉN SOY?</h1>
 						<div class="twocolumn-1-1">
@@ -81,12 +80,12 @@
 									</li>
 									<li class="fragment">Intercambio Erasmus ✈️
 										<ul>
-											<li class="small-text">Köln International School of Design. Technische Hochschule Köln</li>
+											<li class="small-text">Köln International School of Design. Technische Hochschule Köln.</li>
 										</ul>
 									</li>
 									<li class="fragment">Game Development & Research M.A. 👾
 										<ul>
-											<li class="small-text">Cologne Game Lab. Technische Hochschule Köln</li>
+											<li class="small-text">Cologne Game Lab. Technische Hochschule Köln.</li>
 										</ul>
 									</li>
 								</ul>
@@ -165,8 +164,6 @@
 							</div>
 						</div>
 					</section>
-				</section>
-
 
 				<!-- - - - - - - - - - INTERMISSION #1 - - - - - - - - - -->
 				<section data-background-image="./lib/img/13-rosas_003-s.png">
@@ -186,7 +183,6 @@
 				</section>
 
 				<!-- - - - - - - - - - WHAT IS THIS FOR - - - - - - - - - -->
-				<section>
 					<section>
 						<h2>EL PROPÓSITO</h2>
 						<h1>DE ESTA PONENCIA</h1>
@@ -226,10 +222,7 @@
 						</ul>
 					</section>
 
-				</section>
-
 				<!-- - - - - - - - - - WHAT IS YOUR WORK FOR - - - - - - - - - -->
-				<section>
 					<!-- THE ASSET IS FOR A MACHINE -->
 					<section>
 						<h2>EL <span class="curse">ASSET</span> ES PARA QUE UNA MÁQUINA LA INTERPRETE (RENDER)</h2>
@@ -268,10 +261,7 @@
 						</div>
 					</section>
 
-				</section>
-
 				<!-- - - - - - - - - - LET'S JUMP IN - - - - - - - - - -->
-				<section>
 					<section>
 						<h1>LA TÉCNICA</h1><h1>DETRÁS</h1><h1>DEL ARTE</h1>
 					</section>
@@ -485,10 +475,7 @@
 						<img class="fragment" width="80%" style="background-color: white" data-src="./lib/img/assets-pipeline.png">
 					</section>
 
-				</section>
-
 				<!-- - - - - - - - - - 2D - - - - - - - - - -->
-				<section>
 					<section>
 						<h2>RESOLUCIÓN</h2>
 						<div class="twocolumn-1-1">
@@ -559,16 +546,11 @@
 							</div>
 						</div>
 					</section>
-				</section>
 
 				<!-- - - - - - - - - - 3D ARTIST - - - - - - - - - -->
-				<section>
-					<section>
-						<h2>MODELING</h2>
-					</section>
 
 					<section>
-						<h2>SCALE</h2>
+						<h2>ESCALA</h2>
 						<div class="twocolumn-3-2">
 							<div class="fragment">
 								<img data-src="./lib/img/noctis.jpg">
@@ -582,12 +564,12 @@
 					</section>
 
 					<section>
-						<h2>SCALE</h2>
+						<h2>ESCALA</h2>
 							<ul>
-								<li class="fragment">The problem with <strong><span class="tiny-text">tiny</span></strong> triangles:
+								<li class="fragment">El problema de los triángulos <strong><span class="tiny-text">minúsculos</span></strong>:
 									<ul>
-										<li class="fragment">The computer still has to calculate the position of all those triangles, just for a single pixel (or none!) to render.</li>
-										<li class="fragment">When there are too many tiny triangles the render is edgy and flickers.</li>
+										<li class="fragment">El ordenador sigue teniendo que calcular la posición de todos esos triángulos, solo para renderizar un píxel (¡o ninguno!).</li>
+										<li class="fragment">Cuando hay demasiados triángulos minúsculos, el renderizado tiene <em>aliasing</em> y parpadea.</li>
 									</ul>
 								</li>
 							</ul>
@@ -599,40 +581,40 @@
 						<div class="twocolumn-1-2">
 							<div class="fragment">
 								<img data-src="./lib/img/LOD.jpg">
-								<div class="small-text">Geometry Best Practices for Artists by Arm Developer.</div>
+								<div class="small-text">Geometry Best Practices for Artists por Arm Developer.</div>
 							</div>
 							<div>
 								<ul>
-									<li class="fragment"><strong>Meshes</strong>:<ul>
-										<li>Solves tiny triangles waste.</li>
+									<li class="fragment"><strong>Mallas</strong>:<ul>
+										<li>Reuelve el problema de los tríangulos minúsculos.</li>
 										</ul>
 									</li>
-									<li class="fragment">Textures (<strong>mipmaps</strong>):<ul>
-										<li>Solves aliasing issues and <em>Moiré</em> patterns.</li>
+									<li class="fragment">Texturas (<strong>mipmaps</strong>):<ul>
+										<li>Resuelve las distorsiones de aliasing y <em>Moiré</em>.</li>
 										</ul>
 									</li>
-									<li class="fragment"><strong>Bones</strong> & framerate:<ul>
-										<li>Solves having too many skinned meshes (like characters) in frame.</li>
+									<li class="fragment"><strong>Huesos</strong> & framerate en animación:<ul>
+										<li>Resuelve el problema de tener demasiadas mallas con esqueleto (skinned meshes) dentro de campo.</li>
 										</ul>
 									</li>
 									<br>
-									<li class="fragment"><strong>QUANTITY</strong>: The <strong>more assets</strong> to load, the heavier the program is going to be on the <strong>memory</strong>.</li>
-									<li class="fragment"><strong>SIZE</strong>: The <strong>more triangles</strong> there need to be rendered, the <strong>bigger the textures</strong>, and the <strong>more skinned meshes</strong> there are, the heavier it will be on the <strong>GPU</strong>.</li>
+									<li class="fragment"><strong>CANTIDAD</strong>: <strong>cuanta mayor cantidad de assets</strong>, más carga para la <strong>CPU</strong>.</li>
+									<li class="fragment"><strong>TAMAÑO</strong>: <strong>cuantos más triángulos</strong>, <strong>más grandes las texturas</strong> y <strong>más skinned meshes</strong>, más carga para la <strong>GPU</strong>.</li>
 								</ul>
 							</div>
 						</div>
 					</section>
 
 					<section>
-						<h2>MODULARITY</h2>
+						<h2>DISEÑO MODULAR</h2>
 						<div class="twocolumn-1-1">
 							<div>
 								<ul>
-									<li class="fragment">Document and apply <strong>strict measurements</strong>:
+									<li class="fragment">Documenta y utiliza <strong>medidas estrictas</strong>:
 										<ul>
-											<li class="fragment">How high is the seat of a chair for the character to sit down?</li>
-											<li class="fragment">What's the measure of the narrowest corridor the character should go through?</li>
-											<li class="fragment">How tall is a wall?</li>
+											<li class="fragment">¿A qué altura está el asiento de la silla para que el personaje se pueda sentar?</li>
+											<li class="fragment">¿Cuál es el tamaño mínimo de un pasillo para que el personaje pueda atravesarlo?</li>
+											<li class="fragment">¿Cómo de alta es la pared?</li>
 										</ul>
 									</li>
 								</ul>
@@ -645,40 +627,37 @@
 					</section>
 
 					<section>
-						<h2>VISIBILITY</h2>
+						<h2>VISIBILIDAD</h2>
 						<ul>
-							<li class="fragment">If a fraction of a mesh is visible, the whole mesh is being calculated.
+							<li class="fragment">Si un trozo de una malla es visible, toda la malla está siendo calculada.
 								<ul>
-									<li class="small-text">And if there is no occlusion culling system in place, even objects in frame hidden behind another object will still be computed.</li>
+									<li class="small-text">Si no se puede implementar la oclusión selectiva (occlusion culling), incluso los objetos dentro de campo escondidos detrás de otros objetos seguirán siendo calculados.</li>
 								</ul>
 							</li>
 							</br>
-							<li class="fragment">How much should I chop a house?
+							<li class="fragment">¿Cuánto debería seccionar una casa?
 								<ul>
-									<li class="fragment">Are you going to be close to it? Chop it!</li>
-									<li class="fragment">Is it a figure in the landscape far away? Make it a quad and slap a texture on it.</li>
+									<li class="fragment">¿Vas a poder verla de cerca? ¡Córtala en pedazos!</li>
+									<li class="fragment">¿Es un objeto del horizonte? Haz un cuadrado y pégale un dibujo de la casa.</li>
 								</ul>
 							</li>
 						</ul>
 					</section>
 
 					<section>
-						<h2>MATERIALS & TEXTURES</h2>
-					</section>
-
-					<section>
-						<h2>TEXTURE SIZE</h2>
+						<h2>TAMAÑO DE LA TEXTURA</h2>
 						<div class="twocolumn-1-1">
 							<div>
 							<ul>
-								<li class="fragment">The smaller, the better.</li>
-								<li class="fragment">The less textures per material, the better:
+								<li class="fragment">Cuanto más pequeña, mejor.</li>
+								<li class="fragment">Cuantas menos texturas por material, mejor:
 									<ul>
 										<li class="fragment">Diffuse map: RGB(A)</li>
 										<li class="fragment">PBR map: RGBA</li>
 										<li class="fragment">Normal map: RGB</li>
 									</ul>
 								</li>
+								<li class="fragment">¿Es monocroma la textura? Muévela a un canal y utiliza los canales restantes para otras texturas monocromas.</li>
 							</ul>
 						</div>
 						<div>
@@ -688,43 +667,39 @@
 					</section>
 
 					<section>
-						<h2>UV SPACE</h2>
+						<h2>ESPACIO UV</h2>
 						<ul>
-							<li class="fragment">Two UV maps:
+							<li class="fragment">Dos mapas:
 								<ul>
 									<li class="fragment">Main UVmap.</li>
 									<li class="fragment">Lightmap.</li>
 								</ul>
 							</li>
 							<br>
-							<li class="fragment">The unwraps can't coincide.</li>
+							<li class="fragment">Puede haber superposición en el primer UV, pero no en el segundo.</li>
 						</ul>
 					</section>
 
 					<section>
-						<h2>MATERIAL INSTANCES</h2>
+						<h2>MATERIALES INSTANCIADOS</h2>
 						<ul>
-							<li class="fragment">The fewer materials, the better. Yet you need to balance:
+							<li class="fragment">Cuantos menos materiales, mejor. Pero ojo con:
 								<ul>
-									<li class="fragment">Big atlases with tons of assets using the same material.</li>
-									<li class="fragment">Small texture maps, with more materials in a scene.</li>
+									<li class="fragment">Atlas muy grandes.</li>
+									<li class="fragment">Demasiadas texturas que cargar.</li>
 								</ul>
 							</li>
 							<br>
-							<li class="fragment">Consider: Tiling and triplanar projections.</li>
+							<li class="fragment">Considera: texturas de repetición (tiling) y proyecciones triplanares.</li>
 							<br>
-							<li class="fragment"><strong>Avoid multimaterial meshes</strong>.</li>
+							<li class="fragment"><strong>Evitad mallas con múltiples materiales</strong>.</li>
 							</br>
-							<li class="fragment">It's better to duplicate and flip a quad than to force double-side render</li>
+							<li class="fragment">En general, es mejor duplicar un cuadrado y darle la vuelta a la copia que forzar el render a doble cara.</li>
 						</ul>
 					</section>
 
 					<section>
-						<h2>EXPORTING</h2>
-					</section>
-
-					<section>
-						<h2>APPLY TRANSFORMS</h2>
+						<h2>APLICA LAS TRANSFORMADAS ANTES DE EXPORTAR</h2>
 						<ul>
 							<li class="fragment">Rotation at 0,0,0.</li>
 							<li class="fragment">Scale at 1,1,1.</li>
@@ -732,8 +707,8 @@
 					</section>
 
 					<section>
-						<h2>PUT YOUR PIVOT POINTS</h2>
-						<h2>WHERE I CAN SEE THEM</h2>
+						<h2>PON LOS PIVOTES</h2>
+						<h2>DONDE PUEDA VERLOS</h2>
 						<div class="twocolumn-1-1">
 							<div>
 								<ul>
@@ -778,8 +753,6 @@
 							<li class="fragment"><a href="https://github.com/mrven/Blender-Asset-Creation-Toolset" target="_blank">Asset Creation Toolset</a>.</li>
 						</ul>
 					</section>
-
-				</section>
 
 				<!-- - - - - - - - - - ANIMATOR - - - - - - - - - -->
 				<section>
