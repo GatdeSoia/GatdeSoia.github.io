@@ -698,8 +698,8 @@
 					<section>
 						<h2>APLICA LAS TRANSFORMADAS ANTES DE EXPORTAR</h2>
 						<ul>
-							<li class="fragment">Rotation at 0,0,0.</li>
-							<li class="fragment">Scale at 1,1,1.</li>
+							<li class="fragment">Rotación a 0,0,0.</li>
+							<li class="fragment">Escala a 1,1,1.</li>
 						</ul>
 					</section>
 
@@ -709,25 +709,25 @@
 						<div class="twocolumn-1-1">
 							<div>
 								<ul>
-									<li class="fragment">The <strong>pivot point</strong> belongs:
+									<li class="fragment">El <strong>pivote</strong> va:
 										<ul>
-											<li class="fragment">... to the bottom left corner of a wall asset...</li>
-											<li class="fragment">... to the center of a basket ball...</li>
-											<li class="fragment">... to the center of the rotation point of a door, and it's aligned with the main rotation axis...</li>
-											<li class="fragment">... between the feet of a biped, coinciding with the pivot of the skeleton.</li>
+											<li class="fragment">... en la esquina izquierda, abajo de un asset pared...</li>
+											<li class="fragment">... en el centro de una pelota de baloncesto...</li>
+											<li class="fragment">... en el centro de rotación de una puerta, alineado con el eje de rotación principal...</li>
+											<li class="fragment">... entre las piernas de un bípedo, coincidiendo con el pivote del esqueleto.</li>
 										</ul>
 									</li>
 								</ul>
 							</div>
 							<div>
 								<img data-src="./lib/img/clint.gif">
-								<div class="small-text">It is time you watch the <em>Dollars Trilogy</em>.</div>
+								<div class="small-text">Es hora de que veas <em> la Trilogía del Dólar</em>.</div>
 							</div>
 						</div>
 					</section>
 
 					<section>
-						<h2>EXPORTING SETTINGS</h2>
+						<h2>PROPIEDADES DE EXPORTACIÓN</h2>
 						<ul>
 							<li class="fragment">Blender to Unity:
 								<ul>
@@ -752,39 +752,30 @@
 					</section>
 
 				<!-- - - - - - - - - - ANIMATOR - - - - - - - - - -->
-				<section>
 					<section>
-						<h1>ANIMATION</h1>
-					</section>
-
-					<section>
-						<h2>RIGGING</h2>
-					</section>
-
-					<section>
-						<h2>BONES MAIN ROLL</h2>
+						<h2>EJE PRINCIPAL DE ROTACIÓN</h2>
 						<img class="fragment" data-src="./lib/img/piku2.png">
 					</section>
 
 					<section>
-						<h2>EULER VS. QUATERNIONS</h2>
+						<h2>EULER VS. CUATERNIONES</h2>
 						<div class="twocolumn-2-3">
 							<div>
 								<ul>
 									<li class="fragment">Euler (X,Y,Z).
 										<ul>
-											<li class="fragment small-text">6 combinations: XYZ, XZY, YXZ, YZX, ZXY, ZYX. To avoid <strong>gimbal lock</strong>, select:</li>
+											<li class="fragment small-text">6 combinaciones (orden de cálculo): XYZ, XZY, YXZ, YZX, ZXY, ZYX. Para evitar el <strong>bloqueo del cardán (gimbal lock)</strong>, selecciona:</li>
 											<ul>
-												<li class="fragment small-text">#1: most important.</li>
-												<li class="fragment small-text">#2: least important.</li>
-												<li class="fragment small-text">#3: middle ground.</li>
+												<li class="fragment small-text">#1: eje más importante.</li>
+												<li class="fragment small-text">#2: eje menos importante.</li>
+												<li class="fragment small-text">#3: segundo eje.</li>
 											</ul>
 										</ul>
 									</li>
-									<li class="fragment">Quaternions (X,Y,Z,W):
+									<li class="fragment">Cuaterniones (X,Y,Z,W):
 									<ul>
 										<li class="fragment small-text">< 180°.</li>
-										<li class="fragment small-text">Avoids gimbal lock.</li>
+										<li class="fragment small-text">Evita el bloqueo.</li>
 									</ul></li>
 								</ul>
 							</div>
@@ -795,53 +786,44 @@
 					</section>
 
 					<section>
-						<h2>CONTROLLERS AND DRIVERS ARE</h2>
-						<h2>YOUR ANIMATOR'S FRIENDS</h2>
+						<h2>LOS CONTROLADORES Y DRIVERS SON</h2>
+						<h2>TUS MEJORES AMIGOS EN ANIMACIÓN</h2>
 						<ul>
-							<li class="fragment">Automate:</li>
+							<li class="fragment">Automatizan:</li>
 							<ul>
-								<li class="fragment">Legs rotation with IK feet.</li>
-								<li class="fragment">Closing hand with different increments on each finger bone.</li>
-								<li class="fragment">Key shapes.</li>
+								<li class="fragment">La rotación de las piernas con cinemática inversa (inverse kinematics) en los pies.</li>
+								<li class="fragment">Cerrar el puño con incrementos separados en cada hueso de los dedos.</li>
+								<li class="fragment">Blend shapes.</li>
 							</ul></li>
 						</ul>
 					</section>
 
 					<section>
-						<h2>ANIMATION</h2>
-					</section>
-
-					<section>
-						<h2>DESIGN A STATE MACHINE</h2>
+						<h2>ANTES DE ANIMAR,</h2>
+						<h2>DISEÑA UNA STATE MACHINE</h2>
 						<img class="fragment" data-src="./lib/img/state.png">
 					</section>
 
 					<section>
-						<h2>BLOCKOUT BEFORE YOU POLISH</h2>
+						<h2>ANTES DE PULIR,</h2>
+						<h2>ESBOZA E IMPLEMENTA</h2>
 						<img class="fragment" width="60%" data-src="./lib/img/bb-dummy.gif">
 					</section>
-
-					<section>
-						<h2>SLICE ON DEMAND</h2>
-						<img class="fragment" width="40%" data-src="./lib/img/seq.png">
-					</section>
-
-				</section>
 
 				<!-- - - - - - - - - - MY TWO CENTS - - - - - - - - - -->
 				<section>
 					<section>
-						<h1>DOS COSETES</h1>
+						<h1>DOS COSITAS</h1>
 					</section>
 
 					<!-- - - - - - - - - - ART HAS NEVER NOT BEEN TECHNICAL - - - - - - - - - -->
 					<section>
-						<h2>L'ART MAI HA SIGUT UNA COSA A BANDA DE LA TÈCNICA</h2>
+						<h2>EL ARTE NUNCA HA SIDO UNA COSA AJENA A LA TÉCNICA</h2>
 					</section>
 
 					<!-- - - - - - - - - - TO HELL WITH CRUNCH - - - - - - - - - -->
 					<section data-background-image="./lib/img/elmo-fire.gif" data-background-repeat>
-						<h2>A L'INFERN AMB EL CRUNCH</h2>
+						<h2>AL INFIERNO CON EL CRUNCH</h2>
 					</section>
 				</section>
 
@@ -849,9 +831,9 @@
 				<section data-background-image="./lib/img/earth.png">
 					<h1>FI</h1>
 					<br>
-					<h2 class="h2-front-page"><a href="https://gatdesoia.es/talks/tech-in-art-ca">gatdesoia.es/talks/tech-in-art-ca</a></h2>
+					<h2 class="h2-front-page"><a href="https://gatdesoia.es/">gatdesoia.es/</a></h2>
 					<br>
-					<h3 class="h3-front-page">Jugueu el meu joc! 🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹</h3>
+					<h3 class="h3-front-page">¡Jugad a 🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹!</h3>
 					<h3 class="h3-front-page"><a href="https://gatdesoia.itch.io/13-rosas" target="_blank">https://gatdesoia.itch.io/13-rosas</a></h3>
 					<br>
 					<h2>CASILDA DE ZULUETA</h2>
