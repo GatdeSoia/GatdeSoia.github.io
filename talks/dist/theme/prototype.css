@@ -103,6 +103,12 @@ section.has-dark-background {
    grid-gap: 10px;
    text-align: left;
 }
+.twocolumn-2-3 {
+   display: grid;
+   grid-template-columns: 2fr 3fr;
+   grid-gap: 10px;
+   text-align: left;
+}
 
 .twocolumn-1-2 {
    display: grid;
