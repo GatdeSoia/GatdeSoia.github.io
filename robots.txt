@@ -1,7 +1,7 @@
 User-agent: GPTBot
 Disallow: /
 
-User-agent: ChatGTP-User
+User-agent: ChatGPT-User
 Disallow: /
 
 User-agent: Google-Extended
@@ -20,4 +20,13 @@ User-agent: OpenAI
 Disallow: /
 
 User-agent: CCBot
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: OAI-SearchBot
+Disallow: /
+
+User-agent: PiplBot
 Disallow: /
