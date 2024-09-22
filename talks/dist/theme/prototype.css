@@ -97,15 +97,9 @@ section.has-dark-background {
  * CUSTOM CASI
  *********************************************/
 
-.twocolumn-3-2 {
+.twocolumn-1-1 {
    display: grid;
-   grid-template-columns: 3fr 2fr;
-   grid-gap: 10px;
-   text-align: left;
-}
-.twocolumn-2-3 {
-   display: grid;
-   grid-template-columns: 2fr 3fr;
+   grid-template-columns: 1fr 1fr;
    grid-gap: 10px;
    text-align: left;
 }
@@ -117,9 +111,29 @@ section.has-dark-background {
    text-align: left;
 }
 
-.twocolumn-1-1 {
+.twocolumn-2-1 {
    display: grid;
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 2fr 1fr;
+   grid-gap: 10px;
+   text-align: left;
+}
+.twocolumn-2-3 {
+   display: grid;
+   grid-template-columns: 2fr 3fr;
+   grid-gap: 10px;
+   text-align: left;
+}
+
+.twocolumn-3-1 {
+   display: grid;
+   grid-template-columns: 3fr 1fr;
+   grid-gap: 10px;
+   text-align: left;
+}
+
+.twocolumn-3-2 {
+   display: grid;
+   grid-template-columns: 3fr 2fr;
    grid-gap: 10px;
    text-align: left;
 }
@@ -127,6 +141,20 @@ section.has-dark-background {
 .threecolumn-1-1-1 {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 10px;
+   text-align: left;
+}
+
+.fourcolumn-1-1-1-1 {
+  display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-gap: 10px;
+   text-align: left;
+}
+
+.fivecolumn-1-1-1-1-1 {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
    grid-gap: 10px;
    text-align: left;
 }

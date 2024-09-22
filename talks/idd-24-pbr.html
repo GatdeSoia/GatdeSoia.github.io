@@ -17,6 +17,7 @@
 		<div class="reveal">
 			<div class="slides">
 
+
 				<!-- - - - - - - - - - INTRO - - - - - - - - - -->
 				<section>
 					<h1>TO PBR OR NOT PBR</h1>
@@ -28,147 +29,586 @@
 				</section>
 
 				<!-- ABOUT THE TALK -->
-				 <section>
-					<h2>WHAT'S THIS TALK ABOUT?</h2>
+				<section>
+				<h2>WHAT'S THIS TALK ABOUT?</h2>
+				<ul>
+					<li class="fragment">General guidelines for <strong>texturing 3D models</strong> in video games.</li>
+					<li class="fragment"><strong>Realistic vs. stylized</strong> rendering methods.</li>
+					<li class="fragment"><strong>Optimization</strong> tips.</li>
+					<li class="fragment">How to <strong>avoid errors</strong> in common lighting models.</li>
+				</ul>
+				</section>
+
+
+				<!-- ABOUT NOT THE TALK -->
+				<section>
+					<h2>WHAT <strong>ISN'T</strong> IT ABOUT?</h2>
 					<ul>
-						<li class="fragment">General guidelines for <strong>texturing 3D models</strong> in video games.</li>
-						<li class="fragment"><strong>Realistic vs. stylized</strong> rendering methods.</li>
-						<li class="fragment"><strong>Optimization</strong> tips.</li>
-						<li class="fragment">How to <strong>avoid errors</strong> in common lighting models.</li>
+						<li class="fragment">How to use texture/material creation tools (e.g.: Marmoset, Substance).</li>
+						<li class="fragment">Programming shaders* (HLSL, GLSL, node editor...).</li>
+						<li class="fragment">How to have good taste.</li>
+						<li class="fragment">What's the best rendering style.</li>
 					</ul>
-				 </section>
-
-
-				 <!-- ABOUT NOT THE TALK -->
-					<section>
-					 <h2>WHAT <strong>ISN'T</strong> IT ABOUT?</h2>
-					 <ul>
-						 <li class="fragment">How to use texture/material creation tools (e.g.: Marmoset, Substance).</li>
-						 <li class="fragment">Programming shaders* (HLSL, GLSL, node editor...).</li>
-						 <li class="fragment">How to have good taste.</li>
-						 <li class="fragment">What's the best rendering style.</li>
-					 </ul>
-					</section>
+				</section>
 
 
 				<!-- - - - - - - - - - WHO AM I? - - - - - - - - - -->
-					<section>
-						<h2>WHO AM I?</h2>
-						<div class="twocolumn-1-1">
-							<div>
-								<ul>
-									<li class="fragment">Casilda de Zulueta (<strong>Casi</strong>).
-										<ul>
-											<li class="small-text"><a href="https://gatdesoia.es">Gat de Soia . es</a></li>
-										</ul>
-									</li>
-									<li class="fragment"><strong>My source of income</strong>:
-										<ul>
-											<li class="small-text fragment">Entwicklerin für 3D Visualisierung @ Staatsbibliothek zu Berlin 📚🏛️</li>
-											<li class="small-text fragment">Technical Artist & Animator (Freelancer) ✨🎮</li>
-										</ul>
-									</li>
-									<li class="fragment">Indie developer:
-										<ul>
-											<li class="small-text fragment"><a href="https://gatdesoia.itch.io/13-rosas">🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹</a></li>
-										</ul>
-									</li>
-									<li class="fragment">Coorganizer of the #FemDevsMeetup 💚
-										<ul>
-											<li class="small-text fragment">≠ FemDevs 💜</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-							<div>
-								<img data-src="./lib/img/tbck-blue.png">
-							</div>
+				<section>
+					<h2>WHO AM I?</h2>
+					<div class="twocolumn-1-1">
+						<div>
+							<ul>
+								<li class="fragment">Casilda de Zulueta (<strong>Casi</strong>).
+									<ul>
+										<li class="small-text"><a href="https://gatdesoia.es">Gat de Soia . es</a></li>
+									</ul>
+								</li>
+								<li class="fragment"><strong>My source of income</strong>:
+									<ul>
+										<li class="small-text fragment">Entwicklerin für 3D Visualisierung @ Staatsbibliothek zu Berlin 📚🏛️</li>
+										<li class="small-text fragment">Technical Artist & Animator (Freelancer) ✨🎮</li>
+									</ul>
+								</li>
+								<li class="fragment">Indie developer:
+									<ul>
+										<li class="small-text fragment"><a href="https://gatdesoia.itch.io/13-rosas">🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹</a></li>
+									</ul>
+								</li>
+								<li class="fragment">Coorganizer of the #FemDevsMeetup 💚
+									<ul>
+										<li class="small-text fragment">≠ FemDevs 💜</li>
+									</ul>
+								</li>
+							</ul>
 						</div>
-					</section>
-
-
-					<!-- - - - - - - - - - WHERE DO I COME FROM? - - - - - - - - - -->
-					<section>
-						<h2>WHAT'S MY (CAREER) STORY?</h2>
-						<div class="twocolumn-1-2">
-							<div>
-								<img data-src="./lib/img/carousel.gif">
-								<div class="small-text">This kid is going places, I'm telling you.</div>
-							</div>
-							<div>
-								<ul>
-									<li class="fragment">Audiovisual Communication B.Soc.Sc. 📼
-										<ul>
-											<li class="small-text">Escola Politècnica Superior de Gandia. Universitat Politècnica de València.</li>
-										</ul>
-									</li>
-									<li class="fragment">Game Development & Research M.A. 👾
-										<ul>
-											<li class="small-text">Cologne Game Lab. Technische Hochschule Köln.</li>
-										</ul>
-									</li>
-									<li class="fragment">Student Freelancer Animator 🐜
-										<ul>
-											<li class="small-text">It doesn't pay or pays real bad.</li>
-										</ul>
-									</li>
-									<li class="fragment">Fulltime Job (3D Generalist) 🐑
-										<ul>
-											<li class="small-text">The pay raise is considerable, still started with minimum wage.</li>
-										</ul>
-									</li>
-									<li class="fragment">Back to Freelance 🦄
-										<ul>
-											<li class="small-text">First as a 3D Artist,</li>
-											<li class="small-text">then as a specialist.</li>
-											<li class="small-text">Raising yearly +50 EUR dayrate.</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
+						<div>
+							<img data-src="./lib/img/tbck-blue.png">
 						</div>
-					</section>
+					</div>
+				</section>
 
 
-					<!-- - - - - - - - - - INTERMISSION #1 - - - - - - - - - -->
-					<section data-background-image="./lib/img/13-rosas_003-s.png">
-						<h2 style="text-align: center">🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹</h2>
-						<strong><a href="https://gatdesoia.itch.io/13-rosas" target="_blank">https://gatdesoia.itch.io/13-rosas</a></strong>
-						<div class="threecolumn-1-1-1">
-							<div class="fragment">
-								<img data-src="./lib/img/13r-01.jpg">
-							</div>
-							<div class="fragment">
-								<img data-src="./lib/img/13r-02.jpg">
-							</div>
-							<div class="fragment">
-								<img data-src="./lib/img/13r-03.jpg">
-							</div>
+				<!-- - - - - - - - - - WHERE DO I COME FROM? - - - - - - - - - -->
+				<section>
+					<h2>WHAT'S MY (CAREER) STORY?</h2>
+					<div class="twocolumn-1-2">
+						<div>
+							<img data-src="./lib/img/carousel.gif">
+							<div class="small-text">This kid is going places, I'm telling you.</div>
 						</div>
-					</section>
+						<div>
+							<ul>
+								<li class="fragment">Audiovisual Communication B.Soc.Sc. 📼
+									<ul>
+										<li class="small-text">Escola Politècnica Superior de Gandia. Universitat Politècnica de València.</li>
+									</ul>
+								</li>
+								<li class="fragment">Game Development & Research M.A. 👾
+									<ul>
+										<li class="small-text">Cologne Game Lab. Technische Hochschule Köln.</li>
+									</ul>
+								</li>
+								<li class="fragment">Student Freelancer Animator 🐜
+									<ul>
+										<li class="small-text">It doesn't pay or pays real bad.</li>
+									</ul>
+								</li>
+								<li class="fragment">Fulltime Job (3D Generalist) 🐑
+									<ul>
+										<li class="small-text">The pay raise is considerable, still started with minimum wage.</li>
+									</ul>
+								</li>
+								<li class="fragment">Back to Freelance 🦄
+									<ul>
+										<li class="small-text">First as a 3D Artist,</li>
+										<li class="small-text">then as a specialist.</li>
+										<li class="small-text">Raising yearly +50 EUR dayrate.</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+
+				<!-- - - - - - - - - - INTERMISSION #1 - - - - - - - - - -->
+				<section data-background-image="./lib/img/13-rosas_003-s.png">
+					<h2 style="text-align: center">🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹</h2>
+					<strong><a href="https://gatdesoia.itch.io/13-rosas" target="_blank">https://gatdesoia.itch.io/13-rosas</a></strong>
+					<div class="threecolumn-1-1-1">
+						<div class="fragment">
+							<img data-src="./lib/img/13r-01.jpg">
+						</div>
+						<div class="fragment">
+							<img data-src="./lib/img/13r-02.jpg">
+						</div>
+						<div class="fragment">
+							<img data-src="./lib/img/13r-03.jpg">
+						</div>
+					</div>
+				</section>
 
 				 
-				 <!-- 1 -->
-					<section>
-					 <h2>WHAT DO I HAVE TO RENDER?</h2>
-					 <ul>
-						 <li class="fragment">A</li>
-					 </ul>
-					</section>
+				<!-- 00 - INTRO -->
+				<section>
+					<h2>WE HAVE A MODEL ✨</h2>
+					<div class="twocolumn-1-2">
+					<div>
+						<ul>
+							<li class="fragment">And we want to render it.</li>
+						</ul>
+					</div>
+					<div class="fragment">
+						<img data-src="./lib/img/pbr/00-wireframe.png">
+						<div class="small-text">Say hello to Bun Bnuy.</div>
+					</div>
+					</div>
+				</section>
+
+				 
+				<!-- 00 - FLAT COLOR -->
+				<section>
+				<h2>COLOR 🎨</h2>
+				<div class="threecolumn-1-1-1">
+					<div>
+						<img data-src="./lib/img/pbr/00-w.png" class="fragment">
+						<img data-src="./lib/img/pbr/00-r.png" class="fragment">
+					</div>
+					<div>
+						<img data-src="./lib/img/pbr/00-y.png" class="fragment">
+						<img data-src="./lib/img/pbr/00-p.png" class="fragment">
+					</div>
+				</div>
+				</section>
+
+				 
+				<!-- 00 - UV -->
+				<section>
+					<h2>OBJECT UVs 🏁</h2>
+					<div class="twocolumn-2-1">
+					<div>
+						<img data-src="./lib/img/pbr/00-uv-1.png" class="fragment">
+					</div>
+					<div>
+						<img data-src="./lib/img/pbr/00-uv-2.png" class="fragment">
+						<img data-src="./lib/img/pbr/00-uv-3.png" class="fragment">
+					</div>
+					</div>
+				</section>
+
+				 
+				<!-- 00 - FLAT TEXTURE -->
+				<section>
+				<h2>TEXTURED WITH OBJECT UVs 🏁</h2>
+				<div class="twocolumn-2-1">
+					<div>
+						<img data-src="./lib/img/pbr/00-flat-tex.png" class="fragment">
+					</div>
+					<div>
+					<div class="fragment">
+						<img data-src="./lib/img/pbr/00-diffuse-map.png">
+						<div class="small-text">1024 x 1024 px</div>
+					</div>
+					<div class="fragment">
+						<img data-src="./lib/img/pbr/00-diffuse-map-2.png" style="max-height: 256px">
+						<div class="small-text">256 x 512 px</div>
+					</div>
+				</div>
+				</div>
+				</section>
+
+				 
+				<!-- 00 - TRIPLANAR PROJECTION -->
+				<section>
+					<h2>WORLD AND OBJECT COORDs 🌍🧊</h2>
+					<div class="threecolumn-1-1-1">
+					<div>
+						<img data-src="./lib/img/pbr/00-triplanar-1.png" class="fragment">
+						<img data-src="./lib/img/pbr/00-checkers.png" class="fragment">
+					</div>
+					<div>
+						<img data-src="./lib/img/pbr/00-triplanar-2.png" class="fragment">
+						<img data-src="./lib/img/pbr/00-UV.png" class="fragment">
+					</div>
+					<div>
+						<ul>
+							<li class="fragment"><strong>Triplanar</strong> projection.</li>
+						</ul>
+					</div>
+					</div>
+				</section>
+
+				 
+				<!-- 00 - WORLD VS OBJECT PROJECTIONS -->
+				<section>
+				<h2>WORLD AND OBJECT COORDs 🌍🧊</h2>
+				<div class="twocolumn-1-1">
+					<div>
+						<ul>
+							<li class="fragment">World coordinates texture projection:
+								<ul>
+									<li class="small-text fragment">Doesn't scale with object (you can stretch it and the texture will tile).</li>
+									<li class="small-text fragment">Doesn't rotate with object (angled objects may present distortions in the texture).</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li class="fragment">Object coordinates texture projection:
+								<ul>
+									<li class="small-text fragment">Scales with object (texture will stretch with object).</li>
+									<li class="small-text fragment">Rotates with object (projections will align with object's axes).</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				</section>
+
+				 
+				<!-- 00 - CAM & SCREEN COORDs -->
+				<section>
+					<h2>CLIP (CAMERA) AND SCREEN COORDs 🎥🖥️</h2>
+					<div class="threecolumn-1-1-1">
+					<div>
+						<img data-src="./lib/img/pbr/00-cam-1.png" class="fragment">
+						<img data-src="./lib/img/pbr/00-cam-2.png" class="fragment">
+					</div>
+					<div>
+						<img data-src="./lib/img/pbr/00-screen-1.png" class="fragment">
+						<img data-src="./lib/img/pbr/00-screen-2.png" class="fragment">
+					</div>
+					<div>
+						<ul>
+							<li class="fragment">Center of coordinates:
+								<ul>
+									<li class="small-text fragment">Clip = center of the view.</li>
+									<li class="small-text fragment">Screen = top* or bottom* left corner.</li>
+								</ul>
+							</li>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<li class="small-text fragment">*Depends on the API.</li>
+						</ul>
+					</div>
+					</div>
+				</section>
+
+				 
+				<!-- 00 - VERTEX INFORMATION -->
+				<section>
+				<h2>WHAT DOES A VERTEX TELL US ANYWAYS? 🌟</h2>
+				<ul>
+					<li class="fragment">Its position,</li>
+					<li class="fragment">its normal direction:
+						<ul>
+							<li class="small-text fragment">used for lighting models,</li>
+						</ul>
+					</li>
+					<li class="fragment">its UV coordinates,</li>
+					<li class="fragment">and its color (RGBA)! 🎨</li>
+				</ul>
+				</section>
+
+				 
+				<!-- 00 - VERTEX COLOR -->
+				<section>
+					<h2>VERTEX COLORS 🎨</h2>
+					<div class="twocolumn-2-1">
+					<div>
+						<img data-src="./lib/img/pbr/00-vertpaint-1.png" class="fragment">
+					</div>
+					<div>
+						<div class="fragment">
+							<img data-src="./lib/img/pbr/00-vertpaint-2.png">
+						</div>
+						<div class="fragment">
+							<img data-src="./lib/img/pbr/00-vertpaint-3.png">
+						</div>
+				</div>
+					</div>
+				</section>
+
+				 
+				<!-- 00 - VERTEX LIGHTING -->
+				<section>
+				<h2>PAINTING SHADOWS 🦔</h2>
+				<div class="twocolumn-2-1">
+					<div>
+						<img data-src="./lib/img/pbr/00-vertpaint-4.png" class="fragment">
+					</div>
+					<div>
+						<img data-src="./lib/img/pbr/00-diffuse-map-2.png" style="max-height: 256px" class="fragment">
+						<ul>
+							<li class="small-text fragment">Congratulations! You've unlocked <strong>vertex lighting</strong>.</li>
+						</ul>
+					</div>
+				</div>
+				</section>
 
 
-					<!-- - - - - - - - - - THE END - - - - - - - - - -->
-					<section>
-						<h1>THE END</h1>
-						<br>
-						<h3 class="h3-front-page">🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹</h3>
-						<h3 class="h3-front-page">Play the demo! <a href="https://gatdesoia.itch.io/13-rosas" target="_blank">https://gatdesoia.itch.io/13-rosas</a></h3>
-						<br>
-						<h2>CASILDA DE ZULUETA</h2>
-						<h4 class="h4-front-page"><a href="https://twitter.com/gatdesoia" target="_blank">@GatdeSoia 🐦</a> / <a href="https://gatdesoia.bsky.social" target="_blank">🦋</a> / <a href="https://linkedin.com/in/gatdesoia" target="_blank">💼</a></h4>
-						<h3 class="h3-front-page"><a href="https://femdevsmeetup.com" target="_blank">#FemDevsMeetup 💚🎮</a></h3>
-						<img data-src="./lib/img/13r-popup.svg" style="width: 128px; box-shadow: none;">
-					</section>
+				<!-- 01 - PBR -->
+				<section>
+				<h2>METALLIC AND ROUGHNESS VALUES 🤘</h2>
+				<div class="fivecolumn-1-1-1-1-1 fragment">
+					<div>
+						<img data-src="./lib/img/pbr/01-pbr-m1r0.png">
+						<img data-src="./lib/img/pbr/01-pbr-m0r0.png">
+					</div>
+					<div>
+						<img data-src="./lib/img/pbr/01-pbr-m1r25.png">
+						<img data-src="./lib/img/pbr/01-pbr-m0r25.png">
+					</div>
+					<div>
+						<img data-src="./lib/img/pbr/01-pbr-m1r50.png">
+						<img data-src="./lib/img/pbr/01-pbr-m0r50.png">
+					</div>
+					<div>
+						<img data-src="./lib/img/pbr/01-pbr-m1r75.png">
+						<img data-src="./lib/img/pbr/01-pbr-m0r75.png">
+					</div>
+					<div>
+						<img data-src="./lib/img/pbr/01-pbr-m1r100.png">
+						<img data-src="./lib/img/pbr/01-pbr-m0r100.png">
+					</div>
+				</div>
+				</section>
+
+
+				<!-- 01 - PBR -->
+				<section>
+					<h2>METALLIC AND ROUGHNESS VALUES 🤘</h2>
+					<div class="fivecolumn-1-1-1-1-1 fragment">
+						<div>
+							<img data-src="./lib/img/pbr/01-pbr-m1r0-detail.png">
+							<img data-src="./lib/img/pbr/01-pbr-m0r0-detail.png">
+						</div>
+						<div>
+							<img data-src="./lib/img/pbr/01-pbr-m1r25-detail.png">
+							<img data-src="./lib/img/pbr/01-pbr-m0r25-detail.png">
+						</div>
+						<div>
+							<img data-src="./lib/img/pbr/01-pbr-m1r50-detail.png">
+							<img data-src="./lib/img/pbr/01-pbr-m0r50-detail.png">
+						</div>
+						<div>
+							<img data-src="./lib/img/pbr/01-pbr-m1r75-detail.png">
+							<img data-src="./lib/img/pbr/01-pbr-m0r75-detail.png">
+						</div>
+						<div>
+							<img data-src="./lib/img/pbr/01-pbr-m1r100-detail.png">
+							<img data-src="./lib/img/pbr/01-pbr-m0r100-detail.png">
+						</div>
+					</div>
+				</section>
+
+				 
+				<!-- 01 - PBR TEXTURE -->
+				<section>
+				<h2>PBR TEXTURE (MRAO) 📸</h2>
+				<div class="twocolumn-2-1">
+					<div>
+						<img data-src="./lib/img/pbr/01-pbr.png" class="fragment">
+					</div>
+					<div>
+						<div class="twocolumn-1-1 fragment">
+							<div>
+								<img data-src="./lib/img/pbr/01-pbr-detail-1.png">
+							</div>
+							<div>
+								<img data-src="./lib/img/pbr/01-pbr-detail-2.png">
+							</div>
+						</div>
+						<img data-src="./lib/img/pbr/01-pbr-tex.png" class="fragment">
+						<ul>
+							<li class="small-text fragment">512 x 512 px</li>
+							<li class="small-text fragment">R = Metallic</li>
+							<li class="small-text fragment">G = Roughness</li>
+							<li class="small-text fragment">B = Ambient Occlusion</li>
+						</ul>
+					</div>
+				</div>
+				</section>
+
+
+				<!-- 01 - PBR TEXTURE EMISSIVE -->
+				<section>
+					<h2>PBR TEXTURE (EMISSIVE) 💡</h2>
+					<div class="twocolumn-2-1">
+						<div>
+							<img data-src="./lib/img/pbr/01-pbr-emissive.png" class="fragment">
+						</div>
+						<div>
+							<img data-src="./lib/img/pbr/01-pbr-e-tex.png" class="fragment">
+							<ul>
+								<li class="small-text fragment">512 x 512 px</li>
+								<li class="small-text fragment">Color Texture + Intensity Value (>1 to use Bloom postprocessing)</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				
+				<!-- 01 - NORMALS -->
+				<section>
+					<h2>NORMAL TEXTURE 💙</h2>
+					<div class="twocolumn-2-1">
+						<div>
+							<img data-src="./lib/img/pbr/01-n.png" class="fragment">
+						</div>
+						<div>
+						<div>
+							<img data-src="./lib/img/pbr/01-n-tex-1.png" class="fragment">
+						</div>
+							<div class="twocolumn-1-1">
+								<div>
+									<img data-src="./lib/img/pbr/01-n-tex-2.png" class="fragment">
+								</div>
+							</div>
+							<ul>
+								<li class="small-text fragment">1024 x 1024 px</li>
+								<li class="small-text fragment">High-poly normal bake (mesh UVs) + Projected tiled normal (object coords triplanar)</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+
+				<!-- TEXTURES RECAP -->
+				<section>
+					<h2>TEXTURES RECAP</h2>
+					<div class="fourcolumn-1-1-1-1">
+						<div>
+							<img data-src="./lib/img/pbr/00-diffuse-map.png" class="fragment">
+							<ul>
+								<li class="fragment">Diffuse:</li>
+								<li class="small-text fragment">Full size.</li>
+								<li class="small-text fragment">sRGB.</li>
+								<li class="small-text fragment">RGB(A).</li>
+							</ul>
+						</div>
+						<div>
+							<img data-src="./lib/img/pbr/01-pbr-tex.png" class="fragment">
+							<ul>
+								<li class="fragment">PBR:</li>
+								<li class="small-text fragment">Half size.</li>
+								<li class="small-text fragment">Linear.</li>
+								<li class="small-text fragment">RGB(A).</li>
+							</ul>
+						</div>
+						<div>
+							<img data-src="./lib/img/pbr/01-pbr-e-tex.png" class="fragment">
+							<ul>
+								<li class="fragment">Emissive:</li>
+								<li class="small-text fragment">Half size.</li>
+								<li class="small-text fragment">sRGB.</li>
+								<li class="small-text fragment">RGB.</li>
+							</ul>
+						</div>
+						<div>
+							<img data-src="./lib/img/pbr/01-n-tex-1.png" class="fragment">
+							<ul>
+								<li class="fragment">Normal:</li>
+								<li class="small-text fragment">Full size.</li>
+								<li class="small-text fragment">Linear.</li>
+								<li class="small-text fragment">RGB.</li>
+							</ul>
+						</div>
+					</div>
+					<ul>
+						<li class="fragment">Whatever the size but always in <strong>power of 2</strong>.</li>
+						<li class="fragment">No surface is pure white/black, use <strong>safe colors</strong>: 
+							<ul>
+								<li class="small-text fragment">Clamp darkest and brightest diffuse colors (charcoal: 0.009, 0.009, 0.009; fresh snow: 0.899, 0.899, 0.899).</li>
+							</ul>
+						</li>
+						<li class="fragment">Try to avoid using textures for everything and use the smallest resolution possible without losing visual quality.</li>
+					</ul>
+				</section>
+
+
+				<!-- LIGHTING MODELS -->
+				<section>
+					<h2>LIGHTING MODELS</h2>
+					<ul>
+						<li class="fragment">Vertex lighting.</li>
+						<li class="fragment">Per-pixel lighting:
+							<uv>
+								<li class="small-text fragment">PBR.</li>
+								<li class="small-text fragment">Toon shader.</li>
+							</uv>
+						</li>
+					</ul>
+				</section>
+
+
+				<!-- AM I FORGETTING SOMETHING? -->
+				<section>
+					<h1>AM I FORGETTING SOMETHING?</h1>
+				</section>
+
+
+				<!-- TRANSPARENCY -->
+				<section>
+					<h2>YES, TRANSPARENCY! 🍃</h2>
+					<ul>
+						<li class="fragment">Just DON'T.</li>
+						<li class="fragment">Seriously, it's the <em>Door Problem</em> of real-time rendering.</li>
+						<li class="fragment">...</li>
+						<li class="fragment">...</li>
+						<li class="fragment">Well, OK, I guess you can use alpha-test/cutout...</li>
+						<li class="fragment">...</li>
+					</ul>
+				</section>
+
+
+				<!-- TRANSPARENCY ALPHA BLEND -->
+				<section>
+					<h2>TRANSLUCENT MATERIALS</h2>
+					<ul>
+						<li class="fragment">Subsurface scattering.</li>
+						<li class="fragment">Semi-transparent materials:
+							<ul>
+								<li class="fragment">Addition/Multiply blending.</li>
+								<li class="fragment">Alpha blending.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				
+				<!-- ONE LAST THING -->
+				 <section>
+					<h2>ONE LAST THING...</h2>
+					<div class="twocolumn-2-1">
+						<div>
+							<img data-src="./lib/img/pbr/XX-bun.png" class="fragment">
+						</div>
+					</div>
+				 </section>
+
+
+				<!-- - - - - - - - - - THE END - - - - - - - - - -->
+				<section>
+					<h1>THE END</h1>
+					<br>
+					<h3 class="h3-front-page">🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹</h3>
+					<h3 class="h3-front-page">Play the demo! <a href="https://gatdesoia.itch.io/13-rosas" target="_blank">https://gatdesoia.itch.io/13-rosas</a></h3>
+					<br>
+					<h2>CASILDA DE ZULUETA</h2>
+					<h4 class="h4-front-page"><a href="https://twitter.com/gatdesoia" target="_blank">@GatdeSoia 🐦</a> / <a href="https://gatdesoia.bsky.social" target="_blank">🦋</a> / <a href="https://linkedin.com/in/gatdesoia" target="_blank">💼</a></h4>
+					<h3 class="h3-front-page"><a href="https://femdevsmeetup.com" target="_blank">#FemDevsMeetup 💚🎮</a></h3>
+					<img data-src="./lib/img/13r-popup.svg" style="width: 128px; box-shadow: none;">
+				</section>
 
 
 			</div>
