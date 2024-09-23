@@ -148,6 +148,12 @@
 					</div>
 				</section>
 
+
+				<!-- TEXTURING -->
+				<section>
+					<h1>3D RENDERING 🧊</h1>
+				</section>
+
 				 
 				<!-- 00 - INTRO -->
 				<section>
@@ -184,7 +190,7 @@
 				 
 				<!-- 00 - UV -->
 				<section>
-					<h2>OBJECT UVs 🏁</h2>
+					<h2>MESH UVs 🏁</h2>
 					<div class="twocolumn-2-1">
 					<div>
 						<img data-src="./lib/img/pbr/00-uv-1.png" class="fragment">
@@ -199,7 +205,7 @@
 				 
 				<!-- 00 - FLAT TEXTURE -->
 				<section>
-				<h2>TEXTURED WITH OBJECT UVs 🏁</h2>
+				<h2>TEXTURED WITH MESH UVs 🏁</h2>
 				<div class="twocolumn-2-1">
 					<div>
 						<img data-src="./lib/img/pbr/00-flat-tex.png" class="fragment">
@@ -314,7 +320,11 @@
 							<li class="small-text fragment">used for lighting models,</li>
 						</ul>
 					</li>
-					<li class="fragment">its UV coordinates,</li>
+					<li class="fragment">its UV coordinates:
+						<ul>
+							<li class="small-text fragment">there can be >1 UV space (more on that later),</li>
+						</ul>
+					</li>
 					<li class="fragment">and its color (RGBA)! 🎨</li>
 				</ul>
 				</section>
@@ -531,8 +541,18 @@
 								<li class="small-text fragment">Clamp darkest and brightest diffuse colors (charcoal: 0.009, 0.009, 0.009; fresh snow: 0.899, 0.899, 0.899).</li>
 							</ul>
 						</li>
-						<li class="fragment">Try to avoid using textures for everything and use the smallest resolution possible without losing visual quality.</li>
+						<li class="fragment">Try to avoid using textures for everything and use the smallest resolution possible without losing visual quality:
+							<ul>
+								<li class="small-text fragment">Set up a <strong>texel density</strong> target.</li>
+							</ul>
+						</li>
 					</ul>
+				</section>
+
+
+				<!-- CASTING SHADOWS -->
+				<section>
+					<h1>WHAT ABOUT SHADING? ⛅</h1>
 				</section>
 
 
@@ -541,11 +561,164 @@
 					<h2>LIGHTING MODELS</h2>
 					<ul>
 						<li class="fragment">Vertex lighting.</li>
-						<li class="fragment">Per-pixel lighting:
-							<uv>
-								<li class="small-text fragment">PBR.</li>
-								<li class="small-text fragment">Toon shader.</li>
-							</uv>
+						<li class="fragment">Per-pixel lighting.</li>
+						<br>
+						<br>
+						<li class="fragment">PBR.</li>
+						<li class="fragment">Non-PBR.
+							<ul>
+								<li class="small-text fragment">E.g.: Toon shaders, CAD visualization or other mixed shaders.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+
+				<!-- PBR -->
+				<section>
+					<h2>PHYSICALLY BASED RENDERING 🌅</h2>
+					<ul>
+						<li class="fragment">It's a simulation/approximation.</li>
+						<li class="fragment">It depends on:
+							<ul>
+								<li class="small-text fragment">The model and material setup.</li>
+								<li class="small-text fragment">The lighting setup.</li>
+								<li class="small-text fragment">The lighting model (as in: the rendering method).</li>
+							</ul>
+						</li>
+						<li class="fragment">Most used material setups in PBR:
+							<ul>
+								<li class="small-text fragment">Metallic workflow:
+									<ul>
+										<li>More attached to reality.</li>
+										<li>M = 1: Diffuse turns into specular tint.</li>
+										<li>Attention to artifacts in transitioning areas metallic/non-metallic.</li>
+									</ul>
+								</li>
+								<li class="small-text fragment">Specular workflow:
+									<ul>
+										<li>More understandable.</li>
+										<li>Less tied to reality (loosening the meaning of PBR).</li>
+										<li>Can't tint specular, but fixes "metallic" transition artifacts.</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<!-- STATIC SHADING -->
+				<section>
+					<h2>BAKING LIGHTS 🧁</h2>
+					<div>
+						<ul>
+							<li class="fragment">Rely as little as possible on dynamic lights.
+								<ul>
+									<li class="small-text fragment">They are expensive.</li>
+									<li class="small-text fragment">Shading looks meh in real-time in most machines.</li>
+									<li class="small-text fragment">You'd be surprised how little you actually need them.</li>
+								</ul>
+							</li>
+							<li class="fragment">Secondary UV space:
+								<ul>
+									<li class="small-text fragment">Only rule: NO OVERLAPS, al faces need their exclusive space inside the UV coordinates.</li>
+									<li class="small-text fragment">Prepare lightmaps in the model editor rather than in the engine software.</li>
+								</ul>
+							</li>
+							<li class="fragment">Volumetric lightmaps/Light probes:
+								<ul>
+									<li class="small-text fragment">For lighting dynamic objects.</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+
+				<!-- PBR -->
+				<section>
+					<h2>SUBSURFACE SCATTERING 🕯️</h2>
+					<div class="twocolumn-1-1">
+						<div>
+							<ul>
+								<li class="fragment">Cheap version:
+									<ul>
+										<li class="small-text fragment">Slap an <strong>emissive</strong> texture on it.</li>
+										<li class="small-text fragment">It can be dimmed in/out dynamically (ask your shader programmer).</li>
+										<li class="small-text fragment">Best for folliage.</li>
+									</ul>
+								</li>
+								<div class="twocolumn-1-1">
+									<div>
+										<img data-src="./lib/img/pbr/01-pbr-e-tex-ss.png" class="fragment">
+									</div>
+								</div>
+								<li class="fragment">Expensive version:
+									<ul>
+										<li class="small-text fragment">It's another set of texture channels.</li>
+										<li class="small-text fragment">Methods: raytracing, screen-space (SSSS).</li>
+										<li class="small-text fragment">Best for flesh.</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div>
+							<img data-src="./lib/img/pbr/01-ss-e.png" class="fragment">
+						</div>
+					</div>
+				</section>
+
+
+				<!-- NON-PBR -->
+				<section>
+					<h2>NON-PBR</h2>
+					<ul>
+						<li class="fragment">It can be anything, really.</li>
+						<li class="fragment">Flat-shaded.</li>
+						<li class="fragment">Toon-shaded:
+							<ul>
+								<li class="small-text fragment">It requires altering normals to stylize shading shapes.</li>
+							</ul>
+						</li>
+						<li class="fragment">Outline:
+							<ul>
+								<li class="small-text fragment">Can be per-object.
+									<ul>
+										<li>Manually-made (inverted-faces husk, cheap).</li>
+										<li>Via shader (not the most efficient).</li>
+									</ul>
+								</li>
+								<li class="small-text fragment">Postprocessing (various shader methods, like sobel test on depth and normal buffers).</li>
+							</ul>
+						</li>
+						<br>
+						<br>
+						<li class="fragment">Note that metallic surfaces don't work well with celshading.</li>
+					</ul>
+				</section>
+
+
+				<!-- TIPS -->
+				<section>
+					<h2>BEST PRACTICES ℹ️</h2>
+					<ul>
+						<li class="fragment">On the mesh:
+							<ul>
+								<li class="small-text fragment">Avoid non-manifolds (exception: quads for vegetation and the likes).</li>
+								<li class="small-text fragment">Separate opaque from transparent parts into different meshes.</li>
+								<li class="small-text fragment">No n-gons, no cry.</li>
+								<li class="small-text fragment">Avoid long triangles.</li>
+								<li class="small-text fragment">Make use of LODs.</li>
+							</ul>
+						</li>
+						<li class="fragment">On the material:
+							<ul>
+								<li class="small-text fragment">Don't multimaterial (exception: meshes with opaque and transparent parts).</li>
+								<li class="small-text fragment">Pack single-channel textures together.</li>
+								<li class="small-text fragment">If the property is a constant (e.g.: a single diffuse color, the same roughness value all over the model), don't use a texture.</li>
+								<li class="small-text fragment">Only power of 2.</li>
+								<li class="small-text fragment">Make use of Mipmaps + deactivate textures in LODs.</li>
+							</ul>
 						</li>
 					</ul>
 				</section>
@@ -573,13 +746,20 @@
 
 				<!-- TRANSPARENCY ALPHA BLEND -->
 				<section>
-					<h2>TRANSLUCENT MATERIALS</h2>
+					<h2>TRANSLUCENT MATERIALS 🧪</h2>
 					<ul>
 						<li class="fragment">Subsurface scattering.</li>
 						<li class="fragment">Semi-transparent materials:
 							<ul>
-								<li class="fragment">Addition/Multiply blending.</li>
-								<li class="fragment">Alpha blending.</li>
+								<li class="small-text fragment">Addition/Multiply blending.</li>
+								<li class="small-text fragment">Alpha blending.</li>
+								<li class="small-text fragment">Have fun fixing z-sorting errors <em>manually</em>.</li>
+							</ul>
+						</li>
+						<li class="fragment">Get away with <strong>dithering alpha-test</strong>.</li>
+						<li class="fragment">Do you have to account for refraction? Caustics? Specularity? Iridescence?
+							<ul>
+								<li class="small-text fragment">Talk to your technical artist.</li>
 							</ul>
 						</li>
 					</ul>
@@ -588,7 +768,7 @@
 				
 				<!-- ONE LAST THING -->
 				 <section>
-					<h2>ONE LAST THING...</h2>
+					<h2>ONE LAST THING... 💗</h2>
 					<div class="twocolumn-2-1">
 						<div>
 							<img data-src="./lib/img/pbr/XX-bun.png" class="fragment">
