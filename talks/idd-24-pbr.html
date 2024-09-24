@@ -558,7 +558,7 @@
 
 				<!-- LIGHTING MODELS -->
 				<section>
-					<h2>LIGHTING MODELS</h2>
+					<h2>LIGHTING MODELS 🔦</h2>
 					<ul>
 						<li class="fragment">Vertex lighting.</li>
 						<li class="fragment">Per-pixel lighting.</li>
@@ -588,14 +588,14 @@
 						</li>
 						<li class="fragment">Most used material setups in PBR:
 							<ul>
-								<li class="small-text fragment">Metallic workflow:
+								<li class="small-text fragment"><strong>Metallic workflow</strong>:
 									<ul>
 										<li>More attached to reality.</li>
 										<li>M = 1: Diffuse turns into specular tint.</li>
 										<li>Attention to artifacts in transitioning areas metallic/non-metallic.</li>
 									</ul>
 								</li>
-								<li class="small-text fragment">Specular workflow:
+								<li class="small-text fragment"><strong>Specular workflow</strong>:
 									<ul>
 										<li>More understandable.</li>
 										<li>Less tied to reality (loosening the meaning of PBR).</li>
@@ -640,6 +640,9 @@
 					<h2>SUBSURFACE SCATTERING 🕯️</h2>
 					<div class="twocolumn-1-1">
 						<div>
+							<img data-src="./lib/img/pbr/01-ss-e.png" class="fragment">
+						</div>
+						<div>
 							<ul>
 								<li class="fragment">Cheap version:
 									<ul>
@@ -662,9 +665,6 @@
 								</li>
 							</ul>
 						</div>
-						<div>
-							<img data-src="./lib/img/pbr/01-ss-e.png" class="fragment">
-						</div>
 					</div>
 				</section>
 
@@ -672,29 +672,35 @@
 				<!-- NON-PBR -->
 				<section>
 					<h2>NON-PBR</h2>
-					<ul>
-						<li class="fragment">It can be anything, really.</li>
-						<li class="fragment">Flat-shaded.</li>
-						<li class="fragment">Toon-shaded:
+					<div class="twocolumn-2-1">
+						<div>
 							<ul>
-								<li class="small-text fragment">It requires altering normals to stylize shading shapes.</li>
-							</ul>
-						</li>
-						<li class="fragment">Outline:
-							<ul>
-								<li class="small-text fragment">Can be per-object.
+								<li class="fragment">It can be anything, really.</li>
+								<li class="fragment">Flat-shaded.</li>
+								<li class="fragment">Toon-shaded:
 									<ul>
-										<li>Manually-made (inverted-faces husk, cheap).</li>
-										<li>Via shader (not the most efficient).</li>
+										<li class="small-text fragment">It requires altering normals to stylize shading shapes.</li>
+										<li class="small-text fragment">Metallic surfaces don't work well with celshading.</li>
 									</ul>
 								</li>
-								<li class="small-text fragment">Postprocessing (various shader methods, like sobel test on depth and normal buffers).</li>
+								<li class="fragment">Outline:
+									<ul>
+										<li class="small-text fragment">Can be per-object.
+											<ul>
+												<li>Manually-made (inverted-faces husk, cheap).</li>
+												<li>Via shader (not the most efficient).</li>
+											</ul>
+										</li>
+										<li class="small-text fragment">Postprocessing (various shader methods, like sobel test on depth and normal buffers).</li>
+									</ul>
+								</li>
 							</ul>
-						</li>
-						<br>
-						<br>
-						<li class="fragment">Note that metallic surfaces don't work well with celshading.</li>
-					</ul>
+						</div>
+						<div>
+							<img data-src="./lib/img/pbr/02-flat-outline-meshwrap.png" class="fragment">
+							<img data-src="./lib/img/pbr/02-toon-outline-postprocessing.png" class="fragment">
+						</div>
+					</div>
 				</section>
 
 
@@ -747,22 +753,29 @@
 				<!-- TRANSPARENCY ALPHA BLEND -->
 				<section>
 					<h2>TRANSLUCENT MATERIALS 🧪</h2>
-					<ul>
-						<li class="fragment">Subsurface scattering.</li>
-						<li class="fragment">Semi-transparent materials:
+					<div class="twocolumn-1-2">
+						<div>
+							<img data-src="./lib/img/pbr/04-alpha.png" class="fragment">
+						</div>
+						<div>
 							<ul>
-								<li class="small-text fragment">Addition/Multiply blending.</li>
-								<li class="small-text fragment">Alpha blending.</li>
-								<li class="small-text fragment">Have fun fixing z-sorting errors <em>manually</em>.</li>
+								<li class="fragment">Subsurface scattering.</li>
+								<li class="fragment">Semi-transparent materials:
+									<ul>
+										<li class="small-text fragment">Addition/Multiply blending.</li>
+										<li class="small-text fragment">Alpha blending.</li>
+										<li class="small-text fragment">Have fun fixing z-sorting errors <em>manually</em>.</li>
+									</ul>
+								</li>
+								<li class="fragment">Get away with <strong>dithering alpha-test</strong>.</li>
+								<li class="fragment">Do you have to account for refraction? Caustics? Specularity? Iridescence?
+									<ul>
+										<li class="small-text fragment">Talk to your technical artist.</li>
+									</ul>
+								</li>
 							</ul>
-						</li>
-						<li class="fragment">Get away with <strong>dithering alpha-test</strong>.</li>
-						<li class="fragment">Do you have to account for refraction? Caustics? Specularity? Iridescence?
-							<ul>
-								<li class="small-text fragment">Talk to your technical artist.</li>
-							</ul>
-						</li>
-					</ul>
+						</div>
+					</div>
 				</section>
 
 				
