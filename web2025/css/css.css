@@ -328,8 +328,7 @@ button.ext-link {
 }
 
 .scroll-up {
-  background-image: url(../lib/img/icons/scroll-down.svg);
-  transform: rotate(180deg);
+  background-image: url(../lib/img/icons/scroll-up.svg);
 }
 
 /* HEADER ------------------------------------------------------ */
