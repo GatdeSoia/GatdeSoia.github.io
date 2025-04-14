@@ -111,7 +111,7 @@ p {
   line-height: 32px;
 }
 
-.line {
+.line, .line-2 {
   display: inline-block;
 }
 
@@ -919,6 +919,10 @@ nav li {
 @media screen and (max-width: 512px) {
   h1 {
     font-size: 42px;
+  }
+
+  .line-2 {
+    display: inline;
   }
 
   .flex-wrap-reverse-2 {
