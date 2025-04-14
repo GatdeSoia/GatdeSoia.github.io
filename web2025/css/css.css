@@ -340,6 +340,7 @@ header {
 }
 
 nav {
+  overflow: hidden;
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
   padding: 8px;
   box-shadow: 0 0 4px #9999FF;
@@ -354,6 +355,20 @@ nav ul {
 
 nav li {
   margin: 0;
+}
+
+.nav-0 {
+  display: block;
+  visibility: visible;
+}
+
+.nav-2 {
+  display: none;
+  visibility: hidden;
+}
+
+.dropdown-content {
+  display: none;
 }
 
 /* FOOTER ------------------------------------------------------ */
@@ -595,6 +610,10 @@ nav li {
 
 .flex-justify-between {
   justify-content: space-between;
+}
+
+.float-l {
+  float: left;
 }
 
 .float-r {
@@ -876,6 +895,24 @@ nav li {
   .maxh-96-2 {
     max-height: 96px;
     margin: auto;
+  }
+
+  .nav-0 {
+    display: none;
+    visibility: hidden;
+  }
+
+  .nav-2 {
+    display: block;
+    visibility: visible;
+  }
+  
+  .dropdown {
+    overflow: hidden;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
   }
 }
 
