@@ -125,6 +125,7 @@ ul {
 
 li {
   margin: 16px 0 16px 8px;
+  line-height: 32px;
 }
 
 /** HEADINGS **/
