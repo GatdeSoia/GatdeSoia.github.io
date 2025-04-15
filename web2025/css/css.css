@@ -111,7 +111,8 @@ p {
   line-height: 32px;
 }
 
-.line, .line-2 {
+.line, 
+.line-2 {
   display: inline-block;
 }
 
@@ -127,7 +128,10 @@ li {
 }
 
 /** HEADINGS **/
-h1, h2, h3, h4 {
+h1, 
+h2, 
+h3, 
+h4 {
   text-transform: uppercase;
   font-weight: normal;
   padding: 0;
@@ -213,7 +217,9 @@ button.ext-link {
   margin-top: 8px;
 }
 
-.mono, .notebook p, .notebook ul {
+.mono, 
+.notebook p, 
+.notebook ul {
   font-family: "Roboto Mono", 'Courier New', Courier, monospace;
 }
 
@@ -357,18 +363,16 @@ nav li {
   margin: 0;
 }
 
-.nav-0 {
+.nav-wide {
   display: block;
   visibility: visible;
 }
 
-.nav-2 {
+.nav-narrow,
+.nav-toggle-btn input,
+.nav-toggle-content {
   display: none;
   visibility: hidden;
-}
-
-.dropdown-content {
-  display: none;
 }
 
 /* FOOTER ------------------------------------------------------ */
@@ -655,7 +659,8 @@ nav li {
   margin-left: 8px;
 }
 
-.margin-l-16, .margin-l-16-2 {
+.margin-l-16, 
+.margin-l-16-2 {
   margin-left: 16px;
 }
 
@@ -680,7 +685,8 @@ nav li {
   margin-right: 8px;
 }
 
-.margin-r-16, .margin-r-16-2 {
+.margin-r-16, 
+.margin-r-16-2 {
   margin-right: 16px;
 }
 
@@ -888,7 +894,8 @@ nav li {
     height: 400px;
   }
 
-  .splash-m, .splash-l {
+  .splash-m, 
+  .splash-l {
     max-width: 300px;
   }
 
@@ -897,23 +904,90 @@ nav li {
     margin: auto;
   }
 
-  .nav-0 {
+  .nav-wide {
     display: none;
     visibility: hidden;
   }
 
-  .nav-2 {
+  .nav-narrow,
+  .nav-toggle-btn input,
+  .nav-toggle-content {
     display: block;
     visibility: visible;
   }
-  
-  .dropdown {
-    overflow: hidden;
+
+  :root {
+    --line-width: 20px;
+    --line-height: 1.5px;
+    --line-gap: 5px;
   }
 
-  .dropdown:hover .dropdown-content {
-    display: block;
+  .nav-toggle-btn {
+    gap: var(--line-gap);
+    margin: 8px 8px 8px 16px;
+    width: max-content;
+    cursor: pointer;
   }
+
+  .nav-toggle-btn::before,
+  .nav-toggle-btn::after,
+  .nav-toggle-btn input {
+    content: "";
+    width: var(--line-width);
+    height: var(--line-height);
+    background-color: #FF4646;
+    border-radius: 128px;
+    transform-origin: left center;
+    transition: background-color 0.2s, opacity 0.2s, width 0.2s, rotate 0.2s, translate 0.2s;
+  }
+
+  .nav-toggle-btn:hover::before,
+  .nav-toggle-btn:hover::after,
+  .nav-toggle-btn input:hover {
+    background-color: #FFFFFF;
+  }
+
+  .nav-toggle-btn:active::before,
+  .nav-toggle-btn:active::after,
+  .nav-toggle-btn input:active {
+    background-color: #333333;
+  }
+
+  .nav-toggle-btn input {
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    pointer-events: none;
+  }
+
+  .nav-toggle-btn:has(input:checked)::before {
+    rotate: 37deg;
+    width: calc(var(--line-width) + 4px);
+    translate: 0 calc(var(--line-height) / -2);
+  }
+
+  .nav-toggle-btn:has(input:checked)::after {
+    rotate: -37deg;
+    width: calc(var(--line-width) + 4px);
+    translate: 0 calc(var(--line-height) / 2);
+  }
+
+  .nav-toggle-btn input:checked {
+    opacity: 0;
+    width: 0;
+  }
+
+  .nav-toggle-content {
+    display: none;
+    visibility: hidden;
+  }
+
+  .nav-toggle-btn.nav-toggle-btn:has(input:checked) + .nav-toggle-content {
+    display: block;
+    visibility: visible;
+  }
+
 }
 
 @media screen and (max-width: 512px) {
