@@ -268,7 +268,7 @@ button.ext-link {
 /* FRONT CARD -------------------------------------------------- */
 .front-card-bg {
   background-color: #B5B9FF;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .front-card {
@@ -280,6 +280,7 @@ button.ext-link {
   width: 512px;
   max-width: calc(100vw - 96px);
   height: 384px;
+  min-height: 192px;
   max-height: calc(100vh - 128px);
 }
 
