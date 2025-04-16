@@ -85,7 +85,7 @@
 /** CORE **/
 html {
   scrollbar-width: thin;
-  scrollbar-color: #fff #e0e0ee;
+  scrollbar-color: #FFFFFF #E6E6EE;
   scroll-behavior: smooth;
   overscroll-behavior: contain;
 }
@@ -100,7 +100,7 @@ html {
 body {
   font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
   color: #333333;
-  letter-spacing: 24%;
+  letter-spacing: 16%;
   margin: 0;
   padding: 0;
 }
@@ -209,6 +209,8 @@ button.ext-link {
 /** NOTEBOOK STYLE **/
 .notebook {
   background-image: url(../lib/img/bg/notebook.png);
+  background-size: 32px 32px;
+  background-position: center top;
   border-radius: 32px;
   padding: 64px 32px;
   border: 1px solid rgba(255, 255, 255, 0.7);
@@ -238,8 +240,8 @@ button.ext-link {
   padding: 0 32px;
 }
 
-/** COMMENTS **/
-.commented {
+/** TOOLTIPS **/
+.tooltip {
   border-bottom: 2px dotted #333333;
 }
 
@@ -272,16 +274,14 @@ button.ext-link {
 }
 
 .front-card {
-  background-color: #e0e0ee;
+  background-color: #E6E6EE;
   border: 2px dotted #9999FF;
   border-radius:16px;
   padding: 64px 32px 32px 32px;
   margin: auto;
   width: 512px;
   max-width: calc(100vw - 96px);
-  height: 384px;
   min-height: 192px;
-  max-height: calc(100vh - 128px);
 }
 
 /** LOGO **/
@@ -402,6 +402,51 @@ nav li {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left bottom;
+  width: 100%;
+  height: 400px;
+}
+
+.pic-13r-1 {
+  background-image: url(../lib/img/pics/13r-pic-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 70% bottom;
+  width: 100%;
+  height: 400px;
+}
+
+.pic-13r-2 {
+  background-image: url(../lib/img/pics/13r-pic-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 65% bottom;
+  width: 100%;
+  height: 400px;
+}
+
+.pic-13r-3 {
+  background-image: url(../lib/img/pics/13r-pic-3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  width: 100%;
+  height: 400px;
+}
+
+.pic-13r-4 {
+  background-image: url(../lib/img/pics/13r-pic-4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right bottom;
+  width: 100%;
+  height: 400px;
+}
+
+.pic-13r-5 {
+  background-image: url(../lib/img/pics/13r-pic-5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 75% bottom;
   width: 100%;
   height: 400px;
 }
@@ -738,6 +783,12 @@ nav li {
   width: 256px;
 }
 
+.w-3p,
+.w-3p-1,
+.w-3p-2 {
+  width: 33,33%;
+}
+
 /** MAX WIDTHS + CENTRAL ALIGN **/
 .maxw-128 {
   max-width: 128px;
@@ -855,12 +906,20 @@ nav li {
   .separator-b-r {
     margin-right: 0;
   }
+
+  .w-3p-1 {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 768px) {
   .row-to-col-2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .col-to-row-2 {
+    flex-direction: row;
   }
 
   .txt-c-2 {
@@ -873,6 +932,14 @@ nav li {
   
   .margin-r-16-2 {
     margin-right: 0;
+  }
+
+  .w-3p-2 {
+    width: 100%;
+  }
+
+  .front-card {
+    padding: 32px 32px 24px 32px;
   }
 
   .splash-13r {
