@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="bg-celeste">
   <head>
-    <title>PORTFOLIO | Casilda de Zulueta ~ Gat de Soia . es</title>
+    <title>PORTFOLIO | Casilda de Zulueta | Technical Art & Animation | Gat de Soia . es</title>
     <meta charset="UTF-8">
+
     <meta name="author" content="Casilda de Zulueta"/>
-    <meta name="description" content="Technical Art & Animation. M'agrada el café i faig videojocs."/>
+    <meta name="description" content="M'agrada el café i faig videojocs."/>
+
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
     <meta property="og:image" content="./thumbnail.png"/>
     <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="627" />
+    <meta property="og:image:height" content="630" />
+
     <link href="./favicon.ico" rel="icon" type="image/x-icon"/>
     <link rel="stylesheet" type="text/css" href="./css/css.css">
   </head>
 
   <body>
+    <!-- START PAGE WITH HIDDEN BODY-->
     <script>
-      /* START PAGE WITH HIDDEN BODY */
       document.body.className = "hidden";
     </script>
 
@@ -25,285 +29,280 @@
     </div>
 
     <!-- HEADER -->
-    <header id="header" class="blur purple-box-shadow cursor-def">
-        <div class="logo sticky">
-          <a href="./index.html"><div class="float-l"><img class="header-cat-logo" src="./lib/logo/cat.svg"/></div></a>
-          <div class="header-logo-text float-l txt-center">
-            <h5 class="title-name red-grad red-glow uppercase regular">Casilda de Zulueta</h5>
-            <h6 class="title-job uppercase regular">Technical Art & Animation</h6>
-          </div>
+    <header id="header">
+      <nav>
+        <ul class="nav-wide flex-container-row flex-justify-r flex-wrap">
+          <li><a href="index.html"><button>Home</button></a></li>
+          <li><a href="portfolio.html"><button>Portfolio</button></a></li>
+          <li><a href="workshops.html"><button>Workshops</button></a></li>
+          <li><a href="contact.html"><button>Contact</button></a></li>
+        </ul>
+        <div class="nav-narrow flex-container-col">
+          <label class="nav-toggle-btn flex-container-col">
+            <input type="checkbox"/>
+          </label>
+          <ul class="nav-toggle-content">
+              <li><a href="index.html"><button>Home</button></a></li>
+              <li><a href="portfolio.html"><button>Portfolio</button></a></li>
+              <li><a href="workshops.html"><button>Workshops</button></a></li>
+              <li><a href="contact.html"><button>Contact</button></a></li>
+          </ul>
         </div>
-      <nav class="float-r sticky">
-        <a href="https://gatdesoia.itch.io/" target="_blank" title="itch.io"><img src="./lib/icon/controller.svg" class="icon"/></a>
-        <a href="mailto:contact(at)gatdesoia(dot)es" title="e-mail"><img src="./lib/icon/email.svg" class="icon"/></a>
       </nav>
     </header>
 
-    <div class="buttons padding-96">
-      <a href="./resume.html" class="button">Résumé 📑</a>
-    </div>
-
     <!-- PORTFOLIO -->
-    <section id="portfolio" class="portfolio padding-32">
-      <div class="blur white-box box">
-        <h2 class="txt-shadow uppercase purple">Portfolio</h2>
+    <section id="portfolio" class="w-1024">
+      <div>
+        <div class="margin-32"></div>
 
-        <!-- GAME HILIGHTS -->
-        <div class="game-highlight col-5-1-1-1-1-1">
+        <h1 class="txt-c">Portfolio</h1>
 
-          <!-- 13 ROSAS -->
-          <div class="game-container game-13r">
-            <div class="game-box">
-              <a href="https://achtungautobahn.com/13-rosas/" target="_blank"><img src="./lib/img/box-13r.png" class="game-img celeste-box-shadow" /></a>
+        <div>
+          <div class="flex-container-row flex-justify-between row-to-col-2">
+            <!-- 13 ROSAS -->
+            <div class="splash-m margin-r-16-2 flex-grow">
+              <div class="splash-13r margin-32 framed"></div>
+
+              <div class="flex-container-row flex-justify-between row-to-col-2 margin-16 separator-b">
+                <div class="txt-c-2">
+                  <p><strong>13 Rosas (Under Development)</strong></p>
+                  <p class="txt-size-s"><em>Project Lead / Artist</em></p>
+                  <p class="txt-size-s">Achtung Autobahn</p>
+                </div>
+
+                <div class="flex-container-col flex-justify-r txt-r txt-c-2">
+                  <div>
+                    <a href="13-rosas.html"><button class="margin-l-0 margin-r-0">Learn More</button></a>
+                  </div>
+                  <div>
+                    <a href="https://achtungautobahn.com/13-rosas" target="_blank"><button class="ext-link margin-l-0 margin-r-0">Visit Game Website</button></a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="game-title">
-              <ul><li class="game-name uppercase"><a href="https://achtungautobahn.com/13-rosas/" target="_blank">13 Rosas</a></li></ul>
-              <div class="game-company uppercase">Achtung Autobahn</div>
-              <div class="game-job">Project Lead / Game Artist</div>
-              <div class="txt-small">🌹✨💜</div>
+
+            <!-- MARS VICE -->
+            <div class="splash-s margin-l-16-2 flex-shrink-0">
+              <div class="splash-mv margin-32 framed"></div>
+
+              <div class="flex-container-col flex-justify-c margin-16 separator-b">
+                <div class="txt-c">
+                  <p><strong>Mars Vice</strong></p>
+                  <p class="txt-size-s"><em>3D Lead / Technical Artist / Animator</em></p>
+                  <p class="txt-size-s">Rho Labyrinths</p>
+                </div>
+
+                <div class="flex-container-col flex-justify-c">
+                  <div>
+                    <a href="mars-vice.html"><button>Learn More</button></a>
+                  </div>
+                  <div>
+                    <a href="https://store.steampowered.com/app/1886910/Mars_Vice/" target="_blank"><button class="ext-link">Buy on Steam</button></a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- MARS VICE -->
-          <div class="game-container game-mv">
-              <div class="game-box">
-                <a href="https://store.steampowered.com/app/1886910/Mars_Vice/" target="_blank"><img src="./lib/img/box-mv.png" class="game-img celeste-box-shadow" /></a>
-              </div>
-              <div class="game-title">
-                <ul><li class="game-name uppercase"><a href="https://store.steampowered.com/app/1886910/Mars_Vice/" target="_blank">Mars Vice</a></li></ul>
-                <div class="game-company uppercase">Rho Labyrinths</div>
-                <div class="game-job">3D Art Lead / Technical Artist / Rigger / Animator</div>
-                <div class="txt-small">🌈🪐🦁</div>
-              </div>
-          </div>
+          <div class="flex-container-row flex-justify-between row-to-col-2">
+            <!-- SBB -->
+            <div class="splash-l flex-grow">
+              <div class="margin-32"></div>
 
-          <!-- DEAD LETTERS -->
-          <div class="game-container game-dl">
-              <div class="game-box">
-                <a href="https://spoondrift.games/" target="_blank"><img src="./lib/img/box-dl.png" class="game-img celeste-box-shadow" /></a>
-              </div>
-              <div class="game-title">
-                <ul><li class="game-name uppercase"><a href="https://spoondrift.games/" target="_blank">Dead Letters</a></li></ul>
-                <div class="game-company uppercase">Spoondrift</div>
-                <div class="game-job">Rigger / Animator</div>
-                <div class="txt-small">💌💀🍽️</div>
-              </div>
-          </div>
+              <div class="splash-popup margin-32 framed"></div>
 
-          <!-- ENCLOSED ENCOUNTER -->
-          <div class="game-container game-ee">
-              <div class="game-box">
-                <a href="https://fantasticfoe.com/" target="_blank"><img src="./lib/img/box-ee.png" class="game-img celeste-box-shadow" /></a>
-              </div>
-              <div class="game-title">
-                <ul><li class="game-name uppercase"><a href="https://fantasticfoe.com/" target="_blank">Enclosed Encounter</a></li></ul>
-                <div class="game-company uppercase">Fantastic Foe</div>
-                <div class="game-job">Rigger / Animator</div>
-                <div class="txt-small">🐛🔨📺</div>
-              </div>
-          </div>
+              <div class="flex-container-row flex-justify-between row-to-col-2 margin-16 separator-b">
+                <div class="txt-c-2">
+                  <p><strong>Pop-Up 3D Projekt</strong></p>
+                  <p class="txt-size-s"><em>3D Visualization Developer</em></p>
+                  <p class="txt-size-s">Staatsbibliothek zu Berlin / Projektverbund NFDI4Culture</p>
+                </div>
 
-          <!-- BERLIN MANIACS -->
-          <div class="game-container game-maniacs">
-            <div class="game-box">
-              <a href="https://achtungautobahn.com/berlin-maniacs/" target="_blank"><img src="./lib/img/box-maniacs.png" class="game-img celeste-box-shadow" /></a>
+                <div class="flex-container-col flex-justify-r txt-r txt-c-2">
+                  <div>
+                    <button class="btn-inactive margin-l-0 margin-r-0" title="Page under construction." alt="Page under construction.">Learn More</button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="game-title">
-              <ul><li class="game-name uppercase"><a href="https://achtungautobahn.com/berlin-maniacs/" target="_blank">Berlin Maniacs</a></li></ul>
-              <div class="game-company uppercase">Achtung Autobahn</div>
-              <div class="game-job">3D Artist / Animator</div>
-              <div class="txt-small">🛣️⭐📸</div>
+          </div>
+
+          <div class="flex-container-row flex-justify-between row-to-col-2">
+            <!-- FLYING SHEEP -->
+            <div class="splash-s margin-r-16-2 flex-shrink-0">
+              <div class="margin-32"></div>
+
+              <div class="splash-fs margin-32 framed"></div>
+
+              <div class="flex-container-col flex-justify-c margin-16 separator-b">
+                <div class="txt-c">
+                  <p><strong>Flying Sheep Games</strong></p>
+                  <p class="txt-size-s"><em>Art Director / Character & Environment Artist / Animator</em></p>
+                  <p class="txt-size-s">Flying Sheep</p>
+                </div>
+
+                <div class="flex-container-col flex-justify-c">
+                  <div>
+                    <button class="btn-inactive" title="Page under construction." alt="Page under construction.">See Projects</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- TOGGO -->
+            <div class="splash-m margin-l-16-2 flex-grow">
+              <div class="margin-32"></div>
+
+              <div class="splash-toggo margin-32 framed"></div>
+
+              <div class="flex-container-row flex-justify-between row-to-col-2 margin-16 separator-b">
+                <div class="txt-c-2">
+                  <p><strong>Super RTL Toggo Games</strong></p>
+                  <p class="txt-size-s"><em>Character & Environment Artist / Animator</em></p>
+                  <p class="txt-size-s">Flying Sheep</p>
+                </div>
+
+                <div class="flex-container-col flex-justify-r txt-r txt-c-2">
+                  <div>
+                    <button class="margin-l-0 margin-r-0 btn-inactive" title="Page under construction." alt="Page under construction.">See Projects</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-
-        <hr class="line-dotted line-margin">
-
-        <!-- GAME LIST -->
-        <div class="game-list">
-          <!-- THE 7TH AXE -->
-          <div class="game-title">
-            <ul><li class="game-name uppercase"><a href="http://www.brainseed-factory.com/" target="_blank">The 7th Axe</a></li></ul>
-            <div class="game-company uppercase">Brainseed Factory</div>
-            <div class="game-job">Cinematics Animator</div>
-          </div>
-
-          <!-- KNIGHTS OF FORTUNE -->
-          <div class="game-title">
-            <ul><li class="game-name uppercase"><a href="https://play.knights-of-fortune.com/" target="_blank">Knights of Fortune</a></li></ul>
-            <div class="game-company uppercase">Flying Sheep Studios</div>
-            <div class="game-job">3D Character Modeler / Rigger / Animator</div>
-          </div>
-
-          <!-- SUNRISE ROOTS -->
-          <div class="game-title">
-            <ul><li class="game-name uppercase"><a href="https://twitter.com/flyingsheeple/status/1247116843120123906" target="_blank">Sunrise Roots</a></li></ul>
-            <div class="game-company uppercase">Flying Sheep Studios</div>
-            <div class="game-job">Art Director / 3D Environment Artist / Rigger / Animator</div>
-          </div>
-
-          <!-- RED PANDA SURFER -->
-          <div class="game-title">
-            <ul><li class="game-name uppercase"><a href="https://games.flying-sheep.com/red-panda-surfer/" target="_blank">Red Panda: Surfer</a></li></ul>
-            <div class="game-company uppercase">Flying Sheep Studios</div>
-            <div class="game-job">3D Character & Environment Artist</div>
-          </div>
-
-          <!-- NINJAGO -->
-          <div class="game-title">
-            <ul><li class="game-name uppercase"><a href="https://www.toggo.de/ninjago/spiel/im-niemandsland" target="_blank">Lego Ninjago: Im Niemandsland</a></li></ul>
-            <ul><li class="game-name uppercase"><a href="https://www.toggo.de/ninjago/spiel/rueckkehr-der-oni" target="_blank">Lego Ninjago: Rückkehr der Oni</a></li></ul>
-            <ul><li class="game-name uppercase"><a href="https://www.toggo.de/ninjago/spiel/motorrad-gang" target="_blank">Lego Ninjago: Lloyd gegen Garmadons Motorrad-Gang</a></li></ul>
-            <ul><li class="game-name uppercase"><a href="https://www.toggo.de/ninjago/spiel/turnier-der-tapferen" target="_blank">Lego Ninjago: Turnier der Tapferen</a></li></ul>
-            <ul><li class="game-name uppercase"><a href="https://www.toggo.de/ninjago/spiel/sumpf-arena" target="_blank">Lego Ninjago: Sumpf-Arena</a></li></ul>
-            <div class="game-company uppercase">Flying Sheep Studios</div>
-            <div class="game-job">3D Character & Environment Artist / Animator</div>
-          </div>
-
-          <!-- NEXO KNIGHTS -->
-          <div class="game-title">
-            <ul><li class="game-name uppercase"><a href="https://www.toggo.de/nexo-knights/spiel/besiege-den-steinkoloss" target="_blank">Lego Nexo Knights: Besiege den Steinkoloss!</a></li></ul>
-            <div class="game-company uppercase">Flying Sheep Studios</div>
-            <div class="game-job">3D Character Artist / Animator</div>
-          </div>
-
-          <!-- HOW TO TRAIN YOUR DRAGON -->
-          <div class="game-title">
-            <ul><li class="game-name uppercase"><a href="https://twitter.com/flyingsheeple/status/1090200972670971904" target="_blank">How to Train Your Dragon: Ohnezahns wilder Flug</a></li></ul>
-            <div class="game-company uppercase">Flying Sheep Studios</div>
-            <div class="game-job">3D Character Artist / Animator</div>
-          </div>
-
-          <!-- TROLLHUNTERS -->
-          <div class="game-title">
-            <ul><li class="game-name uppercase"><a href="https://www.toggo.de/trolljaeger/spiel/zwergendarts" target="_blank">Trollhunters: Zwergendarts</a></li></ul>
-            <ul><li class="game-name uppercase"><a href="https://www.toggo.de/trolljaeger/spiele/spiel/abenteuer-in-den-trollhoehlen" target="_blank">Trollhunters: Abenteuer in den Trollhöhlen</a></li></ul>
-            <div class="game-company uppercase">Flying Sheep Studios</div>
-            <div class="game-job">3D Character & Environment Artist / Animator</div>
-          </div>
-
-          <!-- TROLLS -->
-          <div class="game-title">
-            <ul><li class="game-name uppercase"><a href="https://www.toggo.de/trolls/spiele/spiel/kaeferflug" target="_blank">Trolls: Käferflug</a></li></ul>
-            <div class="game-company uppercase">Flying Sheep Studios</div>
-            <div class="game-job">3D Character Artist / Animator</div>
-          </div>
-
-          <!-- TOM & JERRY -->
-          <div class="game-title">
-            <ul><li class="game-name uppercase"><a href="https://twitter.com/flyingsheeple/status/996389193948516352" target="_blank">Tom & Jerry: Mäuseflitzer</a></li></ul>
-            <div class="game-company uppercase">Flying Sheep Studios</div>
-            <div class="game-job">3D Character & Environment Artist / Animator</div>
-          </div>
-
-          <!-- PLAYMOBIL -->
-          <div class="game-title">
-            <ul><li class="game-name uppercase"><a href="https://twitter.com/flyingsheeple/status/1082584325261049858" target="_blank">Playmobil Magic: Der Kristallpfad</a></li></ul>
-            <ul><li class="game-name uppercase"><a href="https://twitter.com/flyingsheeple/status/1057580021408260097" target="_blank">Playmobil Ghostbusters: Geisterjagd im Gruselhotel</a></li></ul>
-            <div class="game-company uppercase">Flying Sheep Studios</div>
-            <div class="game-job">3D Character & Environment Artist / Animator</div>
-          </div>
-
-          <!-- BARBIE -->
-          <div class="game-title">
-            <ul><li class="game-name uppercase"><a href="https://www.toggo.de/barbie/spiel/super-kuchen-lauf" target="_blank">Barbie: Traumvilla Abenteuer: Super-Kuchen-Lauf</a></li></ul>
-            <div class="game-company uppercase">Flying Sheep Studios</div>
-            <div class="game-job">3D Character Artist [Sprite Rendering] / Animator</div>
-          </div>
-
-          <!-- ZAK STORM -->
-          <div class="game-title">
-            <ul><li class="game-name uppercase"><a href="https://www.toggo.de/zak-storm/spiel/breitseiten-ballerei" target="_blank">Zak Storm: Breitseiten Ballerei</a></li></ul>
-            <div class="game-company uppercase">Flying Sheep Studios</div>
-            <div class="game-job">3D Character & Environment Artist</div>
-          </div>
-
-          <!-- DENNIS & GNASHER -->
-          <div class="game-title">
-            <ul><li class="game-name uppercase"><a href="https://www.toggo.de/dennis--fletscher/spiel/skate-blaem" target="_blank">Dennis & Gnasher: Skate Bläm!</a></li></ul>
-            <div class="game-company uppercase">Flying Sheep Studios</div>
-            <div class="game-job">3D Character & Environment Artist / Animator</div>
-          </div>
-
-          <!-- ALVIN & THE CHIPMUNKS -->
-          <div class="game-title">
-            <ul><li class="game-name uppercase"><a href="https://www.toggo.de/alvinnn/spiel/die-schleimmonster" target="_blank">Alvin & the Chipmunks: Alvin gegen die Schleimmonster</a></li></ul>
-            <ul><li class="game-name uppercase"><a href="https://www.toggo.de/alvinnn-und-die-chipmunks/spiel/auf-zehenspitzen" target="_blank">Alvin & the Chipmunks: Auf Zehenspitzen!</a></li></ul>
-            <div class="game-company uppercase">Flying Sheep Studios</div>
-            <div class="game-job">3D Character & Environment Artist / Animator</div>
-          </div>
-
-          <!-- ANGELO -->
-          <div class="game-title">
-            <ul><li class="game-name uppercase"><a href="https://www.toggo.de/angelo/spiel/gegen-den-test" target="_blank">Angelo: Gegen den Test</a></li></ul>
-            <div class="game-company uppercase">Flying Sheep Studios</div>
-            <div class="game-job">3D Character & Environment Artist / Animator</div>
-          </div>
-
-          <!-- ODDBODS -->
-          <div class="game-title">
-            <ul><li class="game-name uppercase"><a href="https://www.toggo.de/oddbods/spiel/das-verrueckte-pizza-rennen" target="_blank">Oddbods: Das Verrückte Pizza-Rennen</a></li></ul>
-            <div class="game-company uppercase">Flying Sheep Studios</div>
-            <div class="game-job">3D Character Artist / Animator</div>
-          </div>
-
-          <!-- WM / ICE HOCKEY -->
-          <div class="game-title">
-            <ul><li class="game-name uppercase"><a href="https://twitter.com/flyingsheeple/status/1082605352665968640" target="_blank">Toggo Ferien Spaß: Eishockey</a></li></ul>
-            <ul><li class="game-name uppercase"><a href="https://twitter.com/flyingsheeple/status/1007202756447399937" target="_blank">Toggo: Serien WM</a></li></ul>
-            <div class="game-company uppercase">Flying Sheep Studios</div>
-            <div class="game-job">3D Environment Artist</div>
-          </div>
-
-          <!-- SUPER TOY CLUB -->
-          <div class="game-title">
-            <ul><li class="game-name uppercase"><a href="https://www.toggo.de/super-toy-club/spiel/wirbel-im-weltraum" target="_blank">Super Toy Club: Wirbel im Weltraum</a></li></ul>
-            <div class="game-company uppercase">Flying Sheep Studios</div>
-            <div class="game-job">3D Character & Environment Artist / Animator</div>
-          </div>
-
-          <!-- DROPLETS -->
-          <div class="game-title">
-            <ul><li class="game-name uppercase">Toggo Ferien Spaß: Schneeball-Schlacht</li></ul>
-            <ul><li class="game-name uppercase">Toggo Ferien Spaß: Knall auf Fall</li></ul>
-            <ul><li class="game-name uppercase"><a href="https://twitter.com/flyingsheeple/status/883333969948811267" target="_blank">Toggo Ferien Spaß: Wasserbomben-Wahnsinn</a></li></ul>
-            <div class="game-company uppercase">Flying Sheep Studios</div>
-            <div class="game-job">Character Concept Artist / 3D Character & Environment Artist / Animator</div>
-          </div>
-
-          <!-- MOSKITO BEAT -->
-          <div class="game-title">
-            <ul><li class="game-name uppercase"><a href="http://katharinatillmanns.de/FLUP/" target="_blank">Moskito Beat: Flup der Frosch macht Musik</a></li></ul>
-            <div class="game-company uppercase">Superglue Games</div>
-            <div class="game-job">Character Animator / Secondary Character Designer / Storyboard Artist / CGI Artist</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="buttons">
-        <a href="./resume.html" class="button">Résumé 📑</a>
       </div>
     </section>
+    
+    <div class="margin-64"></div>
 
-    <footer class="txt-center celeste-grad-border">
-      <div class="column-display">
-        <div class="padding-16 margin-8">
-          <a href="https://gatdesoia.itch.io/" target="_blank" title="itch.io"><img src="./lib/icon/controller-pink.svg" class="icon"/></a>
-          <a href="mailto:contact(at)gatdesoia(dot)es" title="e-mail"><img src="./lib/icon/email-pink.svg" class="icon"/></a>
+    <!-- STUDIOS & BRANDS -->
+     <section id="studios" class="w-1024">
+      <div>
+        <h2 class="txt-c">Studios & Brands</h2>
+        <p class="txt-c txt-size-s"><em>Game development companies and IPs that I have worked for.</em></p>
+      </div>
+
+      <div class="flex-container-row flex-justify-c flex-wrap margin-32">
+        <!-- ACHTUNG AUTOBAHN -->
+        <div class="margin-l-16 margin-r-16">
+          <img src="./lib/img/logos/achtungautobahn-logo-b.png" class="maxh-128 maxh-96-2"/>
         </div>
-        <div>
-          <a href="https://bsky.app/profile/gatdesoia.es" target="_blank" title="blusky"><img src="./lib/icon/bsky-pink.svg" class="icon"/></a>
-          <a href="https://www.linkedin.com/in/gatdesoia" target="_blank" title="linkedin"><img src="./lib/icon/lnkdn-pink.svg" class="icon"/></a>
+
+        <!-- SPOONDRIFT -->
+        <div class="margin-l-16 margin-r-16">
+          <img src="./lib/img/logos/spoondrift-logo-b.png" class="maxh-128 maxh-96-2"/>
+        </div>
+
+        <!-- FANTASTIC FOE -->
+        <div class="margin-l-16 margin-r-16">
+          <img src="./lib/img/logos/fantasticfoe-logo-b.png" class="maxh-128 maxh-96-2"/>
+        </div>
+
+        <!-- RHO LABYRINTHS -->
+        <div class="margin-l-16 margin-r-16">
+          <img src="./lib/img/logos/rholabs-logo-b.png" class="maxh-128 maxh-96-2"/>
+        </div>
+
+        <!-- BRAINSEED FACTORY -->
+        <div class="margin-l-16 margin-r-16">
+          <img src="./lib/img/logos/brainseed-logo-b.png" class="maxh-128 maxh-96-2"/>
+        </div>
+
+        <!-- TOGGO -->
+        <div class="margin-l-16 margin-r-16">
+          <img src="./lib/img/logos/toggo-logo-b.png" class="maxh-128 maxh-96-2"/>
+        </div>
+
+        <!-- FLYING SHEEP -->
+        <div class="margin-l-16 margin-r-16">
+          <img src="./lib/img/logos/fs-logo-b.png" class="maxh-128 maxh-96-2"/>
+        </div>
+
+        <!-- BARBIE -->
+        <div class="margin-l-16 margin-r-16">
+          <img src="./lib/img/logos/barbie-logo-b.png" class="maxh-128 maxh-96-2"/>
+        </div>
+
+        <!-- NINJAGO -->
+        <div class="margin-l-16 margin-r-16">
+          <img src="./lib/img/logos/ninjago-logo-b.png" class="maxh-128 maxh-96-2"/>
+        </div>
+
+        <!-- GHOSTBUSTERS -->
+        <div class="margin-l-16 margin-r-16">
+          <img src="./lib/img/logos/ghostbusters-logo-b.png" class="maxh-128 maxh-96-2"/>
+        </div>
+
+        <!-- TROLLHUNTERS -->
+        <div class="margin-l-16 margin-r-16">
+          <img src="./lib/img/logos/trollhunters-logo-b.png" class="maxh-128 maxh-96-2"/>
+        </div>
+
+        <!-- TOM AND JERRY -->
+        <div class="margin-l-16 margin-r-16">
+          <img src="./lib/img/logos/tomandjerry-logo-b.png" class="maxh-128 maxh-96-2"/>
+        </div>
+
+        <!-- TROLLS -->
+        <div class="margin-l-16 margin-r-16">
+          <img src="./lib/img/logos/trolls-logo-b.png" class="maxh-128 maxh-96-2"/>
+        </div>
+
+        <!-- ANGELO -->
+        <div class="margin-l-16 margin-r-16">
+          <img src="./lib/img/logos/angelo-logo-b.png" class="maxh-128 maxh-96-2"/>
+        </div>
+
+        <!-- HOW TO TRAIN YOUR DRAGON -->
+        <div class="margin-l-16 margin-r-16">
+          <img src="./lib/img/logos/dragons-logo-b.png" class="maxh-128 maxh-96-2"/>
         </div>
       </div>
-      <div>~</div>
-      <div><span class="uppercase">Casilda de Zulueta</span> | Technical Art & Animation. | M'agrada el café i faig videojocs. | <a href="./index.html">GatdeSoia.es</a> | 2024</div>
-      <div class="imprs"><a href="./impressumunddatenschutzhinweis.html">Impressum und Datenschutz</a></div>
-      <div class="trap"><a rel="me" href="https://mastodon.social/@gatdesoia">Mastodon</a></div>
+     </section>
+
+    <div class="margin-64"></div>
+
+    <!-- FOOTER -->
+    <footer id="footer w-1024">
+      <div class="flex-container-row flex-justify-r w-1024">
+        <div>
+          <a href="#"><div class="icon scroll-up"></div></a>
+        </div>
+      </div>
+
+      <div class="flex-container-col flex-justify-c">
+        <div class="logo-img margin-l-4 margin-b-4">
+          <img src="./lib/img/icons/cat.svg"/>
+        </div>
+        
+        <div class="flex-container-row flex-justify-c margin-16">
+          <div class="margin-r-4">
+            <a href="https://linkedin.com/in/gatdesoia" target="_blank"><div class="icon linkdn"></div></a>
+          </div>
+          <div class="margin-l-4 margin-r-4">
+            <a href="https://bsky.app/profile/gatdesoia.es" target="_blank"><div class="icon bsky"></div></a>
+          </div>
+          <div class="margin-l-4">
+            <a href="mailto:contact at gatdesoia dot es" target="_blank"><div class="icon email"></div></a>
+          </div>
+        </div>
+
+        <div class="txt-c margin-16">
+          <p class="txt-size-s">Casilda de Zulueta | Technical Art & Animation. | M'agrada el café i faig videojocs. | <a href="index.html" class="mono">GatdeSoia.es</a> | 2025</p>
+        </div>
+
+        <div class="txt-c">
+          <p class="txt-size-xs"><a href="impressumunddatenschutzhinweis.html" class="mono">Impressum und Datenschutz</a></p>
+        </div>
+      </div>
+
+      <div class="margin-64"></div>
     </footer>
 
-    <!-- MAKE BODY VISIBLE ON WINDOW LOAD -->
     <script>
+      /* MAKE BODY VISIBLE ON WINDOW LOAD */
       document.addEventListener("DOMContentLoaded", () => {
         window.onload = function() {
           document.body.className = "visible";
