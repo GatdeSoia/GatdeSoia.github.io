@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-celeste">
+  <head>
+    <title>MARS VICE 🌈 | Casilda de Zulueta | Technical Art & Animation | Gat de Soia . es</title>
+    <meta charset="UTF-8">
+
+    <meta name="author" content="Casilda de Zulueta"/>
+    <meta name="description" content="M'agrada el café i faig videojocs."/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <meta property="og:image" content="./thumbnail.png"/>
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <link href="./favicon.ico" rel="icon" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="./css/css.css">
+  </head>
+
+  <body>
+    <!-- START PAGE WITH HIDDEN BODY-->
+    <script>
+      document.body.className = "hidden";
+    </script>
+
+    <!-- TRAP -->
+    <div class="trap">
+        Avoiding automated lists: <a href="mailto:hi@casicasiperono.cat">hi@casicasiperono.cat</a>
+    </div>
+
+    <!-- HEADER -->
+    <header id="header">
+      <nav>
+        <ul class="nav-wide flex-container-row flex-justify-r flex-wrap">
+          <li><a href="index.html"><button>Home</button></a></li>
+          <li><a href="portfolio.html"><button>Portfolio</button></a></li>
+          <li><a href="workshops.html"><button>Workshops</button></a></li>
+          <li><a href="contact.html"><button>Contact</button></a></li>
+        </ul>
+        <div class="nav-narrow flex-container-col">
+          <label class="nav-toggle-btn flex-container-col">
+            <input type="checkbox"/>
+          </label>
+          <ul class="nav-toggle-content">
+              <li><a href="index.html"><button>Home</button></a></li>
+              <li><a href="portfolio.html"><button>Portfolio</button></a></li>
+              <li><a href="workshops.html"><button>Workshops</button></a></li>
+              <li><a href="contact.html"><button>Contact</button></a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- 13 ROSAS -->
+    <section class="w-1024">
+      <div>
+        <div class="margin-32"></div>
+
+        <h1 class="txt-c">Mars Vice</h1>
+
+        <p class="txt-c txt-size-s"><em>*That* <strong>queer, furry, sci-fi, adventure game</strong>.</em></p>
+        <p class="txt-c txt-size-s"><em>Developer: <a href="https://mars-vice.com/" target="_blank">Rho Labyrinths</a>. Status: Released | <a href="https://store.steampowered.com/app/1886910/Mars_Vice/" target="_blank">Steam</a></em></p>
+      </div>
+    </section>
+
+    <div class="margin-16"></div>
+
+    <section class="w-1024">
+      <div>
+        <div class="pic-mv-1 framed"></div>
+      </div>
+    </section>
+
+    <div class="margin-32"></div>
+
+    <section class="w-1024">
+      <div class="notebook">
+        <h2 class="txt-c">A biopunk adventure</h2>
+    
+        <div class="margin-32"></div>
+
+        <p><strong>Mars Vice</strong> is a narrative adventure game set on a distant and futuristic Mars. <em>Follow two civil investigators, <strong>Dax</strong> and <strong>Anaya</strong>, as they root out deep-seated corruption in the Martian city of Pavonis in this biopunk-infused story.</em></p>
+
+        <p>For this project, I was the <strong>3D art lead</strong>, <strong>VFX artist</strong> and <strong>in-game animator</strong>. My tasks went from supervising 3D assets production and lighting, to making optimization passes, writing custom shaders, creating particle effects, and rigging and animating organic and inorganic creatures and machines.</p>
+        
+        <div class="margin-32"></div>
+
+        <h2 class="txt-c">Tools</h2>
+
+        <div class="margin-32"></div>
+
+        <ul>
+          <li>Unity (HLSL, C#).</li>
+          <li>Blender.</li>
+          <li>Affinity Designer.</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="margin-32"></div>
+
+    <section class="w-1024">
+      <div>
+        <div class="pic-mv-2 framed"></div>
+      </div>
+    </section>
+
+    <div class="margin-32"></div>
+
+    <section class="w-1024">
+      <div class="notebook">
+        <h2 class="txt-c">Iterating processes, prioritizing production</h2>
+    
+        <div class="margin-32"></div>
+
+        <p>Throughout development, I refined pipelines and assets reusability.</p>
+
+        <p>The game had many unique elements. At times, it was easy to treat each object as a hero asset, and as such, to categorize them all as high priority. Reality was that no matter how much we wanted everything to fit in before release, some things would have to go or exist in a less unique manner.</p>
+
+        <p>We had textures reused for multitude of surfaces, and entire assets re-contextualized to use as decor in different areas of the game. The graphic design work (such as the one used for posters and product design) was streamlined by sharing the UV maps with the 2D team. The level designer became very creative with the set-dressing tools I made and the available gallery of 3D assets that our team produced.</p>
+
+        <p>I introduced a custom-made triplanar world projection for tilable textures, scrollable ads, holographic texts, many kinds of bodies of water (the cauldron lake, waterfalls and water tanks), and an embarrassingly-good pixel censor.</p>
+      </div>
+    </section>
+
+    <div class="margin-32"></div>
+
+    <section class="w-1024">
+      <div>
+        <div class="pic-mv-3 framed"></div>
+      </div>
+    </section>
+
+    <div class="margin-32"></div>
+
+    <section class="w-1024">
+      <div class="notebook">
+        <h2 class="txt-c">A mix of 2D and 3D</h2>
+    
+        <div class="margin-32"></div>
+
+        <p>Everything alive had to be 2D. Everything inorganic was made in 3D.</p>
+
+        <p>So plants, characters and actual animals were billboarded towards the camera, whilst the world could be freely navigated within the boundaries of the map (for most scenes). The development of this system fell on the hands of the programmer. One great thing about it is that lighting conditions also affected the sprites. In the end, all elements blended harmoniously on screen.</p>
+
+        <p>The art director made sure we kept the visual cohesion of all elements, in all scenes. Having very early in production color concepts and a bunch of character sprites helped us visualize the final art we were aiming for.</p>
+
+        <p>But managing a team of artists while also creating assets myself wasn't an easy mix. I ended up blocked entire days for one or the other task, making the transition easier for me.</p>
+
+        <p>I hope players appreciate the effort. That little robot surely stole my heart while I was animating it.</p>
+
+        <div class="txt-c">
+          <a href="https://store.steampowered.com/app/1886910/Mars_Vice/" target="_blank"><button class="ext-link">Buy the game on Steam</button></a>
+        </div>
+      </div>
+    </section>
+
+    <div class="margin-32"></div>
+
+    <section class="w-1024">
+      <div>
+        <div class="pic-mv-4 framed"></div>
+      </div>
+    </section>
+
+    <div class="margin-128"></div>
+
+    <!-- FOOTER -->
+    <footer id="footer w-1024">
+      <div class="flex-container-row flex-justify-r w-1024">
+        <div>
+          <a href="#"><div class="icon scroll-up"></div></a>
+        </div>
+      </div>
+
+      <div class="flex-container-col flex-justify-c">
+        <div class="logo-img margin-l-4 margin-b-4">
+          <img src="./lib/img/icons/cat.svg"/>
+        </div>
+        
+        <div class="flex-container-row flex-justify-c margin-16">
+          <div class="margin-r-4">
+            <a href="https://linkedin.com/in/gatdesoia" target="_blank"><div class="icon linkdn"></div></a>
+          </div>
+          <div class="margin-l-4 margin-r-4">
+            <a href="https://bsky.app/profile/gatdesoia.es" target="_blank"><div class="icon bsky"></div></a>
+          </div>
+          <div class="margin-l-4">
+            <a href="mailto:contact at gatdesoia dot es" target="_blank"><div class="icon email"></div></a>
+          </div>
+        </div>
+
+        <div class="txt-c margin-16">
+          <p class="txt-size-s">Casilda de Zulueta | Technical Art & Animation. | M'agrada el café i faig videojocs. | <a href="index.html" class="mono">GatdeSoia.es</a> | 2025</p>
+        </div>
+
+        <div class="txt-c">
+          <p class="txt-size-xs"><a href="impressumunddatenschutzhinweis.html" class="mono">Impressum und Datenschutz</a></p>
+        </div>
+      </div>
+
+      <div class="margin-64"></div>
+    </footer>
+
+    <script>
+      /* MAKE BODY VISIBLE ON WINDOW LOAD */
+      document.addEventListener("DOMContentLoaded", () => {
+        window.onload = function() {
+          document.body.className = "visible";
+        };
+      });
+    </script>
+  </body>
+</html>
