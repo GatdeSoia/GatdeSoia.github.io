@@ -67,6 +67,7 @@ body {
 }
 
 p {
+  font-size: 16px;
   letter-spacing: 8%;
   margin: 0 12px 16px 12px;
 }
