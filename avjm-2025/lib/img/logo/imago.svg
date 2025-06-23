@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 2048 2048" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="icon" transform="matrix(7.06207,0,0,8,946.317,0)">
+        <rect x="-134" y="0" width="290" height="256" style="fill:none;"/>
+        <g id="estrella" transform="matrix(1.13281,0,0,1,-120.406,-79.6631)">
+            <g>
+                <g transform="matrix(1.14583,0,0,1.14583,-13.4792,117.501)">
+                    <path d="M113,-16L134.553,50.334L204.301,50.334L147.874,91.331L169.427,157.666L113,116.669L56.573,157.666L78.126,91.331L21.699,50.334L91.447,50.334L113,-16Z" style="fill:rgb(229,229,229);"/>
+                </g>
+                <path d="M161.816,240.175L180.656,298.159L116,251.183L51.344,298.159L70.184,240.175L161.816,240.175ZM220.616,175.175L171.308,211L87.884,211L87.884,175.175L11.384,175.175L220.616,175.175ZM131.217,146L100.783,146L116,99.167L131.217,146Z" style="fill:rgb(13,121,242);"/>
+                <path d="M36.08,193.118L11.384,175.175L91.303,175.175L96.51,159.151L164.384,193.088L70.179,240.19L76.04,222.151C76.04,222.151 70.21,204.208 70.21,204.208L85.473,193.118L66.607,193.118L60.777,175.175L54.947,193.118L36.08,193.118Z" style="fill:rgb(242,13,13);"/>
+            </g>
+        </g>
+    </g>
+</svg>
