@@ -49,7 +49,6 @@ html {
   scrollbar-color: #FFFFFF #E1E1E1;
   scroll-behavior: smooth;
   overscroll-behavior: contain;
-  min-height: 100vh;
 }
 
 body {
@@ -82,6 +81,10 @@ a:hover {
 
 a:active {
   color: #0D79F2;
+}
+
+.main-container {
+  min-height: 100vh;
 }
 
 /* HEADINGS --------------------------------------------------- */
@@ -278,7 +281,7 @@ button.ext-link:active {
 /* FOOTER ----------------------------------------------------- */
 footer {
   background-color: #53CCE7;
-  padding: 48px 8px 32px 8px;
+  padding: 48px 0 32px 0;
 }
 
 footer p {
@@ -337,6 +340,10 @@ footer .separator {
 
 .flex-between {
   justify-content: space-between;
+}
+
+.flex-grow {
+  flex-grow: 1;
 }
 
 /* WIDTHS ----------------------------------------------------- */
