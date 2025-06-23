@@ -48,6 +48,7 @@ html {
   scrollbar-width: thin;
   scrollbar-color: #FFFFFF #E1E1E1;
   scroll-behavior: smooth;
+  background-color: #53CCE7;
   overscroll-behavior: contain;
 }
 
