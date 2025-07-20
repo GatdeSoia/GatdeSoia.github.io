@@ -1,0 +1,29 @@
+/* FONTS ------------------------------------------------------- */
+/** ROBOTO MONO VARIANTS **/
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../../../lib/fonts/RobotoMono-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: italic;
+  font-weight: 400;
+  src: url(../../../../lib/fonts/RobotoMono-Italic.ttf);
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 600;
+  src: url(../../../../lib/fonts/RobotoMono-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: italic;
+  font-weight: 600;
+  src: url(../../../../lib/fonts/RobotoMono-SemiBoldItalic.ttf);
+}

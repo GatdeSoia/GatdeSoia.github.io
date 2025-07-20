@@ -1,0 +1,29 @@
+/* FONTS ------------------------------------------------------- */
+/** OPEN SANS VARIANTS **/
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../../../lib/fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url(../../../../lib/fonts/OpenSans-Italic.ttf);
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url(../../../../lib/fonts/OpenSans-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 600;
+  src: url(../../../../lib/fonts/OpenSans-SemiBoldItalic.ttf);
+}

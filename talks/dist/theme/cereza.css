@@ -1,0 +1,432 @@
+/**
+ * Cereza theme for Gat de Soia's presentations, https://gatdesoia.es
+ *
+ * Based on the Black theme for reveal.js, by Hakim El Hattab, http://hakim.se
+ **/
+
+@import url(./fonts/open-sans.css);
+@import url(./fonts/roboto-mono.css);
+@import url(./fonts/racing-sans-one.css);
+
+section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
+  color: #FFFFFF;
+}
+
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+:root {
+  --r-background-color: #CFD6FF;
+  --r-main-font: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
+  --r-main-font-size: 24px;
+  --r-main-color: #333333;
+  --r-main-letter-spacing: 8%;
+  --r-block-margin: 8px;
+  --r-heading-margin: 0 0 8px 0;
+  --r-heading1-font: "Racing Sans One", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  --r-heading-font: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
+  --r-heading1-color: #FF4646;
+  --r-heading-color: #333333;
+  --r-heading-line-height: 1.1em;
+  --r-heading1-letter-spacing: 16%;
+  --r-heading-letter-spacing: 40%;
+  --r-heading-text-transform: uppercase;
+  --r-heading-text-shadow: none;
+  --r-heading-font-weight: normal;
+  --r-heading1-text-shadow: none;
+  --r-heading1-size: 2.8em;
+  --r-heading2-size: 2.1em;
+  --r-heading3-size: 1.4em;
+  --r-heading4-size: 1.2em;
+  --r-heading5-size: 1em;
+  --r-heading6-size: 0.8em;
+  --r-code-font: monospace;
+  --r-link-color: #FF4646;
+  --r-link-color-dark: #FF4646;
+  --r-link-color-hover: #333333;
+  --r-link-color-active: #FFFFFF;
+  --r-selection-background-color: #FFFF00;
+  --r-selection-color: #333333;
+  --r-overlay-element-bg-color: #E6E6EE;
+  --r-overlay-element-fg-color: #333333;
+}
+
+.reveal-viewport {
+  background: #191919;
+  background-color: var(--r-background-color);
+}
+
+.reveal {
+  font-family: var(--r-main-font);
+  font-size: var(--r-main-font-size);
+  font-weight: normal;
+  letter-spacing: var(--r-main-letter-spacing);
+  color: var(--r-main-color);
+}
+
+.reveal ::selection {
+  color: var(--r-selection-color);
+  background: var(--r-selection-background-color);
+  text-shadow: none;
+}
+
+.reveal ::-moz-selection {
+  color: var(--r-selection-color);
+  background: var(--r-selection-background-color);
+  text-shadow: none;
+}
+
+.reveal .slides section,
+.reveal .slides section > section {
+  line-height: 1.3;
+  font-weight: inherit;
+}
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: var(--r-heading-margin);
+  color: var(--r-heading-color);
+  font-family: var(--r-heading-font);
+  font-weight: var(--r-heading-font-weight);
+  line-height: var(--r-heading-line-height);
+  letter-spacing: var(--r-heading-letter-spacing);
+  text-transform: var(--r-heading-text-transform);
+}
+
+.reveal h1 {
+  color: var(--r-heading1-color);
+  font-family: var(--r-heading1-font);
+  letter-spacing: var(--r-heading1-letter-spacing);
+  font-size: var(--r-heading1-size);
+  text-shadow: var(--r-heading-text-shadow);
+}
+
+.reveal h2 {
+  color: var(--r-heading1-color);
+  font-family: var(--r-heading1-font);
+  letter-spacing: var(--r-heading1-letter-spacing);
+  font-size: var(--r-heading2-size);
+}
+
+.reveal h3 {
+  font-size: var(--r-heading3-size);
+}
+
+.reveal h4 {
+  font-size: var(--r-heading4-size);
+}
+
+.reveal h5 {
+  font-size: var(--r-heading5-size);
+}
+
+.reveal h6 {
+  font-size: var(--r-heading6-size);
+}
+
+/*********************************************
+ * OTHER
+ *********************************************/
+.reveal p {
+  margin: var(--r-block-margin) 0;
+  padding: 0.8em 0 0 0;
+  line-height: 1.5;
+}
+
+/* Remove trailing margins after titles */
+.reveal h1:last-child,
+.reveal h2:last-child,
+.reveal h3:last-child,
+.reveal h4:last-child,
+.reveal h5:last-child,
+.reveal h6:last-child {
+  margin-bottom: 0;
+}
+
+/* Ensure certain elements are never larger than the slide itself */
+.reveal img,
+.reveal video,
+.reveal iframe {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.reveal strong,
+.reveal b {
+  font-weight: bold;
+  border-bottom: 2px dotted #9999FF;
+}
+
+.reveal em {
+  font-style: italic;
+}
+
+.reveal ol,
+.reveal dl,
+.reveal ul {
+  display: inline-block;
+  text-align: left;
+  margin: 0;
+}
+
+.reveal ol {
+  list-style-type: decimal;
+}
+
+.reveal ul,
+.reveal ul ul,
+.reveal ul ul ul {
+  list-style-image: url(../../../lib/img/icons/heart.svg);
+  list-style-position: inside;
+}
+
+.reveal ul ul,
+.reveal ul ol,
+.reveal ol ol,
+.reveal ol ul {
+  display: block;
+  margin-left: 32px;
+}
+
+.reveal li {
+  padding: 0.8em 0 0 0;
+}
+
+.reveal dt {
+  font-weight: bold;
+}
+
+.reveal dd {
+  margin-left: 32px;
+}
+
+.reveal blockquote {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin: var(--r-block-margin) auto;
+  padding: 5px;
+  font-style: italic;
+}
+
+.reveal blockquote p:first-child,
+.reveal blockquote p:last-child {
+  display: inline-block;
+}
+
+.reveal q {
+  font-style: italic;
+}
+
+.reveal pre {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: var(--r-block-margin) auto;
+  text-align: left;
+  font-size: 0.55em;
+  font-family: var(--r-code-font);
+  line-height: 1.2em;
+  word-wrap: break-word;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.reveal code {
+  font-family: var(--r-code-font);
+  text-transform: none;
+  tab-size: 2;
+}
+
+.reveal pre code {
+  display: block;
+  padding: 5px;
+  overflow: auto;
+  max-height: 400px;
+  word-wrap: normal;
+}
+
+.reveal .code-wrapper {
+  white-space: normal;
+}
+
+.reveal .code-wrapper code {
+  white-space: pre;
+}
+
+.reveal table {
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.reveal table th {
+  font-weight: bold;
+}
+
+.reveal table th,
+.reveal table td {
+  text-align: left;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  border-bottom: 1px solid;
+}
+
+.reveal table th[align=center],
+.reveal table td[align=center] {
+  text-align: center;
+}
+
+.reveal table th[align=right],
+.reveal table td[align=right] {
+  text-align: right;
+}
+
+.reveal table tbody tr:last-child th,
+.reveal table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.reveal sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+.reveal sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+.reveal small {
+  display: inline-block;
+  font-size: 0.6em;
+  line-height: 1.2em;
+  vertical-align: top;
+}
+
+.reveal small * {
+  vertical-align: top;
+}
+
+.reveal img {
+  margin: var(--r-block-margin) 0;
+}
+
+/*********************************************
+ * LINKS
+ *********************************************/
+.reveal a {
+  color: var(--r-link-color);
+  transition: 0.2s;
+}
+
+.reveal a:hover {
+  color: var(--r-link-color-hover);
+}
+
+.reveal a:active {
+  color: var(--r-link-color-active);
+}
+
+.reveal .roll span:after {
+  color: #fff;
+  background: var(--r-link-color-dark);
+}
+
+/*********************************************
+ * Frame helper
+ *********************************************/
+.reveal .r-frame {
+  border: 4px solid var(--r-main-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.reveal a .r-frame {
+  transition: all 0.15s linear;
+}
+
+.reveal a:hover .r-frame {
+  border-color: var(--r-link-color);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+}
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.reveal .controls {
+  color: var(--r-link-color);
+}
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--r-link-color);
+}
+
+/*********************************************
+ * PRINT BACKGROUND
+ *********************************************/
+@media print {
+  .backgrounds {
+    background-color: var(--r-background-color);
+  }
+}
+
+/*********************************************
+ * EXTRAS
+ *********************************************/
+
+.notebook {
+  font-family: "Roboto Mono", 'Courier New', Courier, monospace;
+  background-size: 32px 32px;
+  background-position: center top;
+  border-radius: 32px;
+  padding: 64px 32px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background-image: url(../../../lib/img/bg/notebook.png);
+}
+
+.mono,
+h1.mono,
+h2.mono,
+h3.mono,
+h4.mono,
+h5.mono,
+h6.mono {
+  font-family: "Roboto Mono", 'Courier New', Courier, monospace;
+}
+
+.emboss {
+  color: #FFFFFF;
+  border-radius: 2px;
+  padding: 64px 32px;
+  box-shadow: 0 0 4px #9999FF inset;
+  background-color: #B5B9FF;
+}
+
+.emboss h1,
+.emboss h2,
+.emboss h3,
+.emboss h4,
+.emboss h5,
+.emboss h6 {
+  color: #FFFFFF;
+}
+
+.front-card {
+  background-color: #E6E6EE;
+  border: 2px dotted #9999FF;
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.txt-small {
+  font-size: 0.7em;
+}

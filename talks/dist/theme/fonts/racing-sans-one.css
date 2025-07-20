@@ -1,0 +1,8 @@
+/* FONTS ------------------------------------------------------- */
+/** RACING SANS ONE VARIANTS **/
+@font-face {
+  font-family: "Racing Sans One";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../../../lib/fonts/RacingSansOne-Regular.ttf);
+}
