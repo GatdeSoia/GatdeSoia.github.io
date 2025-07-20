@@ -228,7 +228,6 @@ button.btn-inactive:active {
   border-radius: 32px;
   padding: 64px 32px;
   border: 1px solid rgba(255, 255, 255, 0.7);
-  /*box-shadow: 0 0 64px #B5B9FF;*/
 }
 
 .mono {
