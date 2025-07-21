@@ -317,6 +317,11 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   margin: var(--r-block-margin) 0;
 }
 
+.framed {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 4px;
+}
+
 /*********************************************
  * LINKS
  *********************************************/
@@ -404,13 +409,13 @@ h6.mono {
 }
 
 .emboss {
-  color: #FFFFFF;
   border-radius: 2px;
   padding: 64px 32px;
   box-shadow: 0 0 4px #9999FF inset;
   background-color: #B5B9FF;
 }
 
+.emboss,
 .emboss h1,
 .emboss h2,
 .emboss h3,
