@@ -364,21 +364,172 @@
 				<!-- SPRITES -->
 				<section>
 					<h3>Sprites</h3>
+					<ul>
+						<li class="fragment"><strong>1 pose = 1 picture.</strong>
+							<ul class="txt-small">
+								<li class="fragment">All pictures get collected in <strong>spritesheets</strong>.</li>
+							</ul>
+						</li>
+						<li class="fragment">Constrain character movement with draw box limits.
+							<ul class="txt-small">
+								<li class="fragment">Treat the ground/center of mass as the pivot.</li>
+							</ul>
+						</li>
+						<li class="fragment">Two main workflows (always in <strong>power of 2</strong>*):
+							<ul class="txt-small">
+								<li class="fragment">Traditional animation (each frame is drawn).</li>
+								<li class="fragment">Any other method rendered/backed in a sequence.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				
+				<!-- POWER OF 2? -->
+				<section data-background-color="#333333">
+					<h3>*Power of 2?</h3>
+					<ul>
+						<li class="fragment">
+							<span class="fragment">2, </span>
+							<span class="fragment">4, </span>
+							<span class="fragment">8, </span>
+							<span class="fragment">16, </span>
+							<span class="fragment">32, </span>
+							<span class="fragment">64, </span>
+							<span class="fragment">128, </span>
+							<span class="fragment">256, </span>
+							<span class="fragment">512, </span>
+							<span class="fragment">1024, </span>
+							<span class="fragment">2048, </span>
+							<span class="fragment">4096</span>
+						</li>
+						<li class="fragment">More, smaller images = worse for the CPU, better for the GPU.</li>
+						<li class="fragment">Fewer, bigger images = better for the CPU, worse for the GPU.</li>
+					</ul>
 				</section>
 				
 				<!-- SKINNED 2D -->
 				<section>
 					<h3>Skinned 2D</h3>
+					<ul>
+						<li class="fragment"> Instead of drawing each frame, characters are designed and sliced into pieces to assemble them like a puppet.</li>
+						<li class="fragment">Animation done via <strong>interpolation</strong>:
+							<ul class="txt-small">
+								<li class="fragment">Mark (<strong>key</strong>) the poses in a <strong>timeline</strong>.</li>
+								<li class="fragment">The machine calculates the trajectories ➡️ it <strong>interpolates</strong> the in-between frames.</li>
+							</ul>
+						</li>
+						<li class="fragment">Facial expressions can be animated via <strong>card swaps</strong>:
+							<ul class="txt-small">
+								<li class="fragment">A drawing per expression with no interpolation (each pose snap into each other).</li>
+								<li class="fragment">Can get more complex by having mouth poses separated from eyes and eyebrows.</li>
+							</ul>
+						</li>
+					</ul>
 				</section>
 				
 				<!-- SKINNED 3D -->
 				<section>
 					<h3>Skinned 3D</h3>
+					<ul>
+						<li class="fragment">You have a model:
+							<ul class="txt-small">
+								<li class="fragment">Add a few <strong>bones</strong>.</li>
+								<li class="fragment"><strong>Weightpaint</strong> the model vertices to the bones.</li>
+								<li class="fragment">Animate by keying the poses (interpolated animation) through transforming the bones (rotating, moving and scaling them).</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				
+				<!-- SKINNED 3D 2 -->
+				<section>
+					<h4>Best practices: Model 🧊</h4>
+					<ul>
+						<li class="fragment">Have a clean mesh.
+							<ul class="txt-small">
+								<li class="fragment">Skinned meshes are <strong>x10 times more resource-heavy</strong> than static meshes. Each triangle counts.</li>
+							</ul>
+						</li>
+						<li class="fragment">Apply all modifiers.</li>
+						<li class="fragment">Pivot point on the ground, between the feet.
+							<ul class="txt-small">
+								<li class="fragment">Quadrupeeds: between the front legs or at equal distance between front and back legs.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				
+				<!-- SKINNED 3D 3 -->
+				<section>
+					<h4>Best practices: Rig 🏗️</h4>
+					<ul>
+						<li class="fragment">Rig = skeleton + controllers.</li>
+						<li class="fragment">Consistent <strong>naming conventions</strong>.
+							<ul class="txt-small">
+								<li class="fragment">Create all the bones on one side, name them properly with the side sufix (e.g.: <em>Arm<strong>_L</strong></em>, <em>Finger_03_02<strong>_R</strong></em>), then <strong>symmetrize</strong>.</li>
+							</ul>
+						</li>
+						<li class="fragment">Always have a <strong>root bone</strong>:
+							<ul class="txt-small">
+								<li class="fragment">Both the armature object's pivot and the root bone are at the <strong>same location</strong> as the mesh's pivot.</li>
+								<li class="fragment">The root bone will be the character's <strong>collision origin</strong>.</li>
+								<li class="fragment">The root bone is the <strong>parent of all other bones</strong>.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				
+				<!-- SKINNED 3D 4 -->
+				<section>
+					<h4>Best practices: Rig Axis 🏗️</h4>
+					<ul>
+						<li class="fragment">Consistent <strong>axis direction</strong>.</li>
+						<li class="fragment"><strong>Quaternions vs. Euler</strong>:
+							<ul class="txt-small">
+								<li class="fragment">Quaternions (X, Y, Z, W) are complicated to animate on a timeline and don't work well with ~180º rotation transforms between keyframes (i.e.: <strong><em>SLERP</em></strong>)...</li>
+								<li class="fragment">... but Euler (X, Y, Z) might end up in <strong>gimbal lock</strong>. To avoid it:
+									<ul>
+										<li class="fragment">Set rotation axis order: #1 the most important rotation axis, #2 the least important rotation axis, #3 the middle rotation axis.
+											<ul>
+												<li class="fragment">E.g.: in <em>Euler.XZY</em>, the bone rotates mainly on its X axis, sometimes on its Y axis, and barely on its Z axis.</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="fragment">Lock unused transforms on each bone.</li>
+					</ul>
+				</section>
+				
+				<!-- SKINNED 3D 5 -->
+				<section>
+					<h4>Best practices: Animation 🐎</h4>
+					<ul>
+						<li class="fragment">Key poses go first.</li>
+						<li class="fragment"><strong>Don't animate the root bone</strong>.
+							<ul class="txt-small">
+								<li class="fragment">For <em>root animation</em> animate the armature object.</li>
+							</ul>
+						</li>
+					</ul>
 				</section>
 				
 				<!-- NON-SKINNED 3D -->
 				<section>
 					<h3>Non-skinned 3D</h3>
+					<ul>
+						<li class="fragment">Why even?
+							<ul class="txt-small">
+								<li class="fragment">Because it's less resource-heavy.</li>
+								<li class="fragment">Often used for machinery/mechanical animations.</li>
+								<li class="fragment">Each piece has its rotation directions aligned and pivot points on the center of rotation.</li>
+								<li class="fragment">Pieces are stacked by parenting hierarchy.</li>
+								<li class="fragment">Can still use drivers and constraints.</li>
+							</ul>
+						</li>
+						<li class="fragment">Hand-yielded objects are not part of the character's mesh, but static meshes attached in engine to the armature's bone.</li>
+					</ul>
 				</section>
 				
 				<!-- BLEND SHAPES -->
@@ -640,7 +791,11 @@
 
 							<br>
 						
-							<h6><a href="https://bsky.app/profile/gatdesoia.es" target="_blank">@GatdeSoia 🦋</a> / <a href="https://linkedin.com/in/gatdesoia" target="_blank">💼</a> | <a href="https://femdevsmeetup.com" target="_blank">#FemDevsMeetup 💚🎮</a></h6>
+							<h6><a href="https://bsky.app/profile/gatdesoia.es" target="_blank">@GatdeSoia 🦋</a> / <a href="https://linkedin.com/in/gatdesoia" target="_blank">💼</a></h6>
+							
+							<h6><a href="https://femdevsmeetup.com" target="_blank">#FemDevsMeetup 💚🎮</a></h6>
+							
+							<h6><a href="https://achtungautobahn.com/13-rosas" target="_blank">ACHTUNG AUTOBAHN 🌹</a></h6>
 						</div>
 						
 						<br>
