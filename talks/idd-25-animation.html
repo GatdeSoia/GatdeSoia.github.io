@@ -21,11 +21,10 @@
 				<section data-background-color="#B5B9FF">
 					<div class="notebook">
 						<div>
-							<h1 class="r-fit-text">There's No Need</h1>
-							<h1 class="r-fit-text">to Rig That Thing</h1>
-							<h1 class="r-fit-text">— Animation for Video Games</h1>
+							<h1 style="font-size: 3.675em">There's No Need</h1>
+							<h1 style="font-size: 3.3em">to Rig That Thing</h1>
+							<h1 style="font-size: 1.975em">— Animation for Video Games</h1>
 
-							<br>
 							<br>
 
 							<h3 class="mono">Casilda de Zulueta</h3>
@@ -236,16 +235,16 @@
 							<ul>
 								<li class="fragment"><em>SNES platformer animation</em>:
 									<ul class="txt-small">
-										<li>2 to 3 sprites per animation sequence,</li>
-										<li>"slippery" movement*,</li>
-										<li>max. 4 colors**.</li>
+										<li class="fragment">2 to 3 sprites per animation sequence,</li>
+										<li class="fragment">"slippery" movement*,</li>
+										<li class="fragment">max. 4 colors**.</li>
 									</ul>
 								</li>
 								<li class="fragment"><em>16-bit 2D fighting game animation</em>:
 									<ul class="txt-small">
-											<li>many more sprites per animation sequence,</li>
-											<li>rigid, fast-reaction movement*,</li>
-											<li>more colors available (but restricted for readability and optimization)**.</li>
+											<li class="fragment">many more sprites per animation sequence,</li>
+											<li class="fragment">rigid, fast-reaction movement*,</li>
+											<li class="fragment">more colors available (but restricted for readability and optimization)**.</li>
 									</ul>
 								</li>
 							</ul>
@@ -267,14 +266,14 @@
 					<ul>
 						<li class="fragment">Let's compare:
 							<ul class="txt-small">
-								<li>cancelling animations are different*,</li>
-								<li>timing penalty is different*,</li>
-								<li>length of actions is different*.</li>
+								<li class="fragment">cancelling animations are different*,</li>
+								<li class="fragment">timing penalty is different*,</li>
+								<li class="fragment">length of actions is different*.</li>
 							</ul>
 						</li>
 						<li class="fragment">Can't separate <strong>animation</strong> from <strong>design</strong> and <strong>genre conventions (*)</strong>.
 							<ul class="txt-small">
-								<li>In two of these examples, the conventions are associated to a developer. It's part of their signature.</li>
+								<li class="fragment">In two of these examples, the conventions are associated to a developer. It's part of their signature.</li>
 							</ul>
 						</li>
 					</ul>
@@ -294,15 +293,15 @@
 						<li class="fragment">Know the time period of your inspirations, and the authors and animation houses behind them.</li>
 						<li class="fragment">To be precise in your work, you need to know the <strong>medium of animation and its history</strong>.
 							<ul class="txt-small">
-								<li>... this will take some time.</li>
+								<li class="fragment">... this will take some time.</li>
 							</ul>
 						</li>
 						<br>
 						<li class="fragment"><strong>Extra take:</strong> don't call it <em>Ghibli style</em> if it's not antifascist 🐽
 							<ul class="txt-small">
-								<li>Repurposing a style you love is great, but knowing its history and participating consciously in the genealogy of art is even better.</li>
-								<li>Form without substance is meaningless.</li>
-								<li>And yes, AI is an insult to life itself.</li>
+								<li class="fragment">Repurposing a style you love is great, but knowing its history and participating consciously in the genealogy of art is even better.</li>
+								<li class="fragment">Form without substance is meaningless.</li>
+								<li class="fragment">And yes, AI is an insult to life itself.</li>
 							</ul>
 						</li>
 					</ul>
@@ -350,20 +349,20 @@
 						<h3>Methods (Techniques)</h3>
 
 						<ul>
-							<li class="fragment">Sprites.</li>
-							<li class="fragment">Skinned 2D.</li>
-							<li class="fragment">Skinned 3D.</li>
-							<li class="fragment">Non-skinned 3D / Rigged, but not skinned.</li>
-							<li class="fragment">Blend shapes (Maya) / Shape keys (Blender).</li>
-							<li class="fragment">Physics-based.</li>
-							<li class="fragment">Via shaders.</li>
+							<li class="fragment">Sprites 👾</li>
+							<li class="fragment">Skinned 2D 🧸</li>
+							<li class="fragment">Skinned 3D 🏃🏾‍♀️‍➡️</li>
+							<li class="fragment">Blend shapes / Shape keys 🔑</li>
+							<li class="fragment">Non-skinned 3D 🤖</li>
+							<li class="fragment">Physics-based 💃🏻</li>
+							<li class="fragment">Via shaders ⛱️</li>
 						</ul>
 					</div>
 				</section>
 				
 				<!-- SPRITES -->
 				<section>
-					<h3>Sprites</h3>
+					<h3>Sprites 👾</h3>
 					<ul>
 						<li class="fragment"><strong>1 pose = 1 picture.</strong>
 							<ul class="txt-small">
@@ -378,7 +377,7 @@
 						<li class="fragment">Two main workflows (always in <strong>power of 2</strong>*):
 							<ul class="txt-small">
 								<li class="fragment">Traditional animation (each frame is drawn).</li>
-								<li class="fragment">Any other method rendered/backed in a sequence.</li>
+								<li class="fragment">Any other method rendered/baked in a sequence.</li>
 							</ul>
 						</li>
 					</ul>
@@ -409,7 +408,7 @@
 				
 				<!-- SKINNED 2D -->
 				<section>
-					<h3>Skinned 2D</h3>
+					<h3>Skinned 2D 🧸</h3>
 					<ul>
 						<li class="fragment"> Instead of drawing each frame, characters are designed and sliced into pieces to assemble them like a puppet.</li>
 						<li class="fragment">Animation done via <strong>interpolation</strong>:
@@ -429,7 +428,7 @@
 				
 				<!-- SKINNED 3D -->
 				<section>
-					<h3>Skinned 3D</h3>
+					<h3>Skinned 3D 🏃🏾‍♀️‍➡️</h3>
 					<ul>
 						<li class="fragment">You have a model:
 							<ul class="txt-small">
@@ -486,7 +485,7 @@
 						<li class="fragment">Consistent <strong>axis direction</strong>.</li>
 						<li class="fragment"><strong>Quaternions vs. Euler</strong>:
 							<ul class="txt-small">
-								<li class="fragment">Quaternions (X, Y, Z, W) are complicated to animate on a timeline and don't work well with ~180º rotation transforms between keyframes (i.e.: <strong><em>SLERP</em></strong>)...</li>
+								<li class="fragment">Quaternions (X, Y, Z, W) are complicated to animate on a timeline and don't work as expected with >180º rotation transforms between keyframes (i.e.: <strong><em>SLERP</em></strong>)...</li>
 								<li class="fragment">... but Euler (X, Y, Z) might end up in <strong>gimbal lock</strong>. To avoid it:
 									<ul>
 										<li class="fragment">Set rotation axis order: #1 the most important rotation axis, #2 the least important rotation axis, #3 the middle rotation axis.
@@ -515,9 +514,23 @@
 					</ul>
 				</section>
 				
+				<!-- BLEND SHAPES -->
+				<section>
+					<h3>Blend shapes / Shape keys 🔑</h3>
+					<ul>
+						<li class="fragment">Animate a vertex or a group of vertices through interpolating between two transforms.</li>
+						<li class="fragment">Useful for:
+							<ul class="txt-small">
+								<li class="fragment">Face animations (no need for bones/reducing the amount of bones).</li>
+								<li class="fragment">Mesh adjustments in extreme poses (to fix volume distortions).</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				
 				<!-- NON-SKINNED 3D -->
 				<section>
-					<h3>Non-skinned 3D</h3>
+					<h3>Non-skinned 3D 🤖</h3>
 					<ul>
 						<li class="fragment">Why even?
 							<ul class="txt-small">
@@ -532,19 +545,33 @@
 					</ul>
 				</section>
 				
-				<!-- BLEND SHAPES -->
-				<section>
-					<h3>Blend shapes / Shape keys</h3>
-				</section>
-				
 				<!-- PHYSICS-BASED -->
 				<section>
-					<h3>Physics-based</h3>
+					<h3>Physics-based 💃🏻</h3>
+					<ul>
+						<li class="fragment">The computer calculates the movement based on mass and force:
+							<ul class="txt-small">
+								<li class="fragment">It can stay <strong>real-time</strong> (only for objects with <strong>a lot of interaction</strong>).</li>
+								<li class="fragment">It can be pre-computed and <strong>baked</strong> into an animation sequence.</li>
+							</ul>
+						</li>
+						<li class="fragment">Use cases: physics as mechanics, hair and clothes, curtains, pre-computed debris.</li>
+					</ul>
 				</section>
 				
 				<!-- VIA SHADERS -->
 				<section>
-					<h3>Via shaders</h3>
+					<h3>Via shaders ⛱️</h3>
+					<ul>
+						<li class="fragment">Mostly common for water FX.</li>
+						<li class="fragment">Can animate:
+							<ul class="txt-small">
+								<li class="fragment">Vertices.</li>
+								<li class="fragment">Textures.</li>
+								<li class="fragment">Material properties.</li>
+							</ul>
+						</li>
+					</ul>
 				</section>
 				
 				<!-- POV -->
@@ -672,14 +699,14 @@
 
 					<ul>
 						<li class="fragment">Take over implementation tasks:
-							<ul>
-								<li class="txt-small">Behavior trees.</li>
-								<li class="txt-small">Locomotion blendspace.</li>
+							<ul class="txt-small">
+								<li class="fragment">Behavior trees.</li>
+								<li class="fragment">Locomotion blendspace.</li>
 							</ul>
 						</li>
 						<li class="fragment">Programmers are the usual bottleneck (it's not their fault).
-							<ul>
-								<li class="txt-small">The more tasks you take from them, the more time they'll have for other parts of the project.</li>
+							<ul class="txt-small">
+								<li class="fragment">The more tasks you take from them, the more time they'll have for other parts of the project.</li>
 							</ul>
 						</li>
 					</ul>
@@ -691,8 +718,8 @@
 
 					<ul>
 						<li class="fragment">You. Most likely it's you.
-							<ul>
-								<li class="fragment txt-small">I've been the technical artist and technical animator in some projects, having dedicated artists and animators in the team. This is rare in small indies.</li>
+							<ul class="txt-small">
+								<li class="fragment">I've been the technical artist and technical animator in some projects, having dedicated artists and animators in the team. This is rare in small indies.</li>
 							</ul>
 						</li>
 						<li class="fragment">Learn to make your own rigs.</li>
@@ -706,8 +733,8 @@
 
 					<ul>
 						<li class="fragment">Unique animations are always <em>nice-to-have</em>.
-							<ul>
-								<li class="txt-small">First exception: walking/running cycle for player character.</li>
+							<ul class="txt-small">
+								<li class="fragment">First exception: walking/running cycle for player character.</li>
 							</ul>
 						</li>
 					</ul>
@@ -720,8 +747,8 @@
 					<ul>
 						<li class="fragment">Keep the amount of rigs at minimum.</li>
 						<li class="fragment">The <strong>most important set of animations is</strong>:
-							<ul>
-								<li class="fragment txt-small">Whichever informs the most about player actions and context feedback.</li>
+							<ul class="txt-small">
+								<li class="fragment">Whichever informs the most about player actions and context feedback.</li>
 							</ul>
 						</li>
 					</ul>
@@ -733,18 +760,18 @@
 
 					<ul>
 						<li class="fragment">Cinematics?
-							<ul>
-								<li class="fragment txt-small">Illustrations with a bit of camera movement.</li>
+							<ul class="txt-small">
+								<li class="fragment">Illustrations with a bit of camera movement.</li>
 							</ul>
 						</li>
 						<li class="fragment">Dialogue system?
-							<ul>
-								<li class="fragment txt-small">Facial / body expressions instead of full lipsync.</li>
+							<ul class="txt-small">
+								<li class="fragment">Facial / body expressions instead of full lipsync.</li>
 							</ul>
 						</li>
 						<li class="fragment">Multiple characters?
-							<ul>
-								<li class="fragment txt-small">Everyone shares the same rig.</li>
+							<ul class="txt-small">
+								<li class="fragment">Everyone shares the same rig.</li>
 							</ul>
 						</li>
 					</ul>
@@ -758,8 +785,8 @@
 						<li class="fragment">... because, no matter what, something won't make it to release.</li>
 						<li class="fragment">Start rough, then polish.</li>
 						<li class="fragment">Move! Dance, do martial arts, swim, or go to pilates, but <strong>move every day</strong>.
-							<ul>
-								<li class="fragment txt-small">Yes, this makes you a better animator.</li>
+							<ul class="txt-small">
+								<li class="fragment">Yes, this makes you a better animator.</li>
 							</ul>
 						</li>
 					</ul>
@@ -769,7 +796,13 @@
 				<section data-background-image="../lib/img/bg/notebook.png" data-background-size="32px" data-background-repeat="repeat">
 					<div class="emboss">
 						<h3>Some further reading 📖✨</h3>
-					</div>
+						<div class="flexbox">
+							<img src="./lib/img/animation/illusion-of-life.png" class="fragment framed">
+							<img src="./lib/img/animation/anim-survival-kit.png" class="fragment framed">
+							<img src="./lib/img/animation/game-anim.png" class="fragment framed">
+						</div>
+
+						<p class="fragment txt-small">Thomas, F. & Johnston, O. <em>The Illusion of Life: Disney Animation</em>. Disney Editions. 1995 / Williams, R. <em>The Animator's Survival Kit</em>. Farrar, Straus and Giroux. 2012 / Cooper, J. <em>Game Anim: Video Game Animation Explained</em>. CRC Press. 2021</p>
 				</section>
 				
 				<!-- THE END ----------------------------------------------------------------------------->

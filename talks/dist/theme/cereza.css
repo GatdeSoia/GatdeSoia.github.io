@@ -439,6 +439,12 @@ p.txt-small {
   margin: 0;
 }
 
+
+
+/*********************************************
+ * COLUMNS
+ *********************************************/
+
 .two-col-1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -485,4 +491,11 @@ p.txt-small {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 8px;
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  height: 360px;
 }
