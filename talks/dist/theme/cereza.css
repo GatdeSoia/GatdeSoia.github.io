@@ -451,6 +451,12 @@ p.txt-small {
   grid-gap: 8px;
 }
 
+.two-col-1-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 8px;
+}
+
 .two-col-1-3 {
   display: grid;
   grid-template-columns: 1fr 3fr;

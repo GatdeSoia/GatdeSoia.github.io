@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>When Games Met the Library: What Industry Expertise Can Do for the Digitization of Kinetic Cultural Heritage</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/cereza.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				
+				<!-- TITLE ------------------------------------------------------------------------------->
+				<section data-background-color="#B5B9FF">
+					<div class="notebook">
+						<div>
+							<h1 style="font-size: 4.5em; margin-bottom: -0.15em; margin-top: -0.25em">When Games</h1>
+							<h1 style="font-size: 3.4em;">Met the Library:</h1>
+							
+							<h1 style="font-size: 1.75em; color: #9999FF">What Industry Expertise</h1>
+							<h1 style="font-size: 1.75em; color: #9999FF">Can Do for the Digitization</h1>
+							<h1 style="font-size: 1.75em; color: #9999FF">of Kinetic Cultural Heritage</h1>
+
+							<br>
+
+							<h3 class="mono" style="font-size: 1.125em">Casilda de Zulueta | Zoe Schubert</h3>
+
+							<br>
+
+							<h6 class="mono" style="font-size: 0.7em">The Interactive Pasts Conference 4 | VALUE Foundation</h6>
+							<h6 class="mono" style="font-size: 0.7em">Leiden, Netherlands | 8th-10th October 2025</h6>
+
+							<p class="mono"><a href="https://culturalmesh.org">CulturalMesh.org</a> | <a href="https://gatdesoia.es">GatdeSoia.es</a></p>
+						</div>
+
+						<p style="margin-bottom: -1.5em">🤍📚✂️🧭🐇🏛️📷✨</p>
+					</div>
+				</section>
+
+				<!-- WHAT IS THIS TALK ABOUT ------------------------------------------------------------->
+				<section data-background-color="#E6E6EE">
+					<h2>What is this talk about?</h2>
+					
+					<ul>
+						<li class="fragment">In specific: the <strong><em>Pop-Up 3D Projekt</em></strong>.</li>
+
+						<li class="fragment">In general terms: a fortunate encounter of commercial games and VFX development with cultural heritage preservation.</li>
+					</ul>
+
+					<img src="./lib/img/popup-bg.png" class="framed">
+				</section>
+
+				<!-- INDEX ------------------------------------------------------------------------------->
+				<section>
+					<h3>Index</h3>
+					
+					<ol>
+						<li class="fragment">Introduction 🤍🏛️</li>
+						
+						<li class="fragment">The Collection 📚🧭</li>
+
+						<li class="fragment">Digitization Methods & Pipelines ✂️📷</li>
+						
+						<li class="fragment">Conclusions 🐇✨</li>
+					</ol>
+				</section>
+
+				<!-- #1 INTRO ---------------------------------------------------------------------------->
+				<section data-background-color="#E6E6EE">
+					<h2>1. Introduction 🤍🏛️</h2>
+				</section>
+				
+				<!-- HI, I'M CASI -->
+				<section data-background-image="../lib/img/bg/notebook.png" data-background-size="32px" data-background-repeat="repeat">
+					<div class="emboss">
+						<h3 style="font-size: 1.3em">Hi, we are the <em>Pop-Up 3D</em> team!</h3>
+
+						<div class="two-col-2-3">
+							<div>
+								<ul>
+									<li class="fragment"><strong>Zoe Schubert</strong>
+										<ul class="txt-small">
+											<li><em>Pop-Up 3D</em> Project Coordinator / <em>Kompakkt</em> Lead Developer</li>
+										</ul>
+									</li>
+									
+									<li class="fragment"><strong>Jacky Lai</strong>
+										<ul class="txt-small">
+											<li>Frontend Developer for <em>Kompakkt</em></li>
+										</ul>
+									</li>
+									
+									<li class="fragment"><strong>Natalia Sucharek</strong>
+										<ul class="txt-small">
+											<li>Photographer / Videographer / Photogrammetry</li>
+										</ul>
+									</li>								
+									<li class="fragment"><strong>Fenya Troch</strong>
+										<ul class="txt-small">
+											<li>3D Artist / Animator</li>
+										</ul>
+									</li>
+									
+									<li class="fragment"><strong>Casilda de Zulueta</strong>
+										<ul class="txt-small">
+											<li>3D Artist / Animator</li>
+										</ul>
+									</li>
+								</ul>
+								
+								<br>
+								<br>
+							</div>
+
+							<div>
+								<div>
+									<img src="./lib/img/pop-up-3d-group-photo.jpg" class="framed">
+									<p class="txt-small">Left to right: Fenya, Zoe, Natalia, Casilda and Jacky.</p>
+								</div>
+
+								<div class="two-col-1-1">
+									<div>
+									</div>
+
+									<div>
+										<br>
+										<img src="./lib/img/sbb-nfdi4culture.png">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- SBB / NFDI4CULTURE -->
+				<section>
+					<h3>The Library and the Consortium</h3>
+
+					<div class="two-col-2-1">
+						<div>
+							<ul>
+								<li class="fragment">Berlin State Library (SBB)
+									<ul>
+										<li class="fragment txt-small">Prussian Cultural Heritage Foundation (SPK)</li>
+										<li class="fragment txt-small">Other institutions in the SPK: State Museums, State Archives, Ibero-American Institute.</li>
+										<li class="fragment txt-small">Other important actors: Prof. Dr. Achim Bonte (Director General SBB), Reinhard Altenhöner (Deputy of the Director General SBB), Dr. Christian Mathieu (Research Adviser SBB), Sigrun Putjenter (Children and Youth Books Dept. Deputy SBB).</li>
+									</ul>
+								</li>
+								<li class="fragment">NFDI4Culture
+									<ul>
+										<li class="txt-small">National Research Data Infrastructure Consortium for Culture</li>
+									</ul>
+								</li>
+								<br>
+								<li class="fragment">Publicly funded by the German Research Foundation (DFG)</li>
+							</ul>
+						</div>
+
+						<div>
+							<img src="./lib/img/sbb-nfdi4culture.png">
+						</div>
+
+					</div>
+				</section>
+
+				<!-- WHAT FOR? -->
+				<section>
+					<h3>Why are we here?</h3>
+
+					<div class="two-col-2-3">
+						<div>
+							<img src="./lib/img/a.png" class="framed">
+						</div>
+
+						<div>
+							<ul>
+								<li class="fragment">Main objective: to digitize and create interactive visualizations of historical game books.
+									<ul>
+										<li class="fragment txt-small">All the objects of the collection get digitized in video.</li>
+										<li class="fragment txt-small">All possible objects get scanned.</li>
+										<li class="fragment txt-small">Some objects get a <strong>3D model</strong>.</li>
+										<li class="fragment txt-small">All 3D models with kinetic properties get <strong>animated</strong>.</li>
+										<li class="fragment txt-small">Display and user interaction get implemented in <em>Kompakkt</em>.</li>
+									</ul>
+								</li>
+								<li class="fragment">Long term: creating potential standards for kinetic 3D digitizations and visualization.</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<!-- #2 THE COLLECTION --------------------------------------------------------------------------->
+				<section data-background-color="#E6E6EE">
+					<h2>2. The Collection 📚🧭</h2>
+				</section>
+
+				<!-- CHILDREN'S COLLECTION -->
+				<section>
+					<div class="notebook">
+						<h3>100 Children's Books</h3>
+
+						<ul>
+							<li class="fragment">From early XIX Century to mid XX Century:
+								<ul>
+									<li class="fragment txt-small">Oldest: <em>The history of little Fanny: exemplified in a series of figures, London 1810</em>.</li>
+									<li class="fragment txt-small">Newest: <em>Hallo! Meine Eisenbahn! Eßlingen 1950</em>.</li>
+								</ul>
+							</li>
+						</ul>
+
+						<div class="two-col-1-1">
+							<div>
+								<img src="./lib/img/a.png">
+							</div>
+
+							<div>
+								<img src="./lib/img/a.png">
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- KOMPAKKT -->
+				<section data-background-color="#333333">
+					<h3>OK, but what is <em>Kompakkt</em>?</h3>
+					<ul>
+						<li class="fragment"><em>Kompakkt</em>
+
+							<ul>
+								<li class="fragment txt-small">???</li>
+							</ul>
+						</li>
+						<li class="fragment">???</li>
+					</ul>
+				</section>
+
+				<!-- #3 METHODOLOGY -------------------------------------------------------------------------->
+				<section data-background-color="#E6E6EE">
+					<h2>3. Digitization Methods & Pipelines ✂️📷</h2>
+				</section>
+
+				<!-- #4 PRIORITIES ----------------------------------------------------------------------->
+				<section data-background-color="#E6E6EE">
+					<h2>4. Conclusions 🐇✨</h2>
+				</section>
+				
+				<!-- THE END ----------------------------------------------------------------------------->
+				<section data-background-color="#B5B9FF">
+					<div class="notebook">
+						<div>
+							<h1 style="font-size: 3em">🤍📚✂️🧭🐇🏛️📷✨</h1>
+
+							<p style="font-size: 1.5em"><a href="https://gatdesoia.es/talks/tipc4-pop-up-3d">GatdeSoia.es/talks/tipc4-pop-up-3d</a></p>
+
+							<br>
+
+							<h3 class="mono" style="font-size: 1.125em">Casilda de Zulueta | Zoe Schubert</h3>
+						
+							<p style="font-size: 0.775em"><a href="mailto:Casilda.deZulueta@sbb.spk-berlin.de" target="_blank">Casilda.deZulueta@sbb.spk-berlin.de</a> | <a href="mailto:Zoe.Schubert@sbb.spk-berlin.de" target="_blank">Zoe.Schubert@sbb.spk-berlin.de</a></p>
+
+							<br>
+
+							<h6 class="mono" style="font-size: 0.7em">The Interactive Pasts Conference 4 | VALUE Foundation</h6>
+							<h6 class="mono" style="font-size: 0.7em">Leiden, Netherlands | 8th-10th October 2025</h6>
+						</div>
+						
+						<br>
+					</div>
+				</section>
+
+				
+				
+				<!-- ??? -->
+				<section data-background-image="../lib/img/bg/notebook.png" data-background-size="32px" data-background-repeat="repeat">
+					<div class="emboss">
+						<h3>???</h3>
+						
+						<ul>
+							<li class="fragment">???
+								<ul>
+									<li class="fragment txt-small">???</li>
+								</ul>
+							</li>
+							<li class="fragment">???</li>
+							
+							<br>
+						</ul>
+					</div>
+				</section>
+				
+				<!-- ??? -->
+				<section data-background-color="#333333">
+					<h3>???</h3>
+					<ul>
+						<li class="fragment">???
+							<ul>
+								<li class="fragment txt-small">???</li>
+							</ul>
+						</li>
+						<li class="fragment">???</li>
+					</ul>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				transition: 'none',
+				backgroundTransition: 'none',
+				slideNumber: "c/t",
+				mouseWheel: true,
+				controlsTutorial: false,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
