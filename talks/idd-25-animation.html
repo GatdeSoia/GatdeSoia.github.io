@@ -405,7 +405,6 @@
 				<section data-background-image="../lib/img/bg/notebook.png" data-background-size="32px" data-background-repeat="repeat">
 					<div class="emboss">
 						<h3>Methods (Techniques)</h3>
-
 						<ul>
 							<li class="fragment">Sprites 👾</li>
 							<li class="fragment">Skinned 2D 🧸</li>
@@ -421,24 +420,34 @@
 				<!-- SPRITES -->
 				<section>
 					<h3>Sprites 👾</h3>
-					<ul>
-						<li class="fragment"><strong>1 pose = 1 picture.</strong>
-							<ul class="txt-small">
-								<li class="fragment">All pictures get collected in <strong>spritesheets</strong>.</li>
-							</ul>
-						</li>
-						<li class="fragment">Constrain character movement with draw box limits.
-							<ul class="txt-small">
-								<li class="fragment">Treat the ground/center of mass as the pivot.</li>
-							</ul>
-						</li>
-						<li class="fragment">Two main workflows (always in <strong>power of 2</strong>*):
-							<ul class="txt-small">
-								<li class="fragment">Traditional animation (each frame is drawn).</li>
-								<li class="fragment">Any other method rendered/baked in a sequence.</li>
-							</ul>
-						</li>
-					</ul>
+
+						<div class="two-col-2-1">
+							<div>
+								<ul>
+									<li><strong>1 pose = 1 picture.</strong>
+										<ul class="txt-small">
+											<li class="fragment">All pictures get collected in <strong>spritesheets</strong>.</li>
+										</ul>
+									</li>
+									<li class="fragment">Constrain character movement with draw box limits.
+										<ul class="txt-small">
+											<li class="fragment">Treat the ground/center of mass as the pivot.</li>
+										</ul>
+									</li>
+									<li class="fragment">Two main workflows (always in <strong>power of 2</strong>*):
+										<ul class="txt-small">
+											<li class="fragment">Traditional animation (each frame is drawn).</li>
+											<li class="fragment">Any other method rendered/baked in a sequence.</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+
+							<div>
+								<img src="./lib/img/anim-mario-2.png" class="framed">
+								<img src="./lib/img/anim-donkey-kong.png" class="framed">
+							</div>
+						</div>
 				</section>
 				
 				<!-- POWER OF 2? -->
@@ -467,35 +476,64 @@
 				<!-- SKINNED 2D -->
 				<section>
 					<h3>Skinned 2D 🧸</h3>
-					<ul>
-						<li class="fragment"> Instead of drawing each frame, characters are designed and sliced into pieces to assemble them like a puppet.</li>
-						<li class="fragment">Animation done via <strong>interpolation</strong>:
-							<ul class="txt-small">
-								<li class="fragment">Mark (<strong>key</strong>) the poses in a <strong>timeline</strong>.</li>
-								<li class="fragment">The machine calculates the trajectories ➡️ it <strong>interpolates</strong> the in-between frames.</li>
+
+					<div class="two-col-1-2">
+						<div>
+								<img src="./lib/img/anim-broken-age.gif" class="framed">
+								<img src="./lib/img/anim-spine.png" class="framed">
+						</div>
+
+						<div>
+							<ul>
+								<li class="fragment"> Instead of drawing each frame, characters are designed and sliced into pieces to assemble them like a puppet.</li>
+								<li class="fragment">Animation done via <strong>interpolation</strong>:
+									<ul class="txt-small">
+										<li class="fragment">Mark (<strong>key</strong>) the poses in a <strong>timeline</strong>.</li>
+										<li class="fragment">The machine calculates the trajectories ➡️ it <strong>interpolates</strong> the in-between frames.</li>
+									</ul>
+								</li>
+								<li class="fragment">Facial expressions can be animated via <strong>card swaps</strong>:
+									<ul class="txt-small">
+										<li class="fragment">A drawing per expression with no interpolation (each pose snap into each other).</li>
+										<li class="fragment">Can get more complex by having mouth poses separated from eyes and eyebrows.</li>
+									</ul>
+								</li>
 							</ul>
-						</li>
-						<li class="fragment">Facial expressions can be animated via <strong>card swaps</strong>:
-							<ul class="txt-small">
-								<li class="fragment">A drawing per expression with no interpolation (each pose snap into each other).</li>
-								<li class="fragment">Can get more complex by having mouth poses separated from eyes and eyebrows.</li>
-							</ul>
-						</li>
-					</ul>
+						</div>
+					</div>
+
+					
 				</section>
 				
 				<!-- SKINNED 3D -->
 				<section>
 					<h3>Skinned 3D 🏃🏾‍♀️‍➡️</h3>
-					<ul>
-						<li class="fragment">You have a model:
-							<ul class="txt-small">
-								<li class="fragment">Add a few <strong>bones</strong>.</li>
-								<li class="fragment"><strong>Weightpaint</strong> the model vertices to the bones.</li>
-								<li class="fragment">Animate by keying the poses (interpolated animation) through transforming the bones (rotating, moving and scaling them).</li>
+
+					<div class="two-col-1-2">
+						<div>
+							<ul>
+								<li class="fragment">You have a model:
+									<ul class="txt-small">
+										<li class="fragment">Add a few <strong>bones</strong>.</li>
+										<li class="fragment"><strong>Weightpaint</strong> the model vertices to the bones.</li>
+										<li class="fragment">Animate by keying the poses (interpolated animation) through transforming the bones (rotating, moving and scaling them).</li>
+									</ul>
+								</li>
 							</ul>
-						</li>
-					</ul>
+						</div>
+
+						<div class="two-col-1-1">
+							<div>
+								<img src="./lib/img/anim-bnuy-1.png" class="framed fragment">
+								<img src="./lib/img/anim-bnuy-3.png" class="framed fragment">
+							</div>
+							<div>
+								<img src="./lib/img/anim-bnuy-2.png" class="framed fragment">
+								<img src="./lib/img/anim-bnuy-4.png" class="framed fragment">
+							</div>
+						</div>
+					</div>
+					
 				</section>
 				
 				<!-- SKINNED 3D 2 -->
@@ -519,44 +557,62 @@
 				<!-- SKINNED 3D 3 -->
 				<section>
 					<h4>Best practices: Rig 🏗️</h4>
-					<ul>
-						<li class="fragment">Rig = skeleton + controllers.</li>
-						<li class="fragment">Consistent <strong>naming conventions</strong>.
-							<ul class="txt-small">
-								<li class="fragment">Create all the bones on one side, name them properly with the side sufix (e.g.: <em>Arm<strong>_L</strong></em>, <em>Finger_03_02<strong>_R</strong></em>), then <strong>symmetrize</strong>.</li>
+
+					<div class="two-col-2-1">
+						<div>
+							<ul>
+								<li class="fragment">Rig = skeleton + controllers.</li>
+								<li class="fragment">Consistent <strong>naming conventions</strong>.
+									<ul class="txt-small">
+										<li class="fragment">Create all the bones on one side, name them properly with the side sufix (e.g.: <em>Arm<strong>_L</strong></em>, <em>Finger_03_02<strong>_R</strong></em>), then <strong>symmetrize</strong>.</li>
+									</ul>
+								</li>
+								<li class="fragment">Always have a <strong>root bone</strong>:
+									<ul class="txt-small">
+										<li class="fragment">Both the armature object's pivot and the root bone are at the <strong>same location</strong> as the mesh's pivot.</li>
+										<li class="fragment">The root bone will be the character's <strong>collision origin</strong>.</li>
+										<li class="fragment">The root bone is the <strong>parent of all other bones</strong>.</li>
+									</ul>
+								</li>
 							</ul>
-						</li>
-						<li class="fragment">Always have a <strong>root bone</strong>:
-							<ul class="txt-small">
-								<li class="fragment">Both the armature object's pivot and the root bone are at the <strong>same location</strong> as the mesh's pivot.</li>
-								<li class="fragment">The root bone will be the character's <strong>collision origin</strong>.</li>
-								<li class="fragment">The root bone is the <strong>parent of all other bones</strong>.</li>
-							</ul>
-						</li>
-					</ul>
+						</div>
+
+						<div>
+							<img src="./lib/img/anim-bnuy.gif" class="framed">
+						</div>
+					</div>
 				</section>
 				
 				<!-- SKINNED 3D 4 -->
 				<section>
 					<h4>Best practices: Rig Axis 🏗️</h4>
-					<ul>
-						<li class="fragment">Consistent <strong>axis direction</strong>.</li>
-						<li class="fragment"><strong>Quaternions vs. Euler</strong>:
-							<ul class="txt-small">
-								<li class="fragment">Quaternions (X, Y, Z, W) are complicated to animate on a timeline and don't work as expected with >180º rotation transforms between keyframes (i.e.: <strong><em>SLERP</em></strong>)...</li>
-								<li class="fragment">... but Euler (X, Y, Z) might end up in <strong>gimbal lock</strong>. To avoid it:
-									<ul>
-										<li class="fragment">Set rotation axis order: #1 the most important rotation axis, #2 the least important rotation axis, #3 the middle rotation axis.
-											<ul>
-												<li class="fragment">E.g.: in <em>Euler.XZY</em>, the bone rotates mainly on its X axis, sometimes on its Y axis, and barely on its Z axis.</li>
-											</ul>
-										</li>
-									</ul>
+
+					<div class="two-col-1-1">
+						<div>
+							<img src="./lib/img/math.gif" class="framed">
+						</div>
+						<div>
+							<ul>
+							<li class="fragment">Consistent <strong>axis direction</strong>.</li>
+							<li class="fragment"><strong>Quaternions vs. Euler</strong>:
+								<ul class="txt-small">
+									<li class="fragment">Quaternions (X, Y, Z, W) are complicated to animate on a timeline and don't work as expected with >180º rotation transforms between keyframes (i.e.: <strong><em>SLERP</em></strong>)...</li>
+									<li class="fragment">... but Euler (X, Y, Z) might end up in <strong>gimbal lock</strong>. To avoid it:
+										<ul>
+											<li class="fragment">Set rotation axis order: #1 the most important rotation axis, #2 the least important rotation axis, #3 the middle rotation axis.
+												<ul>
+													<li class="fragment">E.g.: in <em>Euler.XZY</em>, the bone rotates mainly on its X axis, sometimes on its Y axis, and barely on its Z axis.</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
 								</li>
+								<li class="fragment">Lock unused transforms on each bone.</li>
 							</ul>
-						</li>
-						<li class="fragment">Lock unused transforms on each bone.</li>
-					</ul>
+						</div>
+					</div>
+					
 				</section>
 				
 				<!-- SKINNED 3D 5 -->
@@ -575,15 +631,24 @@
 				<!-- BLEND SHAPES -->
 				<section>
 					<h3>Blend shapes / Shape keys 🔑</h3>
-					<ul>
-						<li class="fragment">Animate a vertex or a group of vertices through interpolating between two transforms.</li>
-						<li class="fragment">Useful for:
-							<ul class="txt-small">
-								<li class="fragment">Face animations (no need for bones/reducing the amount of bones).</li>
-								<li class="fragment">Mesh adjustments in extreme poses (to fix volume distortions).</li>
+					<div class="two-col-2-1">
+						<div>
+							<ul>
+								<li class="fragment">Animate a vertex or a group of vertices through interpolating between two transforms.</li>
+								<li class="fragment">Useful for:
+									<ul class="txt-small">
+										<li class="fragment">Face animations (no need for bones/reducing the amount of bones).</li>
+										<li class="fragment">Mesh adjustments in extreme poses (to fix volume distortions).</li>
+									</ul>
+								</li>
 							</ul>
-						</li>
-					</ul>
+						</div>
+
+						<div>
+							<img src="./lib/img/bb.png" class="framed">
+						</div>
+					</div>
+					
 				</section>
 				
 				<!-- NON-SKINNED 3D -->
@@ -606,30 +671,47 @@
 				<!-- PHYSICS-BASED -->
 				<section>
 					<h3>Physics-based 💃🏻</h3>
-					<ul>
-						<li class="fragment">The computer calculates the movement based on mass and force:
-							<ul class="txt-small">
-								<li class="fragment">It can stay <strong>real-time</strong> (only for objects with <strong>a lot of interaction</strong>).</li>
-								<li class="fragment">It can be pre-computed and <strong>baked</strong> into an animation sequence.</li>
+					<div class="two-col-2-1">
+						<div>
+							<ul>
+								<li class="fragment">The computer calculates the movement based on mass and force:
+									<ul class="txt-small">
+										<li class="fragment">It can stay <strong>real-time</strong> (only for objects with <strong>a lot of interaction</strong>).</li>
+										<li class="fragment">It can be pre-computed and <strong>baked</strong> into an animation sequence.</li>
+									</ul>
+								</li>
+								<li class="fragment">Use cases: physics as mechanics, hair and clothes, curtains, pre-computed debris.</li>
 							</ul>
-						</li>
-						<li class="fragment">Use cases: physics as mechanics, hair and clothes, curtains, pre-computed debris.</li>
-					</ul>
+						</div>
+
+						<div>
+							<img src="./lib/img/anim-alice.gif" class="framed">
+						</div>
+					</div>
 				</section>
 				
 				<!-- VIA SHADERS -->
 				<section>
 					<h3>Via shaders ⛱️</h3>
-					<ul>
-						<li class="fragment">Mostly common for water FX.</li>
-						<li class="fragment">Can animate:
-							<ul class="txt-small">
-								<li class="fragment">Vertices.</li>
-								<li class="fragment">Textures.</li>
-								<li class="fragment">Material properties.</li>
+					<div class="two-col-2-1">
+						<div>
+							<img src="./lib/img/anim-sot.gif" class="framed">
+						</div>
+
+						<div>
+							<ul>
+								<li class="fragment">Mostly common for water FX.</li>
+								<li class="fragment">Can animate:
+									<ul class="txt-small">
+										<li class="fragment">Vertices.</li>
+										<li class="fragment">Textures.</li>
+										<li class="fragment">Material properties.</li>
+									</ul>
+								</li>
 							</ul>
-						</li>
-					</ul>
+						</div>
+					</div>
+					
 				</section>
 				
 				<!-- POV -->
@@ -661,7 +743,7 @@
 				</section>
 
 				<!-- STYLE x TECHNIQUE x POV -->
-				<section>
+				<section data-background-image="./lib/img/harold.jpg">
 					<div class="notebook">
 						<p>Think of a game... 💭</p>
 						<p class="fragment">What's its style? Technique? POV? 💬</p>
@@ -855,17 +937,19 @@
 					<div class="emboss">
 						<h3>Some further reading 📖✨</h3>
 						<div class="flexbox">
-							<img src="./lib/img/illusion-of-life.png" class="fragment framed">
-							<img src="./lib/img/anim-survival-kit.png" class="fragment framed">
-							<img src="./lib/img/game-anim.png" class="fragment framed">
+							<img src="./lib/img/illusion-of-life.png" class="framed">
+							<img src="./lib/img/anim-survival-kit.png" class="framed">
+							<img src="./lib/img/game-anim.png" class="framed">
 						</div>
 
-						<p class="fragment txt-small">Thomas, F. & Johnston, O. <em>The Illusion of Life: Disney Animation</em>. Disney Editions. 1995 / Williams, R. <em>The Animator's Survival Kit</em>. Farrar, Straus and Giroux. 2012 / Cooper, J. <em>Game Anim: Video Game Animation Explained</em>. CRC Press. 2021</p>
+						<p class="txt-small">Thomas, F. & Johnston, O. <em>The Illusion of Life: Disney Animation</em>. Disney Editions. 1995 / Williams, R. <em>The Animator's Survival Kit</em>. Farrar, Straus and Giroux. 2012 / Cooper, J. <em>Game Anim: Video Game Animation Explained</em>. CRC Press. 2021</p>
 				</section>
 
 				<!-- MEDIA LIST -->
 				 <section>
-					<ul class="txt-small">
+					<div class="two-col-1-1">
+						<div>
+<ul class="txt-small">
 						<li><em>13 Rosas</em> (under development). Achtung Autobahn.</li>
 						<li><em>Dragon Ball Z</em> (1989-1996). D. Nishio, S. Yamauchi. Toei Animation.</li>
 						<li><em>Elden Ring</em> (2022). FromSoftware.</li>
@@ -884,6 +968,12 @@
 						<li><em>Tekkonkinkreet</em> (2006). M. Arias. Studio 4°C.</li>
 						<li><em>The Secret Life of Pets</em> (2012). C. Renaud. Illumination Entertainment.</li>
 					</ul>
+						</div>
+						<div>
+							
+						</div>
+					</div>
+					
 				 </section>
 				
 				<!-- THE END ----------------------------------------------------------------------------->
