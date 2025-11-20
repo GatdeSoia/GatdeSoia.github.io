@@ -575,7 +575,7 @@ nav li {
   background-image: url(../lib/img/pics/toggo-pic-4.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center bottom;
+  background-position: 90% bottom;
   width: 100%;
   height: 400px;
 }
